@@ -1,0 +1,9 @@
+LaunchTargetManager/configs/AnalogSensor1=org.eclipse.cdt.arduino.core.connectionType\:Arduino Nano 1
+LaunchTargetManager/org.eclipse.cdt.arduino.core.connectionType,Arduino\ Nano\ 1/name=Arduino Nano 1
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
+configDescList=org.eclipse.cdt.arduino.core.descriptorType\:AnalogSensor1
+eclipse.preferences.version=1
+org.eclipse.cdt.arduino.core.descriptorType\:AnalogSensor1/activeLaunchMode=run
+org.eclipse.cdt.arduino.core.descriptorType\:AnalogSensor1/activeLaunchTarget=org.eclipse.cdt.arduino.core.connectionType\:Arduino Nano 1

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;AnalogSensor1/photoresistor.c&apos; to &apos;photoresistor.cpp&apos;" description="Rename resource &apos;photoresistor.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="photoresistor.c" name="photoresistor.cpp" stamp="1582393100243" updateReferences="true"/>
+</session>

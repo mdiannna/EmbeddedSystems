@@ -1,0 +1,25 @@
+/*
+ * mystdio.cpp
+ *
+ *  Created on: Feb 22, 2020
+ *      Author: mdiannna
+ */
+
+#include <stdio.h>
+#include <avr/io.h>
+#include <Arduino.h>
+#include "mystdio.h"
+
+static int MyPutChar(char c, FILE *stream);
+
+static FILE mystdout = FDEV_SETUP_STREAM(MyPutChar, NULL,
+                                         _FDEV_SETUP_WRITE);
+static int
+uart_putchar(char c, FILE *stream)
+{
+  if (c == '\n')
+    uart_putchar('\r', stream);
+  loop_until_bit_is_set(UCSRA, UDRE);
+  UDR = c;
+  return 0;
+}

@@ -1,0 +1,17 @@
+/*
+ * photoresistor.c
+ *
+ *  Created on: Feb 22, 2020
+ *      Author: mdiannna
+ */
+
+#include "photoresistor.h"
+#include <stdio.h>
+#include <avr/io.h>
+
+void initPhotoresistor() {
+	printf("Photoresistor init");
+}
+
+
+
