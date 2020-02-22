@@ -1,0 +1,13 @@
+/*
+ * analoglibrary.cpp
+ *
+ *  Created on: Feb 22, 2020
+ *      Author: mdiannna
+ */
+#include "analoglibrary.h"
+
+
+
+void ADCtoVoltage() {
+
+}

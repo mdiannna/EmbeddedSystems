@@ -11,19 +11,21 @@
 #include "mystdio.h"
 
 int MyPutChar( char c, FILE *t) {
-    Serial.write( c );
-    return 1;
+    Serial.print( c );
+    return 0;
 }
 
 int MyGetCh(FILE *t) {
   while(!Serial.available());
   char ch = Serial.read();
-  return ch;
+//  return ch;
+  return &ch;
 }
 
 
 void SerialInit() {
   Serial.begin(9600);
   fdevopen( &MyPutChar, &MyGetCh);
+  //fdevopen( MyPutChar, MyGetCh);
 }
 

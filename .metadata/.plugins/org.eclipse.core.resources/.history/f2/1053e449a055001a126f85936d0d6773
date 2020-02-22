@@ -1,0 +1,23 @@
+#include <Arduino.h>
+#include "photoresistor.h"
+#include "mystdio.h"
+#include "led.h"
+#include "analoglibrary.h"
+
+void setup() {
+	pinMode(13, OUTPUT);
+	SerialInit();
+	PhotoresistorInit();
+	LED_Init();
+}
+
+void loop() {
+	printf("Hello world!");
+	int lightLevel = ReadLightLevel();
+
+	delay(1000);
+	LED_On();
+	delay(1000);
+	LED_Off();
+	delay(1000);
+}

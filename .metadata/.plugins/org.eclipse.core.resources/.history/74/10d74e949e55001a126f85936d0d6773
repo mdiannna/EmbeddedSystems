@@ -1,0 +1,22 @@
+/*
+ * analoglibrary.cpp
+ *
+ *  Created on: Feb 22, 2020
+ *      Author: mdiannna
+ */
+#include "analoglibrary.h"
+
+
+
+//TODO:
+int ADCtoVoltage(int value) {
+	int result = 0;
+	return result;
+}
+
+//TODO
+void SaltAndPepperFilter() {
+
+}
+
+

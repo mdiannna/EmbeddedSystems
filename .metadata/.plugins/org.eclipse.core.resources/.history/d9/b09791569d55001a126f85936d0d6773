@@ -1,0 +1,26 @@
+/*
+ * led.cpp
+ *
+ *  Created on: Feb 22, 2020
+ *      Author: mdiannna
+ */
+
+#include "led.h"
+
+
+void LED_Init() {
+// pinMode(LED_PIN, INPUT_PULLUP);
+  pinMode(LED_PIN, OUTPUT);
+  pinMode(GREEN_LED_PIN, OUTPUT);
+  pinMode(RED_LED_PIN, OUTPUT);
+}
+
+
+int Is_LED_On() {
+  int LEDState = digitalRead(LED_PIN);
+  if(LEDState==LED_ON) {
+    return 1;
+  }
+//else
+  return 0;
+}

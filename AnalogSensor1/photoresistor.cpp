@@ -12,11 +12,12 @@
 #include "photoresistor.h"
 
 void PhotoresistorInit() {
-//	printf("Photoresistor init");
+	printf("Photoresistor init");
+}
 
-	Serial.write("Hello!");
-
-
+int ReadLightLevel() {
+	 int lightLevel = analogRead(PHOTORESISTOR_PIN);
+	 return lightLevel;
 }
 
 

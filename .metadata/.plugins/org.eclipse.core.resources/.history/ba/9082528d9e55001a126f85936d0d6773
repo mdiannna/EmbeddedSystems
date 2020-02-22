@@ -1,0 +1,16 @@
+/*
+ * analoglibrary.h
+ *
+ *  Created on: Feb 22, 2020
+ *      Author: mdiannna
+ */
+
+#ifndef ANALOGLIBRARY_H_
+#define ANALOGLIBRARY_H_
+
+int ADCtoVoltage(int value);
+void SaltAndPepperFilter();
+
+
+
+#endif /* ANALOGLIBRARY_H_ */

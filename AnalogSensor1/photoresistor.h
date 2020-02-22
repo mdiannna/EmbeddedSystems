@@ -8,8 +8,10 @@
 #ifndef PHOTORESISTOR_H_
 #define PHOTORESISTOR_H_
 
-void PhotoresistorInit();
+#define PHOTORESISTOR_PIN 0 //A0
 
+void PhotoresistorInit();
+int ReadLightLevel();
 
 
 #endif /* PHOTORESISTOR_H_ */

@@ -94,3 +94,268 @@ Building AnalogSensor1
 make: Nothing to be done for 'all'.
 Program store usage: 1961 of maximum 30720 bytes
 Initial RAM usage: 191 of maximum 2048 bytes
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" "../../AnalogSensor1.cpp" -o "project/AnalogSensor1.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" "../../led.cpp" -o "project/led.cpp.o"
+../../led.cpp: In function 'void LED_Init()':
+../../led.cpp:14:11: error: 'GREEN_LED_PIN' was not declared in this scope
+   pinMode(GREEN_LED_PIN, OUTPUT);
+           ^~~~~~~~~~~~~
+../../led.cpp:14:11: note: suggested alternative: 'LED_PIN'
+   pinMode(GREEN_LED_PIN, OUTPUT);
+           ^~~~~~~~~~~~~
+           LED_PIN
+../../led.cpp:15:11: error: 'RED_LED_PIN' was not declared in this scope
+   pinMode(RED_LED_PIN, OUTPUT);
+           ^~~~~~~~~~~
+../../led.cpp:15:11: note: suggested alternative: 'LED_PIN'
+   pinMode(RED_LED_PIN, OUTPUT);
+           ^~~~~~~~~~~
+           LED_PIN
+Makefile:82: recipe for target 'project/led.cpp.o' failed
+make: *** [project/led.cpp.o] Error 1
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" "../../led.cpp" -o "project/led.cpp.o"
+../../led.cpp: In function 'void LED_Init()':
+../../led.cpp:14:11: error: 'GREEN_LED_PIN' was not declared in this scope
+   pinMode(GREEN_LED_PIN, OUTPUT);
+           ^~~~~~~~~~~~~
+../../led.cpp:14:11: note: suggested alternative: 'LED_PIN'
+   pinMode(GREEN_LED_PIN, OUTPUT);
+           ^~~~~~~~~~~~~
+           LED_PIN
+../../led.cpp:15:11: error: 'RED_LED_PIN' was not declared in this scope
+   pinMode(RED_LED_PIN, OUTPUT);
+           ^~~~~~~~~~~
+../../led.cpp:15:11: note: suggested alternative: 'LED_PIN'
+   pinMode(RED_LED_PIN, OUTPUT);
+           ^~~~~~~~~~~
+           LED_PIN
+Makefile:82: recipe for target 'project/led.cpp.o' failed
+make: *** [project/led.cpp.o] Error 1
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" "../../led.cpp" -o "project/led.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" "../../mystdio.cpp" -o "project/mystdio.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" "../../photoresistor.cpp" -o "project/photoresistor.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p  -o "./AnalogSensor1.elf" project/AnalogSensor1.cpp.o project/led.cpp.o project/mystdio.cpp.o project/photoresistor.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./AnalogSensor1.elf" "./AnalogSensor1.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./AnalogSensor1.elf" "./AnalogSensor1.eep"
+Program store usage: 4293 of maximum 30720 bytes
+Initial RAM usage: 219 of maximum 2048 bytes
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" "../../AnalogSensor1.cpp" -o "project/AnalogSensor1.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" "../../analoglibrary.cpp" -o "project/analoglibrary.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" "../../photoresistor.cpp" -o "project/photoresistor.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p  -o "./AnalogSensor1.elf" project/AnalogSensor1.cpp.o project/analoglibrary.cpp.o project/led.cpp.o project/mystdio.cpp.o project/photoresistor.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./AnalogSensor1.elf" "./AnalogSensor1.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./AnalogSensor1.elf" "./AnalogSensor1.eep"
+Program store usage: 5025 of maximum 30720 bytes
+Initial RAM usage: 271 of maximum 2048 bytes
+
+Building AnalogSensor1
+make: Nothing to be done for 'all'.
+Program store usage: 5025 of maximum 30720 bytes
+Initial RAM usage: 271 of maximum 2048 bytes
+
+Building AnalogSensor1
+make: Nothing to be done for 'all'.
+Program store usage: 5025 of maximum 30720 bytes
+Initial RAM usage: 271 of maximum 2048 bytes
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" "../../AnalogSensor1.cpp" -o "project/AnalogSensor1.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p  -o "./AnalogSensor1.elf" project/AnalogSensor1.cpp.o project/analoglibrary.cpp.o project/led.cpp.o project/mystdio.cpp.o project/photoresistor.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./AnalogSensor1.elf" "./AnalogSensor1.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./AnalogSensor1.elf" "./AnalogSensor1.eep"
+Program store usage: 4511 of maximum 30720 bytes
+Initial RAM usage: 271 of maximum 2048 bytes
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" "../../AnalogSensor1.cpp" -o "project/AnalogSensor1.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p  -o "./AnalogSensor1.elf" project/AnalogSensor1.cpp.o project/analoglibrary.cpp.o project/led.cpp.o project/mystdio.cpp.o project/photoresistor.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./AnalogSensor1.elf" "./AnalogSensor1.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./AnalogSensor1.elf" "./AnalogSensor1.eep"
+Program store usage: 4513 of maximum 30720 bytes
+Initial RAM usage: 273 of maximum 2048 bytes
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" "../../AnalogSensor1.cpp" -o "project/AnalogSensor1.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p  -o "./AnalogSensor1.elf" project/AnalogSensor1.cpp.o project/analoglibrary.cpp.o project/led.cpp.o project/mystdio.cpp.o project/photoresistor.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./AnalogSensor1.elf" "./AnalogSensor1.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./AnalogSensor1.elf" "./AnalogSensor1.eep"
+Program store usage: 4513 of maximum 30720 bytes
+Initial RAM usage: 273 of maximum 2048 bytes
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" "../../AnalogSensor1.cpp" -o "project/AnalogSensor1.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p  -o "./AnalogSensor1.elf" project/AnalogSensor1.cpp.o project/analoglibrary.cpp.o project/led.cpp.o project/mystdio.cpp.o project/photoresistor.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./AnalogSensor1.elf" "./AnalogSensor1.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./AnalogSensor1.elf" "./AnalogSensor1.eep"
+Program store usage: 4511 of maximum 30720 bytes
+Initial RAM usage: 271 of maximum 2048 bytes
+
+Building AnalogSensor1
+make: Nothing to be done for 'all'.
+Program store usage: 4511 of maximum 30720 bytes
+Initial RAM usage: 271 of maximum 2048 bytes
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" "../../AnalogSensor1.cpp" -o "project/AnalogSensor1.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p  -o "./AnalogSensor1.elf" project/AnalogSensor1.cpp.o project/analoglibrary.cpp.o project/led.cpp.o project/mystdio.cpp.o project/photoresistor.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./AnalogSensor1.elf" "./AnalogSensor1.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./AnalogSensor1.elf" "./AnalogSensor1.eep"
+Program store usage: 4513 of maximum 30720 bytes
+Initial RAM usage: 273 of maximum 2048 bytes
+
+Building AnalogSensor1
+make: Nothing to be done for 'all'.
+Program store usage: 4513 of maximum 30720 bytes
+Initial RAM usage: 273 of maximum 2048 bytes
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" "../../mystdio.cpp" -o "project/mystdio.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p  -o "./AnalogSensor1.elf" project/AnalogSensor1.cpp.o project/analoglibrary.cpp.o project/led.cpp.o project/mystdio.cpp.o project/photoresistor.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./AnalogSensor1.elf" "./AnalogSensor1.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./AnalogSensor1.elf" "./AnalogSensor1.eep"
+Program store usage: 4521 of maximum 30720 bytes
+Initial RAM usage: 273 of maximum 2048 bytes
+
+Building AnalogSensor1
+make: Nothing to be done for 'all'.
+Program store usage: 4521 of maximum 30720 bytes
+Initial RAM usage: 273 of maximum 2048 bytes
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" "../../mystdio.cpp" -o "project/mystdio.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p  -o "./AnalogSensor1.elf" project/AnalogSensor1.cpp.o project/analoglibrary.cpp.o project/led.cpp.o project/mystdio.cpp.o project/photoresistor.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./AnalogSensor1.elf" "./AnalogSensor1.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./AnalogSensor1.elf" "./AnalogSensor1.eep"
+Program store usage: 4511 of maximum 30720 bytes
+Initial RAM usage: 273 of maximum 2048 bytes
+
+Building AnalogSensor1
+make: Nothing to be done for 'all'.
+Program store usage: 4511 of maximum 30720 bytes
+Initial RAM usage: 273 of maximum 2048 bytes
+
+Building AnalogSensor1
+make: Nothing to be done for 'all'.
+Program store usage: 4511 of maximum 30720 bytes
+Initial RAM usage: 273 of maximum 2048 bytes
+
+Building AnalogSensor1
+make: Nothing to be done for 'all'.
+Program store usage: 4511 of maximum 30720 bytes
+Initial RAM usage: 273 of maximum 2048 bytes
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" "../../mystdio.cpp" -o "project/mystdio.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p  -o "./AnalogSensor1.elf" project/AnalogSensor1.cpp.o project/analoglibrary.cpp.o project/led.cpp.o project/mystdio.cpp.o project/photoresistor.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./AnalogSensor1.elf" "./AnalogSensor1.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./AnalogSensor1.elf" "./AnalogSensor1.eep"
+Program store usage: 4511 of maximum 30720 bytes
+Initial RAM usage: 273 of maximum 2048 bytes
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" "../../mystdio.cpp" -o "project/mystdio.cpp.o"
+../../mystdio.cpp: In function 'void SerialInit()':
+../../mystdio.cpp:28:34: error: too many arguments to function 'FILE* fdevopen(int (*)(char, FILE*), int (*)(FILE*))'
+   fdevopen( MyPutChar, MyGetCh, 0);
+                                  ^
+In file included from ../../mystdio.cpp:8:0:
+/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/avr/include/stdio.h:419:14: note: declared here
+Makefile:99: recipe for target 'project/mystdio.cpp.o' failed
+ extern FILE *fdevopen(int (*__put)(char, FILE*), int (*__get)(FILE*));
+              ^~~~~~~~
+make: *** [project/mystdio.cpp.o] Error 1
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" "../../mystdio.cpp" -o "project/mystdio.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p  -o "./AnalogSensor1.elf" project/AnalogSensor1.cpp.o project/analoglibrary.cpp.o project/led.cpp.o project/mystdio.cpp.o project/photoresistor.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./AnalogSensor1.elf" "./AnalogSensor1.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./AnalogSensor1.elf" "./AnalogSensor1.eep"
+Program store usage: 4511 of maximum 30720 bytes
+Initial RAM usage: 273 of maximum 2048 bytes
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" "../../mystdio.cpp" -o "project/mystdio.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p  -o "./AnalogSensor1.elf" project/AnalogSensor1.cpp.o project/analoglibrary.cpp.o project/led.cpp.o project/mystdio.cpp.o project/photoresistor.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./AnalogSensor1.elf" "./AnalogSensor1.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./AnalogSensor1.elf" "./AnalogSensor1.eep"
+Program store usage: 4511 of maximum 30720 bytes
+Initial RAM usage: 273 of maximum 2048 bytes
+
+Building AnalogSensor1
+make: Nothing to be done for 'all'.
+Program store usage: 4511 of maximum 30720 bytes
+Initial RAM usage: 273 of maximum 2048 bytes
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" "../../AnalogSensor1.cpp" -o "project/AnalogSensor1.cpp.o"
+../../AnalogSensor1.cpp: In function 'void loop()':
+../../AnalogSensor1.cpp:21:22: error: call of overloaded 'write(float&)' is ambiguous
+  Serial.write(voltage);
+                      ^
+In file included from /home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino/Arduino.h:233:0,
+                 from ../../AnalogSensor1.cpp:1:
+/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino/HardwareSerial.h:129:20: note: candidate: virtual size_t HardwareSerial::write(uint8_t)
+Makefile:75: recipe for target 'project/AnalogSensor1.cpp.o' failed
+     virtual size_t write(uint8_t);
+                    ^~~~~
+/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino/HardwareSerial.h:130:19: note: candidate: size_t HardwareSerial::write(long unsigned int)
+     inline size_t write(unsigned long n) { return write((uint8_t)n); }
+                   ^~~~~
+/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino/HardwareSerial.h:131:19: note: candidate: size_t HardwareSerial::write(long int)
+     inline size_t write(long n) { return write((uint8_t)n); }
+                   ^~~~~
+/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino/HardwareSerial.h:132:19: note: candidate: size_t HardwareSerial::write(unsigned int)
+     inline size_t write(unsigned int n) { return write((uint8_t)n); }
+                   ^~~~~
+/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino/HardwareSerial.h:133:19: note: candidate: size_t HardwareSerial::write(int)
+     inline size_t write(int n) { return write((uint8_t)n); }
+                   ^~~~~
+make: *** [project/AnalogSensor1.cpp.o] Error 1
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" "../../AnalogSensor1.cpp" -o "project/AnalogSensor1.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" "../../mystdio.cpp" -o "project/mystdio.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p  -o "./AnalogSensor1.elf" project/AnalogSensor1.cpp.o project/analoglibrary.cpp.o project/led.cpp.o project/mystdio.cpp.o project/photoresistor.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./AnalogSensor1.elf" "./AnalogSensor1.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./AnalogSensor1.elf" "./AnalogSensor1.eep"
+Program store usage: 4805 of maximum 30720 bytes
+Initial RAM usage: 275 of maximum 2048 bytes
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" "../../mystdio.cpp" -o "project/mystdio.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p  -o "./AnalogSensor1.elf" project/AnalogSensor1.cpp.o project/analoglibrary.cpp.o project/led.cpp.o project/mystdio.cpp.o project/photoresistor.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./AnalogSensor1.elf" "./AnalogSensor1.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./AnalogSensor1.elf" "./AnalogSensor1.eep"
+Program store usage: 4805 of maximum 30720 bytes
+Initial RAM usage: 275 of maximum 2048 bytes
+
+Building AnalogSensor1
+make: Nothing to be done for 'all'.
+Program store usage: 4805 of maximum 30720 bytes
+Initial RAM usage: 275 of maximum 2048 bytes
+
+Building AnalogSensor1
+make: Nothing to be done for 'all'.
+Program store usage: 4805 of maximum 30720 bytes
+Initial RAM usage: 275 of maximum 2048 bytes
+
+Building AnalogSensor1
+make: Nothing to be done for 'all'.
+Program store usage: 4805 of maximum 30720 bytes
+Initial RAM usage: 275 of maximum 2048 bytes
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" "../../AnalogSensor1.cpp" -o "project/AnalogSensor1.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p  -o "./AnalogSensor1.elf" project/AnalogSensor1.cpp.o project/analoglibrary.cpp.o project/led.cpp.o project/mystdio.cpp.o project/photoresistor.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./AnalogSensor1.elf" "./AnalogSensor1.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./AnalogSensor1.elf" "./AnalogSensor1.eep"
+Program store usage: 6021 of maximum 30720 bytes
+Initial RAM usage: 287 of maximum 2048 bytes
