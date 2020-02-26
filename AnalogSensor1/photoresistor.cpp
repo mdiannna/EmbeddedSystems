@@ -20,5 +20,15 @@ int ReadLightLevel() {
 	 return lightLevel;
 }
 
+int ResistanceToLumen(int resistance) {
+	return 500/(resistance/1000); // Conversion resistance to lumen
+}
+
+int VoltageToResistance(int R, float Vin, float Vout) {
+	int Rl = (R*Vin)/Vout - R;
+//	Alternative formula:
+	//int Rl = (R * (Vin - Vout))/Vout;
+	return Rl;
+}
 
 

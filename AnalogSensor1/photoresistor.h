@@ -13,5 +13,7 @@
 void PhotoresistorInit();
 int ReadLightLevel();
 
+int VoltageToResistance(int R, float Vin, float Vout);
+int ResistanceToLumen(int resistance);
 
 #endif /* PHOTORESISTOR_H_ */

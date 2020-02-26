@@ -4,6 +4,9 @@
 #include "led.h"
 #include "analoglibrary.h"
 
+#define R 10000 //ohm resistance value
+#define Vin 5 // input voltage
+
 void setup() {
 	SerialInit();
 	PhotoresistorInit();
@@ -14,12 +17,17 @@ void setup() {
 void loop() {
 
 	int lightLevel = ReadLightLevel();
-	float voltage = ADCtoVoltage(lightLevel);
-
+	float Vout = ADCtoVoltage(lightLevel);
+	int resistance = VoltageToResistance(R, Vin, Vout);
 
 	printf("Light level: %d\n\r", lightLevel);
-	printf("Voltage: %.2f\n\r", voltage);
-	Serial.println(voltage);
+	printf("Voltage: %.2f\n\r", Vout);
+	Serial.println(Vout);
+
+	int lux = ResistanceToLumen(resistance);
+	printf("Light intensity(lumen) - physical parameter: %d\n\r", lux);
+
+
 
 	delay(1000);
 	LED_On();
