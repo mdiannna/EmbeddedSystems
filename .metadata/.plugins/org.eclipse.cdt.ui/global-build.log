@@ -370,3 +370,267 @@ Building AnalogSensor1
 make: Nothing to be done for 'all'.
 Program store usage: 11989 of maximum 30720 bytes
 Initial RAM usage: 1008 of maximum 2048 bytes
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/Wire/src" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/SoftwareSerial/src" "../../AnalogSensor1.cpp" -o "project/AnalogSensor1.cpp.o"
+../../AnalogSensor1.cpp: In function 'void loop()':
+../../AnalogSensor1.cpp:81:48: error: too many arguments to function 'void WeightedAverageFilter()'
+  filteredValue = WeightedAverageFilter(buff2, 3);
+                                                ^
+In file included from ../../AnalogSensor1.cpp:4:0:
+../../analoglibrary.h:14:6: note: declared here
+ void WeightedAverageFilter();
+      ^~~~~~~~~~~~~~~~~~~~~
+../../AnalogSensor1.cpp:81:48: error: void value not ignored as it ought to be
+  filteredValue = WeightedAverageFilter(buff2, 3);
+                                                ^
+make: *** [project/AnalogSensor1.cpp.o] Error 1
+Makefile:80: recipe for target 'project/AnalogSensor1.cpp.o' failed
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/Wire/src" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/SoftwareSerial/src" "../../AnalogSensor1.cpp" -o "project/AnalogSensor1.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/Wire/src" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/SoftwareSerial/src" "../../analoglibrary.cpp" -o "project/analoglibrary.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p  -o "./AnalogSensor1.elf" project/AnalogSensor1.cpp.o project/SFE_BMP180.cpp.o project/analoglibrary.cpp.o project/led.cpp.o project/lightsensor.cpp.o project/mystdio.cpp.o project/pressure_temp_altitude.cpp.o  libraries/Wire/src/Wire.cpp.o libraries/Wire/src/utility/twi.c.o libraries/SoftwareSerial/src/SoftwareSerial.cpp.o  "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./AnalogSensor1.elf" "./AnalogSensor1.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./AnalogSensor1.elf" "./AnalogSensor1.eep"
+Program store usage: 11991 of maximum 30720 bytes
+Initial RAM usage: 1022 of maximum 2048 bytes
+
+Building AnalogSensor1
+make: Nothing to be done for 'all'.
+Program store usage: 11991 of maximum 30720 bytes
+Initial RAM usage: 1022 of maximum 2048 bytes
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/Wire/src" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/SoftwareSerial/src" "../../AnalogSensor1.cpp" -o "project/AnalogSensor1.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p  -o "./AnalogSensor1.elf" project/AnalogSensor1.cpp.o project/SFE_BMP180.cpp.o project/analoglibrary.cpp.o project/led.cpp.o project/lightsensor.cpp.o project/mystdio.cpp.o project/pressure_temp_altitude.cpp.o  libraries/Wire/src/Wire.cpp.o libraries/Wire/src/utility/twi.c.o libraries/SoftwareSerial/src/SoftwareSerial.cpp.o  "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./AnalogSensor1.elf" "./AnalogSensor1.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./AnalogSensor1.elf" "./AnalogSensor1.eep"
+Program store usage: 12023 of maximum 30720 bytes
+Initial RAM usage: 1038 of maximum 2048 bytes
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/Wire/src" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/SoftwareSerial/src" "../../AnalogSensor1.cpp" -o "project/AnalogSensor1.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p  -o "./AnalogSensor1.elf" project/AnalogSensor1.cpp.o project/SFE_BMP180.cpp.o project/analoglibrary.cpp.o project/led.cpp.o project/lightsensor.cpp.o project/mystdio.cpp.o project/pressure_temp_altitude.cpp.o  libraries/Wire/src/Wire.cpp.o libraries/Wire/src/utility/twi.c.o libraries/SoftwareSerial/src/SoftwareSerial.cpp.o  "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./AnalogSensor1.elf" "./AnalogSensor1.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./AnalogSensor1.elf" "./AnalogSensor1.eep"
+Program store usage: 12101 of maximum 30720 bytes
+Initial RAM usage: 1050 of maximum 2048 bytes
+
+Building AnalogSensor1
+make: Nothing to be done for 'all'.
+Program store usage: 12101 of maximum 30720 bytes
+Initial RAM usage: 1050 of maximum 2048 bytes
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/Wire/src" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/SoftwareSerial/src" "../../analoglibrary.cpp" -o "project/analoglibrary.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p  -o "./AnalogSensor1.elf" project/AnalogSensor1.cpp.o project/SFE_BMP180.cpp.o project/analoglibrary.cpp.o project/led.cpp.o project/lightsensor.cpp.o project/mystdio.cpp.o project/pressure_temp_altitude.cpp.o  libraries/Wire/src/Wire.cpp.o libraries/Wire/src/utility/twi.c.o libraries/SoftwareSerial/src/SoftwareSerial.cpp.o  "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./AnalogSensor1.elf" "./AnalogSensor1.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./AnalogSensor1.elf" "./AnalogSensor1.eep"
+Program store usage: 12131 of maximum 30720 bytes
+Initial RAM usage: 1072 of maximum 2048 bytes
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/Wire/src" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/SoftwareSerial/src" "../../analoglibrary.cpp" -o "project/analoglibrary.cpp.o"
+../../analoglibrary.cpp: In function 'float SaltAndPepperFilter(float*)':
+../../analoglibrary.cpp:82:14: error: too many arguments to function 'void sort(float*)'
+  sort(buff, 3);
+              ^
+../../analoglibrary.cpp:42:6: note: declared here
+ void sort(float * arr) {
+      ^~~~
+make: *** [project/analoglibrary.cpp.o] Error 1
+Makefile:96: recipe for target 'project/analoglibrary.cpp.o' failed
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/Wire/src" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/SoftwareSerial/src" "../../analoglibrary.cpp" -o "project/analoglibrary.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p  -o "./AnalogSensor1.elf" project/AnalogSensor1.cpp.o project/SFE_BMP180.cpp.o project/analoglibrary.cpp.o project/led.cpp.o project/lightsensor.cpp.o project/mystdio.cpp.o project/pressure_temp_altitude.cpp.o  libraries/Wire/src/Wire.cpp.o libraries/Wire/src/utility/twi.c.o libraries/SoftwareSerial/src/SoftwareSerial.cpp.o  "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./AnalogSensor1.elf" "./AnalogSensor1.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./AnalogSensor1.elf" "./AnalogSensor1.eep"
+Program store usage: 12293 of maximum 30720 bytes
+Initial RAM usage: 1072 of maximum 2048 bytes
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/Wire/src" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/SoftwareSerial/src" "../../AnalogSensor1.cpp" -o "project/AnalogSensor1.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p  -o "./AnalogSensor1.elf" project/AnalogSensor1.cpp.o project/SFE_BMP180.cpp.o project/analoglibrary.cpp.o project/led.cpp.o project/lightsensor.cpp.o project/mystdio.cpp.o project/pressure_temp_altitude.cpp.o  libraries/Wire/src/Wire.cpp.o libraries/Wire/src/utility/twi.c.o libraries/SoftwareSerial/src/SoftwareSerial.cpp.o  "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./AnalogSensor1.elf" "./AnalogSensor1.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./AnalogSensor1.elf" "./AnalogSensor1.eep"
+Program store usage: 12243 of maximum 30720 bytes
+Initial RAM usage: 1066 of maximum 2048 bytes
+
+Building AnalogSensor1
+make: Nothing to be done for 'all'.
+Program store usage: 12243 of maximum 30720 bytes
+Initial RAM usage: 1066 of maximum 2048 bytes
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/Wire/src" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/SoftwareSerial/src" "../../analoglibrary.cpp" -o "project/analoglibrary.cpp.o"
+../../analoglibrary.cpp: In function 'void sort(float*)':
+../../analoglibrary.cpp:61:2: error: 'cout' was not declared in this scope
+  cout << "Min:" << min << "\n";
+  ^~~~
+../../analoglibrary.cpp:61:2: note: suggested alternative: 'sort'
+  cout << "Min:" << min << "\n";
+  ^~~~
+  sort
+make: *** [project/analoglibrary.cpp.o] Error 1
+Makefile:96: recipe for target 'project/analoglibrary.cpp.o' failed
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/Wire/src" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/SoftwareSerial/src" "../../analoglibrary.cpp" -o "project/analoglibrary.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p  -o "./AnalogSensor1.elf" project/AnalogSensor1.cpp.o project/SFE_BMP180.cpp.o project/analoglibrary.cpp.o project/led.cpp.o project/lightsensor.cpp.o project/mystdio.cpp.o project/pressure_temp_altitude.cpp.o  libraries/Wire/src/Wire.cpp.o libraries/Wire/src/utility/twi.c.o libraries/SoftwareSerial/src/SoftwareSerial.cpp.o  "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./AnalogSensor1.elf" "./AnalogSensor1.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./AnalogSensor1.elf" "./AnalogSensor1.eep"
+Program store usage: 12187 of maximum 30720 bytes
+Initial RAM usage: 1066 of maximum 2048 bytes
+
+Building AnalogSensor1
+make: Nothing to be done for 'all'.
+Program store usage: 12187 of maximum 30720 bytes
+Initial RAM usage: 1066 of maximum 2048 bytes
+
+Building AnalogSensor1
+make: Nothing to be done for 'all'.
+Program store usage: 12187 of maximum 30720 bytes
+Initial RAM usage: 1066 of maximum 2048 bytes
+
+Building AnalogSensor1
+make: Nothing to be done for 'all'.
+Program store usage: 12187 of maximum 30720 bytes
+Initial RAM usage: 1066 of maximum 2048 bytes
+
+Building AnalogSensor1
+make: Nothing to be done for 'all'.
+Program store usage: 12187 of maximum 30720 bytes
+Initial RAM usage: 1066 of maximum 2048 bytes
+
+Building AnalogSensor1
+make: Nothing to be done for 'all'.
+Program store usage: 12187 of maximum 30720 bytes
+Initial RAM usage: 1066 of maximum 2048 bytes
+
+Building AnalogSensor1
+make: Nothing to be done for 'all'.
+Program store usage: 12187 of maximum 30720 bytes
+Initial RAM usage: 1066 of maximum 2048 bytes
+
+Building AnalogSensor1
+make: Nothing to be done for 'all'.
+Program store usage: 12187 of maximum 30720 bytes
+Initial RAM usage: 1066 of maximum 2048 bytes
+
+Building AnalogSensor1
+make: Nothing to be done for 'all'.
+Program store usage: 12187 of maximum 30720 bytes
+Initial RAM usage: 1066 of maximum 2048 bytes
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/Wire/src" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/SoftwareSerial/src" "../../AnalogSensor1.cpp" -o "project/AnalogSensor1.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p  -o "./AnalogSensor1.elf" project/AnalogSensor1.cpp.o project/SFE_BMP180.cpp.o project/analoglibrary.cpp.o project/led.cpp.o project/lightsensor.cpp.o project/mystdio.cpp.o project/pressure_temp_altitude.cpp.o  libraries/Wire/src/Wire.cpp.o libraries/Wire/src/utility/twi.c.o libraries/SoftwareSerial/src/SoftwareSerial.cpp.o  "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./AnalogSensor1.elf" "./AnalogSensor1.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./AnalogSensor1.elf" "./AnalogSensor1.eep"
+Program store usage: 12187 of maximum 30720 bytes
+Initial RAM usage: 1066 of maximum 2048 bytes
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/Wire/src" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/SoftwareSerial/src" "../../AnalogSensor1.cpp" -o "project/AnalogSensor1.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p  -o "./AnalogSensor1.elf" project/AnalogSensor1.cpp.o project/SFE_BMP180.cpp.o project/analoglibrary.cpp.o project/led.cpp.o project/lightsensor.cpp.o project/mystdio.cpp.o project/pressure_temp_altitude.cpp.o  libraries/Wire/src/Wire.cpp.o libraries/Wire/src/utility/twi.c.o libraries/SoftwareSerial/src/SoftwareSerial.cpp.o  "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./AnalogSensor1.elf" "./AnalogSensor1.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./AnalogSensor1.elf" "./AnalogSensor1.eep"
+Program store usage: 12207 of maximum 30720 bytes
+Initial RAM usage: 1066 of maximum 2048 bytes
+
+Building AnalogSensor1
+make: Nothing to be done for 'all'.
+Program store usage: 12207 of maximum 30720 bytes
+Initial RAM usage: 1066 of maximum 2048 bytes
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/Wire/src" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/SoftwareSerial/src" "../../AnalogSensor1.cpp" -o "project/AnalogSensor1.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p  -o "./AnalogSensor1.elf" project/AnalogSensor1.cpp.o project/SFE_BMP180.cpp.o project/analoglibrary.cpp.o project/led.cpp.o project/lightsensor.cpp.o project/mystdio.cpp.o project/pressure_temp_altitude.cpp.o  libraries/Wire/src/Wire.cpp.o libraries/Wire/src/utility/twi.c.o libraries/SoftwareSerial/src/SoftwareSerial.cpp.o  "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./AnalogSensor1.elf" "./AnalogSensor1.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./AnalogSensor1.elf" "./AnalogSensor1.eep"
+Program store usage: 12185 of maximum 30720 bytes
+Initial RAM usage: 1056 of maximum 2048 bytes
+
+Building AnalogSensor1
+make: Nothing to be done for 'all'.
+Program store usage: 12185 of maximum 30720 bytes
+Initial RAM usage: 1056 of maximum 2048 bytes
+
+Building AnalogSensor1
+make: Nothing to be done for 'all'.
+Program store usage: 12185 of maximum 30720 bytes
+Initial RAM usage: 1056 of maximum 2048 bytes
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/Wire/src" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/SoftwareSerial/src" "../../AnalogSensor1.cpp" -o "project/AnalogSensor1.cpp.o"
+../../AnalogSensor1.cpp:3:2: error: stray '#' in program
+ /#include "led.h"
+  ^
+../../AnalogSensor1.cpp:3:1: error: expected unqualified-id before '/' token
+ /#include "led.h"
+ ^
+../../AnalogSensor1.cpp: In function 'void setup()':
+../../AnalogSensor1.cpp:21:2: error: 'LED_Init' was not declared in this scope
+  LED_Init();
+  ^~~~~~~~
+../../AnalogSensor1.cpp: In function 'void showLightResults(float)':
+../../AnalogSensor1.cpp:41:15: error: 'ADCtoVoltage' was not declared in this scope
+  float Vout = ADCtoVoltage(lightLevel);
+               ^~~~~~~~~~~~
+Makefile:80: recipe for target 'project/AnalogSensor1.cpp.o' failed
+make: *** [project/AnalogSensor1.cpp.o] Error 1
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/Wire/src" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/SoftwareSerial/src" "../../AnalogSensor1.cpp" -o "project/AnalogSensor1.cpp.o"
+../../AnalogSensor1.cpp:3:2: error: stray '#' in program
+ /#include "led.h"
+  ^
+../../AnalogSensor1.cpp:3:1: error: expected unqualified-id before '/' token
+ /#include "led.h"
+ ^
+../../AnalogSensor1.cpp: In function 'void setup()':
+../../AnalogSensor1.cpp:21:2: error: 'LED_Init' was not declared in this scope
+  LED_Init();
+  ^~~~~~~~
+../../AnalogSensor1.cpp: In function 'void showLightResults(float)':
+../../AnalogSensor1.cpp:41:15: error: 'ADCtoVoltage' was not declared in this scope
+  float Vout = ADCtoVoltage(lightLevel);
+               ^~~~~~~~~~~~
+make: *** [project/AnalogSensor1.cpp.o] Error 1
+Makefile:80: recipe for target 'project/AnalogSensor1.cpp.o' failed
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/Wire/src" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/SoftwareSerial/src" "../../AnalogSensor1.cpp" -o "project/AnalogSensor1.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p  -o "./AnalogSensor1.elf" project/AnalogSensor1.cpp.o project/SFE_BMP180.cpp.o project/analoglibrary.cpp.o project/led.cpp.o project/lightsensor.cpp.o project/mystdio.cpp.o project/pressure_temp_altitude.cpp.o  libraries/Wire/src/Wire.cpp.o libraries/Wire/src/utility/twi.c.o libraries/SoftwareSerial/src/SoftwareSerial.cpp.o  "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./AnalogSensor1.elf" "./AnalogSensor1.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./AnalogSensor1.elf" "./AnalogSensor1.eep"
+Program store usage: 12249 of maximum 30720 bytes
+Initial RAM usage: 1056 of maximum 2048 bytes
+
+Building AnalogSensor1
+make: Nothing to be done for 'all'.
+Program store usage: 12249 of maximum 30720 bytes
+Initial RAM usage: 1056 of maximum 2048 bytes
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/Wire/src" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/SoftwareSerial/src" "../../AnalogSensor1.cpp" -o "project/AnalogSensor1.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p  -o "./AnalogSensor1.elf" project/AnalogSensor1.cpp.o project/SFE_BMP180.cpp.o project/analoglibrary.cpp.o project/led.cpp.o project/lightsensor.cpp.o project/mystdio.cpp.o project/pressure_temp_altitude.cpp.o  libraries/Wire/src/Wire.cpp.o libraries/Wire/src/utility/twi.c.o libraries/SoftwareSerial/src/SoftwareSerial.cpp.o  "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./AnalogSensor1.elf" "./AnalogSensor1.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./AnalogSensor1.elf" "./AnalogSensor1.eep"
+Program store usage: 12317 of maximum 30720 bytes
+Initial RAM usage: 1060 of maximum 2048 bytes
+
+Building AnalogSensor1
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/Wire/src" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/SoftwareSerial/src" "../../AnalogSensor1.cpp" -o "project/AnalogSensor1.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p  -o "./AnalogSensor1.elf" project/AnalogSensor1.cpp.o project/SFE_BMP180.cpp.o project/analoglibrary.cpp.o project/led.cpp.o project/lightsensor.cpp.o project/mystdio.cpp.o project/pressure_temp_altitude.cpp.o  libraries/Wire/src/Wire.cpp.o libraries/Wire/src/utility/twi.c.o libraries/SoftwareSerial/src/SoftwareSerial.cpp.o  "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./AnalogSensor1.elf" "./AnalogSensor1.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./AnalogSensor1.elf" "./AnalogSensor1.eep"
+Program store usage: 12301 of maximum 30720 bytes
+Initial RAM usage: 1064 of maximum 2048 bytes
+
+Building AnalogSensor1
+make: Nothing to be done for 'all'.
+Program store usage: 12301 of maximum 30720 bytes
+Initial RAM usage: 1064 of maximum 2048 bytes

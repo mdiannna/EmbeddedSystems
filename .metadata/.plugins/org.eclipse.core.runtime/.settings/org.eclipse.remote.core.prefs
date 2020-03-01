@@ -1,7 +1,7 @@
 connections/org.eclipse.cdt.arduino.core.connectionType/Arduino+Nano+1/arduinoBoardName=nano
 connections/org.eclipse.cdt.arduino.core.connectionType/Arduino+Nano+1/arduinoPackageName=arduino
 connections/org.eclipse.cdt.arduino.core.connectionType/Arduino+Nano+1/arduinoPlatformName=avr
-connections/org.eclipse.cdt.arduino.core.connectionType/Arduino+Nano+1/arduinoPortName=/dev/ttyUSB7
+connections/org.eclipse.cdt.arduino.core.connectionType/Arduino+Nano+1/arduinoPortName=/dev/ttyUSB5
 connections/org.eclipse.cdt.arduino.core.connectionType/Arduino+Nano+1/menu_cpu=atmega328old
 connections/org.eclipse.cdt.arduino.core.connectionType/Arduino+Nano+1/programmer=avrisp
 eclipse.preferences.version=1

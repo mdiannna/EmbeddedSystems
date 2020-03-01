@@ -18,7 +18,7 @@ float ADCtoVoltage(float value) {
 	return voltage;
 }
 
-void sort(float * arr, int n) {
+void sortBubble(float * arr, int n) {
 	float temp;
 	for(int i=0; i<n; i++) {
 		
@@ -30,17 +30,60 @@ void sort(float * arr, int n) {
 			}
 		}
 	}
-	printArr(arr, 3);
+}
+
+void swap(float * arr, int ind1, int ind2) {
+	float temp = 0.0;
+	temp = arr[ind1];
+	arr[ind1] = arr[ind2];
+	arr[ind2] = temp;
+}
+
+void sort(float * arr) {
+	float min = arr[0];
+	float temp;
+	char minInd = 0;
+	char medInd = 1;
+
+	if(arr[1] < min) {
+		min = arr[1];
+		swap(arr, 0, 1);
+		// minInd = 1;
+
+	}
+
+	if(arr[2] < min) {
+		min = arr[2];
+		swap(arr, 0, 2);
+		// minInd = 2;
+	}
+
+
+	float max = arr[2];
+	char maxInd = 2;
+
+	// if(arr[0] > max) {
+	// 	max = arr[0];
+	// 	maxInd = 0;
+	// 	swap(arr, maxInd, 1);
+	// }
+
+	if(arr[1] > max) {
+		max = arr[1];
+		swap(arr, 2, 1);
+		// maxInd = 1;
+	}
 }
 
 
 // filter.cpp
 float SaltAndPepperFilter(float * buff) {
-	sort(buff, 3);
+	Serial.println("Salt and pepper filter");
+	sort(buff);
 	float median = buff[1];
 	printf("Median:");
-	cout << median << "\n";
-	// Serial.println(median);
+
+	Serial.println(median);
 	return median;
 }
 

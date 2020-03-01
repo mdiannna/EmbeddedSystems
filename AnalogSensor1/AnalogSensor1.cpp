@@ -1,6 +1,6 @@
 #include <Arduino.h>
 #include "mystdio.h"
-//#include "led.h"
+#include "led.h"
 #include "analoglibrary.h"
 #include "lightsensor.h"
 #include "pressure_temp_altitude.h"
@@ -18,11 +18,11 @@ float median = 0;
 void setup() {
 	SerialInit();
 	LightSensorInit();
-	//LED_Init();
+	LED_Init();
 	InitBMPSensor();
 
-	float * buff = (float *) malloc(3*sizeof(float));
-	float * buff2 = (float *) malloc(3*sizeof(float));
+	buff = (float *) malloc(3*sizeof(float));
+	buff2 = (float *) malloc(3*sizeof(float));
 	buff[0] = 0.0;
 	buff[1] = 0.0;
 	buff[2] = 0.0;
@@ -36,7 +36,7 @@ void setup() {
 
 
 void showLightResults(float lightLevel) {
-	printf("-------\n");
+	printf("\n-------\n");
 	printf("\n");
 	float Vout = ADCtoVoltage(lightLevel);
 	float resistance = VoltageToResistance(R, Vin, Vout);
@@ -45,7 +45,7 @@ void showLightResults(float lightLevel) {
 	printf("LIGHT LEVEL:\n\r");
 	Serial.println(lightLevel);
 
-	printf("Voltage: %.2f\n\r", Vout);
+	//printf("Voltage: %.2f\n\r", Vout);
 	Serial.println(Vout);
 
 	printf("Resistance: %d\n\r", resistance);
@@ -54,9 +54,9 @@ void showLightResults(float lightLevel) {
 
 
 	float lux = ResistanceToLumen(resistance);
-	printf("Light intensity(lumen) - physical parameter: %f\n\r", lux);
+	printf("Light intensity(lumen) - physical parameter: %f\n\r");
 	Serial.print(lux);
-	printf("-------\n");
+	printf("\n-------\n");
 }
 
 
@@ -77,28 +77,30 @@ void loop() {
 	buff[cnt] = lightLevel;
 
 	median = SaltAndPepperFilter(buff);
+	printf("median:");
+	Serial.println(median);
 	PushQueue(buff2, median, 3);
 	filteredValue = WeightedAverageFilter(buff2, 3);
-	
+	printf("Filtered value:");
 	showLightResults(filteredValue);
 
 	cnt++;
 
 
 	T = SensorGetTemperature();
-	printf("Temperature: ");
+	printf("\mTemperature: ");
 	Serial.print(T,2);
 	printf(" deg C, ");
 
 	P = SensorGetPressure(T);
-	printf("Absolute pressure: ");
+	printf("\nAbsolute pressure: ");
 	Serial.print(P,2);
 	printf(" mb, ");
 	Serial.print(P*0.0295333727,2);
 	printf(" inHg");
 
 	p0 = SensorGetRelativePressure(P);
-	printf("relative (sea-level) pressure: ");
+	printf("\nRelative (sea-level) pressure: ");
 	Serial.print(p0,2);
 	printf(" mb, ");
 	Serial.print(p0*0.0295333727,2);
@@ -107,7 +109,7 @@ void loop() {
 	a = SensorGetAltitude(P, p0);
 	printf("computed altitude: ");
 	Serial.print(a,0);
-	printf(" meters, ");
+	printf(" meters\n ");
 
 
 	delay(3000);

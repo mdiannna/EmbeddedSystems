@@ -11,9 +11,9 @@
 float ADCtoVoltage(float value);
 void SaltAndPepperFilter();
 //Filtru medie ponderata
-void WeightedAverageFilter();
+float WeightedAverageFilter(float *, int);
 
-float SaltAndPepperFilter(float * buff);
-void PushQueue(float * buff, float value, int size);
+float SaltAndPepperFilter(float *);
+void PushQueue(float *, float, int);
 
 #endif /* ANALOGLIBRARY_H_ */
