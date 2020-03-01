@@ -14,5 +14,6 @@ void SaltAndPepperFilter();
 void WeightedAverageFilter();
 
 float SaltAndPepperFilter(float * buff);
+void PushQueue(float * buff, float value, int size);
 
 #endif /* ANALOGLIBRARY_H_ */
