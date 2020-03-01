@@ -8,10 +8,11 @@
 #ifndef ANALOGLIBRARY_H_
 #define ANALOGLIBRARY_H_
 
-float ADCtoVoltage(int value);
+float ADCtoVoltage(float value);
 void SaltAndPepperFilter();
 //Filtru medie ponderata
 void WeightedAverageFilter();
 
+float SaltAndPepperFilter(float * buff);
 
 #endif /* ANALOGLIBRARY_H_ */

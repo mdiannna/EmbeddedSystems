@@ -27,10 +27,15 @@ float ResistanceToLumen(int resistance) {
 	return result;
 }
 
-int VoltageToResistance(int R, float Vin, float Vout) {
-	int Rl = (R*Vin)/Vout - R;
+float VoltageToResistance(float R, float Vin, float Vout) {
+	//int Rl = (R*Vin)/Vout - R;
 //	Alternative formula:
-	//int Rl = (R * (Vin - Vout))/Vout;
+	printf("Vin:");
+	Serial.println(Vin);
+	printf("Vout:");
+	Serial.println(Vout);
+
+	float Rl = (R * (Vin - Vout))/Vout;
 	return Rl;
 }
 

@@ -13,7 +13,7 @@
 void LightSensorInit();
 int ReadLightLevel();
 
-int VoltageToResistance(int R, float Vin, float Vout);
+float VoltageToResistance(float R, float Vin, float Vout);
 float ResistanceToLumen(int resistance);
 
 #endif /* LIGHTSENSOR_H_ */

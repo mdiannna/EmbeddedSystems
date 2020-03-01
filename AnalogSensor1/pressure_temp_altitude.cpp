@@ -120,6 +120,88 @@ double SensorGetTemperature(){
 	  return T;
 }
 
+double SensorGetPressure(double T) {
+	char status;
+	double P;
+
+	status = sensor.startPressure(3);
+	      if (status != 0)
+	      {
+	        // Wait for the measurement to complete:
+	        delay(status);
+
+	        // Retrieve the completed pressure measurement:
+	        // Note that the measurement is stored in the variable P.
+	        // Note also that the function requires the previous temperature measurement (T).
+	        // (If temperature is stable, you can do one temperature measurement for a number of pressure measurements.)
+	        // Function returns 1 if successful, 0 if failure.
+
+	        status = sensor.getPressure(P,T);
+	        if (status != 0)
+	        {
+//	          // Print out the measurement:
+//	          Serial.print("absolute pressure: ");
+//	          Serial.print(P,2);
+//	          Serial.print(" mb, ");
+//	          Serial.print(P*0.0295333727,2);
+//	          Serial.println(" inHg");
+
+	          // The pressure sensor returns abolute pressure, which varies with altitude.
+	          // To remove the effects of altitude, use the sealevel function and your current altitude.
+	          // This number is commonly used in weather reports.
+	          // Parameters: P = absolute pressure in mb, ALTITUDE = current altitude in m.
+	          // Result: p0 = sea-level compensated pressure in mb
+
+//	          p0 = sensor.sealevel(P,ALTITUDE);
+//	          Serial.print("relative (sea-level) pressure: ");
+//	          Serial.print(p0,2);
+//	          Serial.print(" mb, ");
+//	          Serial.print(p0*0.0295333727,2);
+//	          Serial.println(" inHg");
+
+	          // On the other hand, if you want to determine your altitude from the pressure reading,
+	          // use the altitude function along with a baseline pressure (sea-level or other).
+	          // Parameters: P = absolute pressure in mb, p0 = baseline pressure in mb.
+	          // Result: a = altitude in m.
+
+	        }
+	        else Serial.println("error retrieving pressure measurement\n");
+	      }
+	      else Serial.println("error starting pressure measurement\n");
+	      return P;
+}
+
+double SensorGetRelativePressure(double P) {
+	   // The pressure sensor returns abolute pressure, which varies with altitude.
+		          // To remove the effects of altitude, use the sealevel function and your current altitude.
+		          // This number is commonly used in weather reports.
+		          // Parameters: P = absolute pressure in mb, ALTITUDE = current altitude in m.
+		          // Result: p0 = sea-level compensated pressure in mb
+
+	double p0;
+		          p0 = sensor.sealevel(P,ALTITUDE);
+//		          Serial.print("relative (sea-level) pressure: ");
+//		          Serial.print(p0,2);
+//		          Serial.print(" mb, ");
+//		          Serial.print(p0*0.0295333727,2);
+//		          Serial.println(" inHg");
+		         return p0;
+}
+
+double SensorGetAltitude(double P, double p0){
+	double a;
+	   // The pressure sensor returns abolute pressure, which varies with altitude.
+		          // To remove the effects of altitude, use the sealevel function and your current altitude.
+		          // This number is commonly used in weather reports.
+		          // Parameters: P = absolute pressure in mb, ALTITUDE = current altitude in m.
+		          // Result: p0 = sea-level compensated pressure in mb
+
+	a = sensor.altitude(P,p0);
+
+	return a;
+}
+
+
 //void loopExample()
 void TestSensorBMP()
 {

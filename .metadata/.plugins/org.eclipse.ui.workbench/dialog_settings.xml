@@ -4,4 +4,10 @@
 	</section>
 	<section name="ImportExportAction">
 	</section>
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="321"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
+	</section>
+	<section name="PreferencesImportWizard">
+	</section>
 </section>

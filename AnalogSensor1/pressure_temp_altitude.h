@@ -10,6 +10,9 @@
 
 void InitBMPSensor();
 void TestSensorBMP();
-
+double SensorGetTemperature();
+double SensorGetPressure(double T);
+double SensorGetRelativePressure(double P);
+double SensorGetAltitude(double P, double p0);
 
 #endif /* PRESSURE_TEMP_ALTITUDE_H_ */
