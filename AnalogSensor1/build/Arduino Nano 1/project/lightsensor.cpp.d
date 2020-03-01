@@ -1,4 +1,4 @@
-project/photoresistor.cpp.o: ../../photoresistor.cpp \
+project/lightsensor.cpp.o: ../../lightsensor.cpp ../../lightsensor.h \
  /home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino/Arduino.h \
  /home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino/binary.h \
  /home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino/WCharacter.h \
@@ -10,5 +10,4 @@ project/photoresistor.cpp.o: ../../photoresistor.cpp \
  /home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino/USBAPI.h \
  /home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino/Arduino.h \
  /home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs/pins_arduino.h \
- /home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs/../standard/pins_arduino.h \
- ../../photoresistor.h
+ /home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs/../standard/pins_arduino.h

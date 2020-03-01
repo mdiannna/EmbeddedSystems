@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;AnalogSensor1/airPressure.h&apos;" deleteContents="false" description="Delete resource &apos;AnalogSensor1/airPressure.h&apos;" element1="/AnalogSensor1/airPressure.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1583052528349"/>
+</session>

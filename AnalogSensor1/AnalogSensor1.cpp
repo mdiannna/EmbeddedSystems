@@ -1,16 +1,16 @@
 #include <Arduino.h>
-#include "photoresistor.h"
 #include "mystdio.h"
 #include "led.h"
 #include "analoglibrary.h"
-#include "airPressure.h"
+#include "lightsensor.h"
+#include "pressure_temp_altitude.h"
 
 #define R 10000 //ohm resistance value
 #define Vin 5 // input voltage
 
 void setup() {
 	SerialInit();
-	PhotoresistorInit();
+	LightSensorInit();
 	LED_Init();
 	InitBMPSensor();
 
@@ -24,11 +24,14 @@ void loop() {
 	int resistance = VoltageToResistance(R, Vin, Vout);
 
 	printf("Light level: %d\n\r", lightLevel);
+	printf("Resistance: %d\n\r", resistance);
+
 	printf("Voltage: %.2f\n\r", Vout);
 	Serial.println(Vout);
 
-	int lux = ResistanceToLumen(resistance);
-	printf("Light intensity(lumen) - physical parameter: %d\n\r", lux);
+	float lux = ResistanceToLumen(resistance);
+	printf("Light intensity(lumen) - physical parameter: %f\n\r", lux);
+	Serial.print(lux);
 
 	TestSensorBMP();
 
