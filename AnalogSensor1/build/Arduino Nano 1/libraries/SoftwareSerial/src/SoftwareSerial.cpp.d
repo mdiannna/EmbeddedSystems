@@ -1,4 +1,5 @@
-project/AnalogSensor1.cpp.o: ../../AnalogSensor1.cpp \
+libraries/SoftwareSerial/src/SoftwareSerial.cpp.o: \
+ /home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp \
  /home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino/Arduino.h \
  /home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino/binary.h \
  /home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino/WCharacter.h \
@@ -11,5 +12,5 @@ project/AnalogSensor1.cpp.o: ../../AnalogSensor1.cpp \
  /home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino/Arduino.h \
  /home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs/pins_arduino.h \
  /home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/eightanaloginputs/../standard/pins_arduino.h \
- ../../photoresistor.h ../../mystdio.h ../../led.h ../../analoglibrary.h \
- ../../airPressure.h
+ /home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/libraries/SoftwareSerial/src/SoftwareSerial.h \
+ /home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino/Stream.h
