@@ -1,4 +1,7 @@
 #include <Arduino.h>
+#include <keypad.h>
+#include <avr.h>
+#include <avr/io.h>
 
 /*  Arduino DC Motor Control - PWM | H-Bridge | L298N  -  Example 01
 
@@ -15,17 +18,20 @@ int pressed = false;
 int cnt = 0;
 
 void setup() {
-  pinMode(enA, OUTPUT);
-  pinMode(in1, OUTPUT);
-  pinMode(in2, OUTPUT);
- // pinMode(button, INPUT);
+	InitMotors();
+	InitKeypad();
+	InitSerial();
+	
   // Set initial rotation direction
   digitalWrite(in1, LOW);
   digitalWrite(in2, HIGH);
   analogWrite(enA,0);
 }
 
-void loop() {
+
+
+void loopTestMotor() {
+
 	if(cnt<500) {
 
 		int motorSpeedA = 100;
@@ -44,5 +50,11 @@ void loop() {
 		 analogWrite(enA, 0);
 	}
 	cnt++;
+}
 
+
+void loop() {
+	char c = GetCharKeypad();
+	printf("You typed: %c\n", c );
+	delay(1000);
 }
