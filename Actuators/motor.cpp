@@ -20,10 +20,14 @@ void InitMotorB() {
 // TODO:
 void MotorForward(char motor, int speed) {
 	if(motor=='A') {
-
+		digitalWrite(in1, LOW);
+	    digitalWrite(in2, HIGH);
+	  	analogWrite(enA,speed);
 	}
 	if(motor=='B') {
-		
+		digitalWrite(in3, LOW);
+	    digitalWrite(in4, HIGH);	
+	  	analogWrite(enB,speed);
 	}
 
 }
@@ -32,10 +36,16 @@ void MotorForward(char motor, int speed) {
 // TODO:
 void MotorBackward(char motor, int speed) {
 	if(motor=='A') {
-
+		digitalWrite(in1, HIGH);
+	    digitalWrite(in2, LOW);
+	  	// analogWrite(enA,PowerToSpeed(power));
+	  	analogWrite(enA,speed);
 	}
 	if(motor=='B') {
-		
+		digitalWrite(in3, HIGH);
+	    digitalWrite(in4, LOW);	
+	  	// analogWrite(enB,PowerToSpeed(power));
+	  	analogWrite(enB,speed);
 	}
 
 }
@@ -44,14 +54,19 @@ void MotorBackward(char motor, int speed) {
 void MotorStop(char motor) {
 	if(motor=='A') {
 		digitalWrite(in1, LOW);
-	  	digitalWrite(in2, HIGH);
+	  	digitalWrite(in2, LOW);
 	  	analogWrite(enA,0);
 	} 
 
 	if(motor=='B') {
 		digitalWrite(in3, LOW);
-	  	digitalWrite(in4, HIGH);
+	  	digitalWrite(in4, LOW);
 	  	analogWrite(enA,0);
 	}
 	
+}
+
+void MotorsStop() {
+	MotorStop('A');
+	MotorStop('B');
 }

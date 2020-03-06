@@ -1,9 +1,3 @@
-/*
- * analoglibrary.h
- *
- *  Created on: Feb 22, 2020
- *      Author: mdiannna
- */
 
 #ifndef KEYPAD_H_
 #define KEYPAD_H_
