@@ -1,7 +1,13 @@
-connections/org.eclipse.cdt.arduino.core.connectionType/Arduino+Nano+1/arduinoBoardName=nano
+connections/org.eclipse.cdt.arduino.core.connectionType/Arduino+Nano+1/arduinoBoardName=mega
 connections/org.eclipse.cdt.arduino.core.connectionType/Arduino+Nano+1/arduinoPackageName=arduino
 connections/org.eclipse.cdt.arduino.core.connectionType/Arduino+Nano+1/arduinoPlatformName=avr
-connections/org.eclipse.cdt.arduino.core.connectionType/Arduino+Nano+1/arduinoPortName=/dev/ttyUSB5
+connections/org.eclipse.cdt.arduino.core.connectionType/Arduino+Nano+1/arduinoPortName=/dev/ttyACM0
 connections/org.eclipse.cdt.arduino.core.connectionType/Arduino+Nano+1/menu_cpu=atmega328old
 connections/org.eclipse.cdt.arduino.core.connectionType/Arduino+Nano+1/programmer=avrisp
+connections/org.eclipse.cdt.arduino.core.connectionType/Arduino+mega/arduinoBoardName=mega
+connections/org.eclipse.cdt.arduino.core.connectionType/Arduino+mega/arduinoPackageName=arduino
+connections/org.eclipse.cdt.arduino.core.connectionType/Arduino+mega/arduinoPlatformName=avr
+connections/org.eclipse.cdt.arduino.core.connectionType/Arduino+mega/arduinoPortName=/dev/ttyACM0
+connections/org.eclipse.cdt.arduino.core.connectionType/Arduino+mega/menu_cpu=atmega2560
+connections/org.eclipse.cdt.arduino.core.connectionType/Arduino+mega/programmer=avrisp
 eclipse.preferences.version=1

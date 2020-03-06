@@ -88,7 +88,7 @@ void loop() {
 
 
 	T = SensorGetTemperature();
-	printf("\mTemperature: ");
+	printf("\nTemperature: ");
 	Serial.print(T,2);
 	printf(" deg C, ");
 

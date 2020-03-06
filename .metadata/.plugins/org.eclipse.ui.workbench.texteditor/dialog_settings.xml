@@ -7,6 +7,7 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="rin"/>
 			<item value="    else Serial.println(&quot;error retrieving temperature measurement\n&quot;);&#x0A;  }&#x0A;  else Serial.println(&quot;error starting temperature measurement\n&quot;);&#x0A;"/>
 		</list>
 		<list key="replacehistory">
