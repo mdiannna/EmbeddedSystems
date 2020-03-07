@@ -1,6 +1,8 @@
 
-#ifndef KEYPAD_H_
-#define KEYPAD_H_
+#include <Arduino.h>
+
+#ifndef MYKEYPAD_H_
+#define MyKEYPAD_H_
 
 // const byte Rows= 4; 
 #define Rows 4 
@@ -21,9 +23,7 @@ char keymap[Rows][Cols]=
 byte rPins[Rows]= {3, 4, 5, 6}; //Rows 0 to 3
 byte cPins[Cols]= {7,8,9}; //Columns 0 to 2
 
-Keypad kpd = Keypad(makeKeymap(keymap), rPins, cPins, Rows, Cols);
-
-
+void InitKeypad();
 char GetCharKeypad();
 
 #endif

@@ -792,3 +792,375 @@ Building Actuators
 "/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./Actuators.elf" "./Actuators.eep"
 Program store usage: 1397 of maximum 253952 bytes
 Initial RAM usage: 8 of maximum 8192 bytes
+
+Building Actuators
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../Actuators.cpp" -o "project/Actuators.cpp.o"
+../../Actuators.cpp:2:10: fatal error: keypad.h: No such file or directory
+ #include <keypad.h>
+          ^~~~~~~~~~
+compilation terminated.
+Makefile:71: recipe for target 'project/Actuators.cpp.o' failed
+make: *** [project/Actuators.cpp.o] Error 1
+
+Building Actuators
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../Actuators.cpp" -o "project/Actuators.cpp.o"
+../../Actuators.cpp:2:10: fatal error: keypad.h: No such file or directory
+ #include <keypad.h>
+          ^~~~~~~~~~
+Makefile:71: recipe for target 'project/Actuators.cpp.o' failed
+compilation terminated.
+make: *** [project/Actuators.cpp.o] Error 1
+
+Building Actuators
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../Actuators.cpp" -o "project/Actuators.cpp.o"
+../../Actuators.cpp:3:10: fatal error: car.h: No such file or directory
+Makefile:77: recipe for target 'project/Actuators.cpp.o' failed
+ #include <car.h>
+          ^~~~~~~
+compilation terminated.
+make: *** [project/Actuators.cpp.o] Error 1
+
+Building Actuators
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../Actuators.cpp" -o "project/Actuators.cpp.o"
+../../Actuators.cpp:3:10: fatal error: car.h: No such file or directory
+ #include <car.h>
+          ^~~~~~~
+compilation terminated.
+make: *** [project/Actuators.cpp.o] Error 1
+Makefile:77: recipe for target 'project/Actuators.cpp.o' failed
+
+Building Actuators
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../Actuators.cpp" -o "project/Actuators.cpp.o"
+../../Actuators.cpp:3:10: fatal error: car.h: No such file or directory
+ #include <car.h>
+          ^~~~~~~
+compilation terminated.
+Makefile:78: recipe for target 'project/Actuators.cpp.o' failed
+make: *** [project/Actuators.cpp.o] Error 1
+
+Building Actuators
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../Actuators.cpp" -o "project/Actuators.cpp.o"
+../../Actuators.cpp:3:10: fatal error: car.h: No such file or directory
+ #include <car.h>
+          ^~~~~~~
+compilation terminated.
+Makefile:78: recipe for target 'project/Actuators.cpp.o' failed
+make: *** [project/Actuators.cpp.o] Error 1
+
+Building Actuators
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../Actuators.cpp" -o "project/Actuators.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../button.cpp" -o "project/button.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../car.cpp" -o "project/car.cpp.o"
+../../car.cpp:1:10: fatal error: keypad.h: No such file or directory
+ #include <keypad.h>
+          ^~~~~~~~~~
+compilation terminated.
+Makefile:94: recipe for target 'project/car.cpp.o' failed
+make: *** [project/car.cpp.o] Error 1
+
+Building Actuators
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../car.cpp" -o "project/car.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../led.cpp" -o "project/led.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../light.cpp" -o "project/light.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../motor.cpp" -o "project/motor.cpp.o"
+../../motor.cpp:2:10: fatal error: avr.h: No such file or directory
+ #include <avr.h>
+          ^~~~~~~
+compilation terminated.
+make: *** [project/motor.cpp.o] Error 1
+Makefile:118: recipe for target 'project/motor.cpp.o' failed
+
+Building Actuators
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../motor.cpp" -o "project/motor.cpp.o"
+../../motor.cpp:4:10: fatal error: motor.h: No such file or directory
+ #include <motor.h>
+          ^~~~~~~~~
+compilation terminated.
+Makefile:118: recipe for target 'project/motor.cpp.o' failed
+make: *** [project/motor.cpp.o] Error 1
+
+Building Actuators
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../motor.cpp" -o "project/motor.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../mykeypad.cpp" -o "project/mykeypad.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../mystdio.cpp" -o "project/mystdio.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega2560  -o "./Actuators.elf" project/Actuators.cpp.o project/button.cpp.o project/car.cpp.o project/led.cpp.o project/light.cpp.o project/motor.cpp.o project/mykeypad.cpp.o project/mystdio.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./Actuators.elf" "./Actuators.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./Actuators.elf" "./Actuators.eep"
+Program store usage: 7059 of maximum 253952 bytes
+Initial RAM usage: 259 of maximum 8192 bytes
+
+Building Actuators
+make: Nothing to be done for 'all'.
+Program store usage: 7059 of maximum 253952 bytes
+Initial RAM usage: 259 of maximum 8192 bytes
+
+Building Actuators
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../Actuators.cpp" -o "project/Actuators.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega2560  -o "./Actuators.elf" project/Actuators.cpp.o project/button.cpp.o project/car.cpp.o project/led.cpp.o project/light.cpp.o project/motor.cpp.o project/mykeypad.cpp.o project/mystdio.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./Actuators.elf" "./Actuators.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./Actuators.elf" "./Actuators.eep"
+Program store usage: 7265 of maximum 253952 bytes
+Initial RAM usage: 273 of maximum 8192 bytes
+
+Building Actuators
+make: Nothing to be done for 'all'.
+Program store usage: 7265 of maximum 253952 bytes
+Initial RAM usage: 273 of maximum 8192 bytes
+
+Building Actuators
+make: Nothing to be done for 'all'.
+Program store usage: 7265 of maximum 253952 bytes
+Initial RAM usage: 273 of maximum 8192 bytes
+
+Building Actuators
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../Actuators.cpp" -o "project/Actuators.cpp.o"
+../../Actuators.cpp: In function 'void loop()':
+../../Actuators.cpp:68:5: error: 's' was not declared in this scope
+  if(s=="forward") {
+     ^
+../../Actuators.cpp:68:5: note: suggested alternative: 'sq'
+  if(s=="forward") {
+     ^
+     sq
+../../Actuators.cpp:72:5: error: 's' was not declared in this scope
+  if(s=="backward") {
+     ^
+../../Actuators.cpp:72:5: note: suggested alternative: 'sq'
+  if(s=="backward") {
+     ^
+     sq
+../../Actuators.cpp:76:5: error: 's' was not declared in this scope
+  if(s=="left") {
+     ^
+../../Actuators.cpp:76:5: note: suggested alternative: 'sq'
+  if(s=="left") {
+     ^
+     sq
+../../Actuators.cpp:80:5: error: 's' was not declared in this scope
+  if(s=="right") {
+     ^
+../../Actuators.cpp:80:5: note: suggested alternative: 'sq'
+  if(s=="right") {
+     ^
+     sq
+../../Actuators.cpp:85:5: error: 's' was not declared in this scope
+  if(s=="lighton" && !IsLightOn()) {
+     ^
+../../Actuators.cpp:85:5: note: suggested alternative: 'sq'
+  if(s=="lighton" && !IsLightOn()) {
+     ^
+     sq
+../../Actuators.cpp:90:5: error: 's' was not declared in this scope
+  if(s=="lightof" && IsLightOn()) {
+     ^
+../../Actuators.cpp:90:5: note: suggested alternative: 'sq'
+  if(s=="lightof" && IsLightOn()) {
+     ^
+     sq
+Makefile:78: recipe for target 'project/Actuators.cpp.o' failed
+make: *** [project/Actuators.cpp.o] Error 1
+
+Building Actuators
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../Actuators.cpp" -o "project/Actuators.cpp.o"
+../../Actuators.cpp: In function 'void loop()':
+../../Actuators.cpp:68:5: error: 's' was not declared in this scope
+  if(s=="forward") {
+     ^
+../../Actuators.cpp:68:5: note: suggested alternative: 'sq'
+  if(s=="forward") {
+     ^
+     sq
+../../Actuators.cpp:72:5: error: 's' was not declared in this scope
+  if(s=="backward") {
+     ^
+../../Actuators.cpp:72:5: note: suggested alternative: 'sq'
+  if(s=="backward") {
+     ^
+     sq
+../../Actuators.cpp:76:5: error: 's' was not declared in this scope
+  if(s=="left") {
+     ^
+../../Actuators.cpp:76:5: note: suggested alternative: 'sq'
+  if(s=="left") {
+     ^
+     sq
+../../Actuators.cpp:80:5: error: 's' was not declared in this scope
+  if(s=="right") {
+     ^
+../../Actuators.cpp:80:5: note: suggested alternative: 'sq'
+  if(s=="right") {
+     ^
+     sq
+../../Actuators.cpp:85:5: error: 's' was not declared in this scope
+  if(s=="lighton" && !IsLightOn()) {
+     ^
+../../Actuators.cpp:85:5: note: suggested alternative: 'sq'
+  if(s=="lighton" && !IsLightOn()) {
+     ^
+     sq
+../../Actuators.cpp:90:5: error: 's' was not declared in this scope
+  if(s=="lightof" && IsLightOn()) {
+     ^
+Makefile:78: recipe for target 'project/Actuators.cpp.o' failed
+../../Actuators.cpp:90:5: note: suggested alternative: 'sq'
+  if(s=="lightof" && IsLightOn()) {
+     ^
+     sq
+make: *** [project/Actuators.cpp.o] Error 1
+
+Building Actuators
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../Actuators.cpp" -o "project/Actuators.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega2560  -o "./Actuators.elf" project/Actuators.cpp.o project/button.cpp.o project/car.cpp.o project/led.cpp.o project/light.cpp.o project/motor.cpp.o project/mykeypad.cpp.o project/mystdio.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./Actuators.elf" "./Actuators.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./Actuators.elf" "./Actuators.eep"
+Program store usage: 7411 of maximum 253952 bytes
+Initial RAM usage: 273 of maximum 8192 bytes
+
+Building Actuators
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../Actuators.cpp" -o "project/Actuators.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega2560  -o "./Actuators.elf" project/Actuators.cpp.o project/button.cpp.o project/car.cpp.o project/led.cpp.o project/light.cpp.o project/motor.cpp.o project/mykeypad.cpp.o project/mystdio.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./Actuators.elf" "./Actuators.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./Actuators.elf" "./Actuators.eep"
+Program store usage: 7683 of maximum 253952 bytes
+Initial RAM usage: 221 of maximum 8192 bytes
+
+Building Actuators
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../Actuators.cpp" -o "project/Actuators.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega2560  -o "./Actuators.elf" project/Actuators.cpp.o project/button.cpp.o project/car.cpp.o project/led.cpp.o project/light.cpp.o project/motor.cpp.o project/mykeypad.cpp.o project/mystdio.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./Actuators.elf" "./Actuators.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./Actuators.elf" "./Actuators.eep"
+Program store usage: 7457 of maximum 253952 bytes
+Initial RAM usage: 221 of maximum 8192 bytes
+
+Building Actuators
+make: Nothing to be done for 'all'.
+Program store usage: 7457 of maximum 253952 bytes
+Initial RAM usage: 221 of maximum 8192 bytes
+
+Building Actuators
+make: Nothing to be done for 'all'.
+Program store usage: 7457 of maximum 253952 bytes
+Initial RAM usage: 221 of maximum 8192 bytes
+
+Building Actuators
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../Actuators.cpp" -o "project/Actuators.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega2560  -o "./Actuators.elf" project/Actuators.cpp.o project/button.cpp.o project/car.cpp.o project/led.cpp.o project/light.cpp.o project/motor.cpp.o project/mykeypad.cpp.o project/mystdio.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./Actuators.elf" "./Actuators.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./Actuators.elf" "./Actuators.eep"
+Program store usage: 7471 of maximum 253952 bytes
+Initial RAM usage: 221 of maximum 8192 bytes
+
+Building Actuators
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../Actuators.cpp" -o "project/Actuators.cpp.o"
+../../Actuators.cpp: In function 'void loop()':
+../../Actuators.cpp:59:7: error: redeclaration of 'char c'
+  char c = Serial.read();
+       ^
+../../Actuators.cpp:57:7: note: 'char c' previously declared here
+  char c;
+       ^
+Makefile:78: recipe for target 'project/Actuators.cpp.o' failed
+make: *** [project/Actuators.cpp.o] Error 1
+
+Building Actuators
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../Actuators.cpp" -o "project/Actuators.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega2560  -o "./Actuators.elf" project/Actuators.cpp.o project/button.cpp.o project/car.cpp.o project/led.cpp.o project/light.cpp.o project/motor.cpp.o project/mykeypad.cpp.o project/mystdio.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./Actuators.elf" "./Actuators.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./Actuators.elf" "./Actuators.eep"
+Program store usage: 4497 of maximum 253952 bytes
+Initial RAM usage: 201 of maximum 8192 bytes
+
+Building Actuators
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../Actuators.cpp" -o "project/Actuators.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega2560  -o "./Actuators.elf" project/Actuators.cpp.o project/button.cpp.o project/car.cpp.o project/led.cpp.o project/light.cpp.o project/motor.cpp.o project/mykeypad.cpp.o project/mystdio.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./Actuators.elf" "./Actuators.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./Actuators.elf" "./Actuators.eep"
+Program store usage: 4509 of maximum 253952 bytes
+Initial RAM usage: 201 of maximum 8192 bytes
+
+Building Actuators
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../Actuators.cpp" -o "project/Actuators.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega2560  -o "./Actuators.elf" project/Actuators.cpp.o project/button.cpp.o project/car.cpp.o project/led.cpp.o project/light.cpp.o project/motor.cpp.o project/mykeypad.cpp.o project/mystdio.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./Actuators.elf" "./Actuators.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./Actuators.elf" "./Actuators.eep"
+Program store usage: 5941 of maximum 253952 bytes
+Initial RAM usage: 221 of maximum 8192 bytes
+
+Building Actuators
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../Actuators.cpp" -o "project/Actuators.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega2560  -o "./Actuators.elf" project/Actuators.cpp.o project/button.cpp.o project/car.cpp.o project/led.cpp.o project/light.cpp.o project/motor.cpp.o project/mykeypad.cpp.o project/mystdio.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./Actuators.elf" "./Actuators.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./Actuators.elf" "./Actuators.eep"
+Program store usage: 5995 of maximum 253952 bytes
+Initial RAM usage: 221 of maximum 8192 bytes
+
+Building Actuators
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../Actuators.cpp" -o "project/Actuators.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega2560  -o "./Actuators.elf" project/Actuators.cpp.o project/button.cpp.o project/car.cpp.o project/led.cpp.o project/light.cpp.o project/motor.cpp.o project/mykeypad.cpp.o project/mystdio.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./Actuators.elf" "./Actuators.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./Actuators.elf" "./Actuators.eep"
+Program store usage: 7739 of maximum 253952 bytes
+Initial RAM usage: 225 of maximum 8192 bytes
+
+Building Actuators
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../Actuators.cpp" -o "project/Actuators.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega2560  -o "./Actuators.elf" project/Actuators.cpp.o project/button.cpp.o project/car.cpp.o project/led.cpp.o project/light.cpp.o project/motor.cpp.o project/mykeypad.cpp.o project/mystdio.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./Actuators.elf" "./Actuators.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./Actuators.elf" "./Actuators.eep"
+Program store usage: 5995 of maximum 253952 bytes
+Initial RAM usage: 221 of maximum 8192 bytes
+
+Building Actuators
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../Actuators.cpp" -o "project/Actuators.cpp.o"
+../../Actuators.cpp: In function 'void loop()':
+../../Actuators.cpp:104:16: error: 'IsLightOff' was not declared in this scope
+  if(c=='n' && !IsLightOff()) {
+                ^~~~~~~~~~
+../../Actuators.cpp:104:16: note: suggested alternative: 'IsLightOn'
+  if(c=='n' && !IsLightOff()) {
+                ^~~~~~~~~~
+                IsLightOn
+Makefile:78: recipe for target 'project/Actuators.cpp.o' failed
+make: *** [project/Actuators.cpp.o] Error 1
+
+Building Actuators
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../Actuators.cpp" -o "project/Actuators.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega2560  -o "./Actuators.elf" project/Actuators.cpp.o project/button.cpp.o project/car.cpp.o project/led.cpp.o project/light.cpp.o project/motor.cpp.o project/mykeypad.cpp.o project/mystdio.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./Actuators.elf" "./Actuators.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./Actuators.elf" "./Actuators.eep"
+Program store usage: 5995 of maximum 253952 bytes
+Initial RAM usage: 221 of maximum 8192 bytes
+
+Building Actuators
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../Actuators.cpp" -o "project/Actuators.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega2560  -o "./Actuators.elf" project/Actuators.cpp.o project/button.cpp.o project/car.cpp.o project/led.cpp.o project/light.cpp.o project/motor.cpp.o project/mykeypad.cpp.o project/mystdio.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./Actuators.elf" "./Actuators.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./Actuators.elf" "./Actuators.eep"
+Program store usage: 5995 of maximum 253952 bytes
+Initial RAM usage: 221 of maximum 8192 bytes
+
+Building Actuators
+make: Nothing to be done for 'all'.
+Program store usage: 5995 of maximum 253952 bytes
+Initial RAM usage: 221 of maximum 8192 bytes
+
+Building Actuators
+make: Nothing to be done for 'all'.
+Program store usage: 5995 of maximum 253952 bytes
+Initial RAM usage: 221 of maximum 8192 bytes
+
+Building Actuators
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../Actuators.cpp" -o "project/Actuators.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega2560  -o "./Actuators.elf" project/Actuators.cpp.o project/button.cpp.o project/car.cpp.o project/led.cpp.o project/light.cpp.o project/motor.cpp.o project/mykeypad.cpp.o project/mystdio.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./Actuators.elf" "./Actuators.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./Actuators.elf" "./Actuators.eep"
+Program store usage: 5863 of maximum 253952 bytes
+Initial RAM usage: 221 of maximum 8192 bytes
+
+Building Actuators
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"/home/mdiannna/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/mega" "../../Actuators.cpp" -o "project/Actuators.cpp.o"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega2560  -o "./Actuators.elf" project/Actuators.cpp.o project/button.cpp.o project/car.cpp.o project/led.cpp.o project/light.cpp.o project/motor.cpp.o project/mykeypad.cpp.o project/mystdio.cpp.o   "./core.a" "-L." -lm
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "./Actuators.elf" "./Actuators.hex"
+"/home/mdiannna/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "./Actuators.elf" "./Actuators.eep"
+Program store usage: 5845 of maximum 253952 bytes
+Initial RAM usage: 219 of maximum 8192 bytes

@@ -1,8 +1,7 @@
 #include <Arduino.h>
-#include <avr.h>
 #include <avr/io.h>
 
-#include <motor.h>
+#include "motor.h"
 
 
 void InitMotorA() {

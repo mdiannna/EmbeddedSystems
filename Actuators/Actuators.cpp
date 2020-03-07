@@ -1,11 +1,10 @@
 #include <Arduino.h>
-#include <keypad.h>
-#include <avr.h>
 #include <avr/io.h>
-#include <car.h>
+#include "car.h"
 #include <stdio.h>
-#include <mystdio.h>
-#include <light.h>
+#include "mystdio.h"
+#include "light.h"
+#include "mykeypad.h"
 
 
 /*  Arduino DC Motor Control - PWM | H-Bridge | L298N  -  Example 01
@@ -24,9 +23,10 @@ int cnt = 0;
 
 void setup() {
 	InitSerial();
-	InitKeypad();
+	//InitKeypad();
 	InitCar();
 	InitLight();
+	printf("Initialization done");
 }
 
 
@@ -55,32 +55,60 @@ void setup() {
 
 
 void loop() {
-	char c = GetCharKeypad();
-	printf("You typed: %c\n", c );
-	
-	if(c=='2') {
+	char c;
+
+//	scanf("%c", &c);
+
+	while(!Serial.available());
+	c = Serial.read();
+	//
+	//printf("You typed!!!: %c\n\r", c );
+	Serial.write(c);
+	//	String s ="";
+//	if (Serial.available() > 0) {
+//	char c = Serial.read();
+//
+////	char c = GetCharKeypad();
+//	printf("You typed: %c\n\r", c );
+//
+//
+//	delay(1000);
+//	 s = Serial.readString();
+//	printf("You typed: %s\n", s );
+//	}
+	//if(s=="forward") {
+	if(c=='f') {
 		MoveForward(50);
 	}
 
-	if(c=='8') {
+//	if(s=="backward") {
+	if(c=='b') {
 		MoveBackward(50);
 	}
 
-	if(c=='4') {
+	if(c=='s') {
+			StopCar();
+		}
+
+//	if(s=="left") {
+	if(c=='l') {
 		TurnLeft();
 	}
 
-	if(c=='6') {
+//	if(s=="right") {
+	if(c=='r') {
 		TurnRight();
 	}
 		
 	// * - Light on
-	if(c=='*' && !IsLightOn()) {
+	//if(s=="lighton" && !IsLightOn()) {
+	if(c=='n') {
 		LightOn();
 	}
 
 	// # - Light off
-	if(c=='#' && IsLightOn()) {
+	//if(s=="lightof" && IsLightOn()) {
+	if(c=='t') {
 		LightOff();
 	}
 }

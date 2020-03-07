@@ -7,7 +7,6 @@
 
 #include <stdio.h>
 #include <avr/io.h>
-#include <avr.h>
 #include <Arduino.h>
 #include "mystdio.h"
 
