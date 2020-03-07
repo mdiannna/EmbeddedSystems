@@ -20,6 +20,7 @@
 int rotDirection = 0;
 int pressed = false;
 int cnt = 0;
+char * s;
 
 void setup() {
 	InitSerial();
@@ -27,6 +28,7 @@ void setup() {
 	InitCar();
 	InitLight();
 	printf("Initialization done");
+ s = (char *) malloc(10*sizeof(char));
 }
 
 
@@ -56,14 +58,54 @@ void setup() {
 
 void loop() {
 	char c;
-
-//	scanf("%c", &c);
+	char speed;
 
 	while(!Serial.available());
 	c = Serial.read();
+	Serial.write(c);
+
+	if(c=='S') {
+		while(!Serial.available());
+		speed = Serial.read();
+		Serial.write("Input speed:\n\r");
+		 switch(speed) {
+		 	     case '1':
+		        	// 10% to 100%
+		        	SetCarSpeed(10);
+		        	break;
+		        case '2':
+		        	SetCarSpeed(20);
+		        	break;
+		        case '3':
+		        	SetCarSpeed(30);
+		        	break;
+		        case '4':
+		        	SetCarSpeed(40);
+		        	break;
+		        case '5':
+		        	SetCarSpeed(50);
+		        	break;
+		        case '6':
+		        	SetCarSpeed(60);
+		        	break;
+		        case '7':
+		        	SetCarSpeed(70);
+		        	break;
+		        case '8':
+		        	SetCarSpeed(80);
+		        	break;
+		        case '9':
+		        	SetCarSpeed(90);
+		        	break;
+		        case 'C':
+		        	SetCarSpeed(100);
+		        	break;
+		 }
+		 printf("Car speed changed\n\r");
+	}
 	//
 	//printf("You typed!!!: %c\n\r", c );
-	Serial.write(c);
+
 	//	String s ="";
 //	if (Serial.available() > 0) {
 //	char c = Serial.read();
@@ -78,16 +120,19 @@ void loop() {
 //	}
 	//if(s=="forward") {
 	if(c=='f') {
-		MoveForward(50);
+		MoveForward();
+		printf("Car Moves Forward\n\r");
 	}
 
 //	if(s=="backward") {
 	if(c=='b') {
-		MoveBackward(50);
+		MoveBackward();
+		printf("Car Moves Backward\n\r");
 	}
 
 	if(c=='s') {
 			StopCar();
+			printf("Car Stops\n\r");
 		}
 
 //	if(s=="left") {

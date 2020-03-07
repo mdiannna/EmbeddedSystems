@@ -1,0 +1,41 @@
+fCar Moves Forward
+sCar Stops
+fCar Moves Forward
+SInput speed:
+Car speed changed
+sCar Stops
+fCar Moves Forward
+sCar Stops
+fCar Moves Forward
+SInput speed:
+Car speed changed
+SInput speed:
+Car speed changed
+SInput speed:
+Car speed changed
+bCar Moves Backward
+lrsCar Stops
+ntntfCar Moves Forward
+SInput speed:
+Car speed changed
+SInput speed:
+Car speed changed
+SInput speed:
+Car speed changed
+bCar Moves Backward
+SInput speed:
+Car speed changed
+sCar Stops
+fCar Moves Forward
+SInput speed:
+Car speed changed
+SInput speed:
+Car speed changed
+bCar Moves Backward
+SInput speed:
+Car speed changed
+SInput speed:
+Car speed changed
+SInput speed:
+Car speed changed
+lrsCar Stops

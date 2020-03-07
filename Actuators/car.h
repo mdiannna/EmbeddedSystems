@@ -4,15 +4,20 @@
 
 #define TURN_POWER 40
 
+
 void InitCar();
 
-// TODO:
+
 void MoveForward(int power);
 void MoveBackward(int power);
-// optional: degrees??
+
+void MoveForward();
+void MoveBackward();
+
 void TurnLeft();
-// optional: degrees??
 void TurnRight();
 void StopCar();
+
+void SetCarSpeed(int);
 
 #endif

@@ -3,6 +3,15 @@
 #include <Arduino.h>
 #include <avr/io.h>
 
+int motorPower = 50;
+
+// s- stop
+// f- forward
+// b- backward
+// l - left
+// r - right
+char direction = 's';
+
 void InitMotors() {
 	InitMotorA();
 	InitMotorB();
@@ -24,29 +33,79 @@ int PowerToSpeed(int power) {
 }
 
 void MoveForward(int power) {
+	direction = 'f';
 	MotorForward('A', PowerToSpeed(power));
 	MotorForward('B', PowerToSpeed(power));
 }
 
 void MoveBackward(int power) {
+	direction = 'b';
 	MotorBackward('A', PowerToSpeed(power));
 	MotorBackward('B', PowerToSpeed(power));
 }
 
-void StopCar() {
-	MotorsStop();
+
+void MoveForward() {
+	direction = 'f';
+	MotorForward('A', PowerToSpeed(motorPower));
+	MotorForward('B', PowerToSpeed(motorPower));
 }
 
-// optional: degrees??
+void MoveBackward() {
+	direction = 'b';
+	MotorBackward('A', PowerToSpeed(motorPower));
+	MotorBackward('B', PowerToSpeed(motorPower));
+}
+
+void StopCar() {
+	MotorsStop();
+	direction = 's';
+}
+
 void TurnLeft() {
+	direction = 'l';
 	int power = TURN_POWER;
 	MotorBackward('A', PowerToSpeed(power));
 	MotorForward('B', PowerToSpeed(power));
 }
 
-// optional: degrees??
 void TurnRight() {
+	direction = 'r';
 	int power = TURN_POWER;
 	MotorForward('A', PowerToSpeed(power));
 	MotorBackward('B', PowerToSpeed(power));
+}
+
+char GetCarDirection() {
+	return direction;
+}
+
+void ResetCarDirectionSpeed() {
+	switch(direction) {
+		case 's':
+		   	 StopCar();
+	    	 break;
+		case 'f':
+			MoveForward(motorPower);
+	    	 break;
+		case 'b':
+			MoveBackward(motorPower);
+	    	 break;
+		case 'l':
+		   	 TurnLeft();
+	    	 break;
+		case 'r':
+		   	 TurnRight();
+	    	 break;
+	// s- stop
+	// f- forward
+	// b- backward
+	// l - left
+	// r - right
+	}
+}
+
+void SetCarSpeed(int powerSpeed) {
+	motorPower = powerSpeed;
+	ResetCarDirectionSpeed();
 }
