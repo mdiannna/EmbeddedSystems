@@ -1,7 +1,6 @@
 /*
  * led.h
  *
- *  Created on: Feb 22, 2020
  *      Author: mdiannna
  */
 

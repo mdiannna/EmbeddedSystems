@@ -7,7 +7,7 @@ connections/org.eclipse.cdt.arduino.core.connectionType/Arduino+Nano+1/programme
 connections/org.eclipse.cdt.arduino.core.connectionType/Arduino+mega/arduinoBoardName=mega
 connections/org.eclipse.cdt.arduino.core.connectionType/Arduino+mega/arduinoPackageName=arduino
 connections/org.eclipse.cdt.arduino.core.connectionType/Arduino+mega/arduinoPlatformName=avr
-connections/org.eclipse.cdt.arduino.core.connectionType/Arduino+mega/arduinoPortName=/dev/ttyACM5
+connections/org.eclipse.cdt.arduino.core.connectionType/Arduino+mega/arduinoPortName=/dev/ttyACM2
 connections/org.eclipse.cdt.arduino.core.connectionType/Arduino+mega/menu_cpu=atmega2560
 connections/org.eclipse.cdt.arduino.core.connectionType/Arduino+mega/programmer=avrisp
 eclipse.preferences.version=1
