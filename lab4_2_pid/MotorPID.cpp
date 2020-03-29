@@ -76,7 +76,7 @@ void setup()
   SerialInit();
   //initialize the variables we're linked to
   Input = ReadEncoderValue();
-  Setpoint = 100;
+  Setpoint = 120;
 
   AutoTuneInit();
   PID_Init();
@@ -85,6 +85,13 @@ void setup()
 void loop()
 {
   Input = ReadEncoderValue();
+  
   myPID.Compute();
+
+  Serial.println("Input:");
+  Seria.print(Input);
+  Serial.println("Output:");
+  Seria.print(Output);
+  
   MotorForward(Output);
 }
