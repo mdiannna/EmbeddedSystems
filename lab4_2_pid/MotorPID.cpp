@@ -67,9 +67,13 @@ void PID_Init() {
 	myPID.SetTunings(kp,ki,kd);
 }
 
+void SerialInit() {
+   Serial.begin(9600);
+}
 
 void setup()
 {
+  SerialInit();
   //initialize the variables we're linked to
   Input = ReadEncoderValue();
   Setpoint = 100;
