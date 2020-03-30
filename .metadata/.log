@@ -728,3 +728,1786 @@ Binding(ALT+ARROW_UP,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.textEditorScope,,,system)
+!SESSION 2020-03-29 19:38:22.876 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=11.0.6
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-03-29 22:23:46.875
+!MESSAGE Indexed 'Lab4_1_2' (1 sources, 38 headers) in 5.44 sec: 1,576 declarations; 1,920 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.arduino.core 4 0 2020-03-29 22:30:09.410
+!MESSAGE Undefined key build.mcu
+
+!ENTRY org.eclipse.cdt.arduino.core 4 0 2020-03-29 22:34:46.688
+!MESSAGE Undefined key build.mcu
+
+!ENTRY org.eclipse.cdt.arduino.core 4 0 2020-03-29 22:34:53.469
+!MESSAGE Undefined key build.mcu
+
+!ENTRY org.eclipse.cdt.arduino.core 4 0 2020-03-29 22:34:57.501
+!MESSAGE Undefined key build.mcu
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-29 22:36:32.517
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.board.ArduinoBoard.getMenuProperties(ArduinoBoard.java:65)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBoardProperties(ArduinoBuildConfiguration.java:220)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBuildModel(ArduinoBuildConfiguration.java:270)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.generateMakeFile(ArduinoBuildConfiguration.java:368)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.build(ArduinoBuildConfiguration.java:743)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:833)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:278)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:468)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:565)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:603)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:412)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:419)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:123)
+	at org.eclipse.launchbar.core.target.launch.LaunchConfigurationTargetedDelegate.buildForLaunch(LaunchConfigurationTargetedDelegate.java:56)
+	at org.eclipse.cdt.arduino.core.internal.launch.ArduinoLaunchConfigurationDelegate.buildForLaunch(ArduinoLaunchConfigurationDelegate.java:65)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 566 2020-03-29 22:36:32.569
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.cdt.core 4 75 2020-03-29 22:36:32.569
+!MESSAGE Errors running builder 'CDT Core Builder' on project 'Lab4_1_2'.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.board.ArduinoBoard.getMenuProperties(ArduinoBoard.java:65)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBoardProperties(ArduinoBuildConfiguration.java:220)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBuildModel(ArduinoBuildConfiguration.java:270)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.generateMakeFile(ArduinoBuildConfiguration.java:368)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.build(ArduinoBuildConfiguration.java:743)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:833)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:278)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:468)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:565)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:603)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:412)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:419)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:123)
+	at org.eclipse.launchbar.core.target.launch.LaunchConfigurationTargetedDelegate.buildForLaunch(LaunchConfigurationTargetedDelegate.java:56)
+	at org.eclipse.cdt.arduino.core.internal.launch.ArduinoLaunchConfigurationDelegate.buildForLaunch(ArduinoLaunchConfigurationDelegate.java:65)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-29 22:36:37.397
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: Undefined key build.mcu
+	at org.eclipse.cdt.arduino.core.internal.Activator.coreException(Activator.java:75)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.resolvePropertyValue(ArduinoBuildConfiguration.java:440)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.resolveProperty(ArduinoBuildConfiguration.java:452)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBuildModel(ArduinoBuildConfiguration.java:292)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.generateMakeFile(ArduinoBuildConfiguration.java:368)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.build(ArduinoBuildConfiguration.java:743)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:833)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:278)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:468)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:565)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:603)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:412)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:419)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:123)
+	at org.eclipse.launchbar.core.target.launch.LaunchConfigurationTargetedDelegate.buildForLaunch(LaunchConfigurationTargetedDelegate.java:56)
+	at org.eclipse.cdt.arduino.core.internal.launch.ArduinoLaunchConfigurationDelegate.buildForLaunch(ArduinoLaunchConfigurationDelegate.java:65)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.arduino.core 4 0 2020-03-29 22:36:37.399
+!MESSAGE Undefined key build.mcu
+!SUBENTRY 1 org.eclipse.cdt.arduino.core 4 0 2020-03-29 22:36:37.399
+!MESSAGE Undefined key build.mcu
+
+!ENTRY org.eclipse.core.resources 4 566 2020-03-29 22:36:37.406
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.cdt.core 4 75 2020-03-29 22:36:37.406
+!MESSAGE Errors running builder 'CDT Core Builder' on project 'Lab4_1_2'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Undefined key build.mcu
+	at org.eclipse.cdt.arduino.core.internal.Activator.coreException(Activator.java:75)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.resolvePropertyValue(ArduinoBuildConfiguration.java:440)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.resolveProperty(ArduinoBuildConfiguration.java:452)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBuildModel(ArduinoBuildConfiguration.java:292)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.generateMakeFile(ArduinoBuildConfiguration.java:368)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.build(ArduinoBuildConfiguration.java:743)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:833)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:278)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:468)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:565)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:603)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:412)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:419)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:123)
+	at org.eclipse.launchbar.core.target.launch.LaunchConfigurationTargetedDelegate.buildForLaunch(LaunchConfigurationTargetedDelegate.java:56)
+	at org.eclipse.cdt.arduino.core.internal.launch.ArduinoLaunchConfigurationDelegate.buildForLaunch(ArduinoLaunchConfigurationDelegate.java:65)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.cdt.arduino.core 4 0 2020-03-29 22:36:37.406
+!MESSAGE Undefined key build.mcu
+!SUBENTRY 1 org.eclipse.cdt.arduino.core 4 0 2020-03-29 22:36:37.406
+!MESSAGE Undefined key build.mcu
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-29 22:36:56.472
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.board.ArduinoBoard.getMenuProperties(ArduinoBoard.java:65)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBoardProperties(ArduinoBuildConfiguration.java:220)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBuildModel(ArduinoBuildConfiguration.java:270)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.generateMakeFile(ArduinoBuildConfiguration.java:368)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.build(ArduinoBuildConfiguration.java:743)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:833)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:278)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:468)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:565)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:603)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:412)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:419)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:123)
+	at org.eclipse.launchbar.core.target.launch.LaunchConfigurationTargetedDelegate.buildForLaunch(LaunchConfigurationTargetedDelegate.java:56)
+	at org.eclipse.cdt.arduino.core.internal.launch.ArduinoLaunchConfigurationDelegate.buildForLaunch(ArduinoLaunchConfigurationDelegate.java:65)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 566 2020-03-29 22:36:56.479
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.cdt.core 4 75 2020-03-29 22:36:56.479
+!MESSAGE Errors running builder 'CDT Core Builder' on project 'Lab4_1_2'.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.board.ArduinoBoard.getMenuProperties(ArduinoBoard.java:65)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBoardProperties(ArduinoBuildConfiguration.java:220)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBuildModel(ArduinoBuildConfiguration.java:270)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.generateMakeFile(ArduinoBuildConfiguration.java:368)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.build(ArduinoBuildConfiguration.java:743)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:833)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:278)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:468)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:565)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:603)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:412)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:419)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:123)
+	at org.eclipse.launchbar.core.target.launch.LaunchConfigurationTargetedDelegate.buildForLaunch(LaunchConfigurationTargetedDelegate.java:56)
+	at org.eclipse.cdt.arduino.core.internal.launch.ArduinoLaunchConfigurationDelegate.buildForLaunch(ArduinoLaunchConfigurationDelegate.java:65)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-29 22:37:10.341
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.board.ArduinoBoard.getMenuProperties(ArduinoBoard.java:65)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBoardProperties(ArduinoBuildConfiguration.java:220)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBuildModel(ArduinoBuildConfiguration.java:270)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.generateMakeFile(ArduinoBuildConfiguration.java:368)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.build(ArduinoBuildConfiguration.java:743)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:833)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:278)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:468)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:565)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:603)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:412)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:419)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:123)
+	at org.eclipse.launchbar.core.target.launch.LaunchConfigurationTargetedDelegate.buildForLaunch(LaunchConfigurationTargetedDelegate.java:56)
+	at org.eclipse.cdt.arduino.core.internal.launch.ArduinoLaunchConfigurationDelegate.buildForLaunch(ArduinoLaunchConfigurationDelegate.java:65)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 566 2020-03-29 22:37:10.343
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.cdt.core 4 75 2020-03-29 22:37:10.343
+!MESSAGE Errors running builder 'CDT Core Builder' on project 'Lab4_1_2'.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.board.ArduinoBoard.getMenuProperties(ArduinoBoard.java:65)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBoardProperties(ArduinoBuildConfiguration.java:220)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBuildModel(ArduinoBuildConfiguration.java:270)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.generateMakeFile(ArduinoBuildConfiguration.java:368)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.build(ArduinoBuildConfiguration.java:743)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:833)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:278)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:468)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:565)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:603)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:412)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:419)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:123)
+	at org.eclipse.launchbar.core.target.launch.LaunchConfigurationTargetedDelegate.buildForLaunch(LaunchConfigurationTargetedDelegate.java:56)
+	at org.eclipse.cdt.arduino.core.internal.launch.ArduinoLaunchConfigurationDelegate.buildForLaunch(ArduinoLaunchConfigurationDelegate.java:65)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-29 22:37:26.572
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: Undefined key build.mcu
+	at org.eclipse.cdt.arduino.core.internal.Activator.coreException(Activator.java:75)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.resolvePropertyValue(ArduinoBuildConfiguration.java:440)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.resolveProperty(ArduinoBuildConfiguration.java:452)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBuildModel(ArduinoBuildConfiguration.java:292)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.generateMakeFile(ArduinoBuildConfiguration.java:368)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.build(ArduinoBuildConfiguration.java:743)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:833)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.arduino.core 4 0 2020-03-29 22:37:26.573
+!MESSAGE Undefined key build.mcu
+!SUBENTRY 1 org.eclipse.cdt.arduino.core 4 0 2020-03-29 22:37:26.573
+!MESSAGE Undefined key build.mcu
+
+!ENTRY org.eclipse.core.resources 4 75 2020-03-29 22:37:26.574
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.cdt.core 4 75 2020-03-29 22:37:26.574
+!MESSAGE Errors running builder 'CDT Core Builder' on project 'Lab4_1_2'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Undefined key build.mcu
+	at org.eclipse.cdt.arduino.core.internal.Activator.coreException(Activator.java:75)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.resolvePropertyValue(ArduinoBuildConfiguration.java:440)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.resolveProperty(ArduinoBuildConfiguration.java:452)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBuildModel(ArduinoBuildConfiguration.java:292)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.generateMakeFile(ArduinoBuildConfiguration.java:368)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.build(ArduinoBuildConfiguration.java:743)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:833)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.cdt.arduino.core 4 0 2020-03-29 22:37:26.575
+!MESSAGE Undefined key build.mcu
+!SUBENTRY 1 org.eclipse.cdt.arduino.core 4 0 2020-03-29 22:37:26.575
+!MESSAGE Undefined key build.mcu
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-29 22:38:32.061
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.board.ArduinoBoard.getMenuProperties(ArduinoBoard.java:65)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBoardProperties(ArduinoBuildConfiguration.java:220)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBuildModel(ArduinoBuildConfiguration.java:270)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.generateMakeFile(ArduinoBuildConfiguration.java:368)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.build(ArduinoBuildConfiguration.java:743)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:833)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:278)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:468)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:565)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:603)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:412)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:419)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:123)
+	at org.eclipse.launchbar.core.target.launch.LaunchConfigurationTargetedDelegate.buildForLaunch(LaunchConfigurationTargetedDelegate.java:56)
+	at org.eclipse.cdt.arduino.core.internal.launch.ArduinoLaunchConfigurationDelegate.buildForLaunch(ArduinoLaunchConfigurationDelegate.java:65)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 566 2020-03-29 22:38:32.063
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.cdt.core 4 75 2020-03-29 22:38:32.063
+!MESSAGE Errors running builder 'CDT Core Builder' on project 'Lab4_1_2'.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.board.ArduinoBoard.getMenuProperties(ArduinoBoard.java:65)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBoardProperties(ArduinoBuildConfiguration.java:220)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBuildModel(ArduinoBuildConfiguration.java:270)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.generateMakeFile(ArduinoBuildConfiguration.java:368)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.build(ArduinoBuildConfiguration.java:743)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:833)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:278)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:468)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:565)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:603)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:412)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:419)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:123)
+	at org.eclipse.launchbar.core.target.launch.LaunchConfigurationTargetedDelegate.buildForLaunch(LaunchConfigurationTargetedDelegate.java:56)
+	at org.eclipse.cdt.arduino.core.internal.launch.ArduinoLaunchConfigurationDelegate.buildForLaunch(ArduinoLaunchConfigurationDelegate.java:65)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-29 22:38:35.836
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: Undefined key build.mcu
+	at org.eclipse.cdt.arduino.core.internal.Activator.coreException(Activator.java:75)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.resolvePropertyValue(ArduinoBuildConfiguration.java:440)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.resolveProperty(ArduinoBuildConfiguration.java:452)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBuildModel(ArduinoBuildConfiguration.java:292)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.generateMakeFile(ArduinoBuildConfiguration.java:368)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.build(ArduinoBuildConfiguration.java:743)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:833)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:278)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:468)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:565)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:603)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:412)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:419)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:123)
+	at org.eclipse.launchbar.core.target.launch.LaunchConfigurationTargetedDelegate.buildForLaunch(LaunchConfigurationTargetedDelegate.java:56)
+	at org.eclipse.cdt.arduino.core.internal.launch.ArduinoLaunchConfigurationDelegate.buildForLaunch(ArduinoLaunchConfigurationDelegate.java:65)
+	at org.eclipse.launchbar.core.target.launch.LaunchConfigurationTargetedDelegate.buildForLaunch(LaunchConfigurationTargetedDelegate.java:50)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:834)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:719)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1017)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.arduino.core 4 0 2020-03-29 22:38:35.837
+!MESSAGE Undefined key build.mcu
+!SUBENTRY 1 org.eclipse.cdt.arduino.core 4 0 2020-03-29 22:38:35.837
+!MESSAGE Undefined key build.mcu
+
+!ENTRY org.eclipse.core.resources 4 566 2020-03-29 22:38:35.847
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.cdt.core 4 75 2020-03-29 22:38:35.847
+!MESSAGE Errors running builder 'CDT Core Builder' on project 'Lab4_1_2'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Undefined key build.mcu
+	at org.eclipse.cdt.arduino.core.internal.Activator.coreException(Activator.java:75)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.resolvePropertyValue(ArduinoBuildConfiguration.java:440)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.resolveProperty(ArduinoBuildConfiguration.java:452)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBuildModel(ArduinoBuildConfiguration.java:292)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.generateMakeFile(ArduinoBuildConfiguration.java:368)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.build(ArduinoBuildConfiguration.java:743)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:833)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:278)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:468)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:565)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:603)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:412)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:419)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:123)
+	at org.eclipse.launchbar.core.target.launch.LaunchConfigurationTargetedDelegate.buildForLaunch(LaunchConfigurationTargetedDelegate.java:56)
+	at org.eclipse.cdt.arduino.core.internal.launch.ArduinoLaunchConfigurationDelegate.buildForLaunch(ArduinoLaunchConfigurationDelegate.java:65)
+	at org.eclipse.launchbar.core.target.launch.LaunchConfigurationTargetedDelegate.buildForLaunch(LaunchConfigurationTargetedDelegate.java:50)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:834)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:719)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1017)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.cdt.arduino.core 4 0 2020-03-29 22:38:35.848
+!MESSAGE Undefined key build.mcu
+!SUBENTRY 1 org.eclipse.cdt.arduino.core 4 0 2020-03-29 22:38:35.848
+!MESSAGE Undefined key build.mcu
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-29 22:38:50.180
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.board.ArduinoBoard.getMenuProperties(ArduinoBoard.java:65)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBoardProperties(ArduinoBuildConfiguration.java:220)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBuildModel(ArduinoBuildConfiguration.java:270)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.generateMakeFile(ArduinoBuildConfiguration.java:368)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.build(ArduinoBuildConfiguration.java:743)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:833)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:278)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:468)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:565)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:603)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:412)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:419)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:123)
+	at org.eclipse.launchbar.core.target.launch.LaunchConfigurationTargetedDelegate.buildForLaunch(LaunchConfigurationTargetedDelegate.java:56)
+	at org.eclipse.cdt.arduino.core.internal.launch.ArduinoLaunchConfigurationDelegate.buildForLaunch(ArduinoLaunchConfigurationDelegate.java:65)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 566 2020-03-29 22:38:50.187
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.cdt.core 4 75 2020-03-29 22:38:50.187
+!MESSAGE Errors running builder 'CDT Core Builder' on project 'Lab4_1_2'.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.board.ArduinoBoard.getMenuProperties(ArduinoBoard.java:65)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBoardProperties(ArduinoBuildConfiguration.java:220)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBuildModel(ArduinoBuildConfiguration.java:270)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.generateMakeFile(ArduinoBuildConfiguration.java:368)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.build(ArduinoBuildConfiguration.java:743)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:833)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:278)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:468)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:565)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:603)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:412)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:419)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:123)
+	at org.eclipse.launchbar.core.target.launch.LaunchConfigurationTargetedDelegate.buildForLaunch(LaunchConfigurationTargetedDelegate.java:56)
+	at org.eclipse.cdt.arduino.core.internal.launch.ArduinoLaunchConfigurationDelegate.buildForLaunch(ArduinoLaunchConfigurationDelegate.java:65)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-03-29 22:39:14.361
+!MESSAGE Indexed 'Lab4_1_2' (5 sources, 43 headers) in 2.14 sec: 1,746 declarations; 2,046 references; 2 unresolved inclusions; 0 syntax errors; 30 unresolved names (0.78%)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-29 22:39:24.803
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.board.ArduinoBoard.getMenuProperties(ArduinoBoard.java:65)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBoardProperties(ArduinoBuildConfiguration.java:220)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:617)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getBuildConfiguration(ProjectIndexerInputAdapter.java:160)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.getScannerInfo(AbstractIndexerTask.java:1030)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:909)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:572)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:164)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2020-03-29 22:39:24.810
+!MESSAGE An internal error occurred during: "C/C++ Indexer".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.board.ArduinoBoard.getMenuProperties(ArduinoBoard.java:65)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBoardProperties(ArduinoBuildConfiguration.java:220)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:617)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getBuildConfiguration(ProjectIndexerInputAdapter.java:160)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.getScannerInfo(AbstractIndexerTask.java:1030)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:909)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:572)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:164)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.arduino.core 4 0 2020-03-29 22:39:32.160
+!MESSAGE Undefined key build.mcu
+
+!ENTRY org.eclipse.cdt.arduino.core 4 0 2020-03-29 22:39:37.068
+!MESSAGE Undefined key build.mcu
+!SESSION 2020-03-30 12:27:13.407 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=11.0.6
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.core 4 2 2020-03-30 12:27:57.807
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.cdt.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:165)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-30 12:27:57.837
+!MESSAGE Error in CDT Core during AST creation
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:165)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 2 2020-03-30 12:28:01.466
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.cdt.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:165)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-30 12:28:01.484
+!MESSAGE Error in CDT Core during AST creation
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:165)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 2 2020-03-30 12:28:08.998
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.cdt.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:165)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-30 12:28:09.012
+!MESSAGE Error in CDT Core during AST creation
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:165)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 2 2020-03-30 12:28:17.372
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.cdt.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:165)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-30 12:28:17.384
+!MESSAGE Error in CDT Core during AST creation
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:165)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 2 2020-03-30 12:28:18.954
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.cdt.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:165)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-30 12:28:18.956
+!MESSAGE Error in CDT Core during AST creation
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:165)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 2 2020-03-30 12:28:22.226
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.cdt.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:165)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-30 12:28:22.234
+!MESSAGE Error in CDT Core during AST creation
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:165)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 2 2020-03-30 12:34:17.380
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.cdt.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:165)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-30 12:34:17.381
+!MESSAGE Error in CDT Core during AST creation
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:165)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 2 2020-03-30 12:34:18.963
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.cdt.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:165)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-30 12:34:18.964
+!MESSAGE Error in CDT Core during AST creation
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:165)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 2 2020-03-30 12:34:21.564
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.cdt.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:165)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-30 12:34:21.569
+!MESSAGE Error in CDT Core during AST creation
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:165)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 2 2020-03-30 12:34:27.162
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.cdt.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:165)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-30 12:34:27.163
+!MESSAGE Error in CDT Core during AST creation
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:165)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 2 2020-03-30 12:34:29.240
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.cdt.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:165)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-30 12:34:29.241
+!MESSAGE Error in CDT Core during AST creation
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:165)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-30 12:34:32.546
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getBuildConfiguration(ProjectIndexerInputAdapter.java:160)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.getScannerInfo(AbstractIndexerTask.java:1030)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:909)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:572)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:164)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2020-03-30 12:34:32.606
+!MESSAGE An internal error occurred during: "C/C++ Indexer".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getBuildConfiguration(ProjectIndexerInputAdapter.java:160)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.getScannerInfo(AbstractIndexerTask.java:1030)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:909)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:572)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:164)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-30 12:34:32.740
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBuildModel(ArduinoBuildConfiguration.java:234)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.generateMakeFile(ArduinoBuildConfiguration.java:368)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.build(ArduinoBuildConfiguration.java:743)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:833)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:278)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:468)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:565)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:603)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:412)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:419)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:123)
+	at org.eclipse.launchbar.core.target.launch.LaunchConfigurationTargetedDelegate.buildForLaunch(LaunchConfigurationTargetedDelegate.java:56)
+	at org.eclipse.cdt.arduino.core.internal.launch.ArduinoLaunchConfigurationDelegate.buildForLaunch(ArduinoLaunchConfigurationDelegate.java:65)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 566 2020-03-30 12:34:32.786
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.cdt.core 4 75 2020-03-30 12:34:32.786
+!MESSAGE Errors running builder 'CDT Core Builder' on project 'Lab4_1_2'.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBuildModel(ArduinoBuildConfiguration.java:234)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.generateMakeFile(ArduinoBuildConfiguration.java:368)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.build(ArduinoBuildConfiguration.java:743)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:833)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:278)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:468)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:565)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:603)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:412)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:419)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:123)
+	at org.eclipse.launchbar.core.target.launch.LaunchConfigurationTargetedDelegate.buildForLaunch(LaunchConfigurationTargetedDelegate.java:56)
+	at org.eclipse.cdt.arduino.core.internal.launch.ArduinoLaunchConfigurationDelegate.buildForLaunch(ArduinoLaunchConfigurationDelegate.java:65)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 2 2020-03-30 12:34:38.694
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.cdt.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:165)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-30 12:34:38.695
+!MESSAGE Error in CDT Core during AST creation
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:165)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 2 2020-03-30 12:34:39.691
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.cdt.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:165)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-30 12:34:39.692
+!MESSAGE Error in CDT Core during AST creation
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:165)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 2 2020-03-30 12:34:41.223
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.cdt.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.ui.text.SharedASTJob.run(SharedASTJob.java:71)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-30 12:34:41.224
+!MESSAGE Error in CDT Core during AST creation
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.ui.text.SharedASTJob.run(SharedASTJob.java:71)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 2 2020-03-30 12:34:41.239
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.cdt.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CMacroExpansionInput$1.run(CMacroExpansionInput.java:281)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-30 12:34:41.241
+!MESSAGE Error in CDT Core during AST creation
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CMacroExpansionInput$1.run(CMacroExpansionInput.java:281)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 2 2020-03-30 12:34:41.255
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.cdt.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CSourceHover$1.run(CSourceHover.java:873)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-30 12:34:41.256
+!MESSAGE Error in CDT Core during AST creation
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:853)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:361)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:354)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:175)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:265)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:223)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CSourceHover$1.run(CSourceHover.java:873)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-30 12:34:42.916
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBuildModel(ArduinoBuildConfiguration.java:234)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.generateMakeFile(ArduinoBuildConfiguration.java:368)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.build(ArduinoBuildConfiguration.java:743)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:833)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:278)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:468)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:565)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:603)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:412)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:419)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:123)
+	at org.eclipse.launchbar.core.target.launch.LaunchConfigurationTargetedDelegate.buildForLaunch(LaunchConfigurationTargetedDelegate.java:56)
+	at org.eclipse.cdt.arduino.core.internal.launch.ArduinoLaunchConfigurationDelegate.buildForLaunch(ArduinoLaunchConfigurationDelegate.java:65)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 566 2020-03-30 12:34:42.932
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.cdt.core 4 75 2020-03-30 12:34:42.932
+!MESSAGE Errors running builder 'CDT Core Builder' on project 'Lab4_1_2'.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBuildModel(ArduinoBuildConfiguration.java:234)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.generateMakeFile(ArduinoBuildConfiguration.java:368)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.build(ArduinoBuildConfiguration.java:743)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:833)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:278)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:468)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:565)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:603)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:412)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:419)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:123)
+	at org.eclipse.launchbar.core.target.launch.LaunchConfigurationTargetedDelegate.buildForLaunch(LaunchConfigurationTargetedDelegate.java:56)
+	at org.eclipse.cdt.arduino.core.internal.launch.ArduinoLaunchConfigurationDelegate.buildForLaunch(ArduinoLaunchConfigurationDelegate.java:65)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-30 12:35:07.625
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getBuildConfiguration(ProjectIndexerInputAdapter.java:160)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.getScannerInfo(AbstractIndexerTask.java:1030)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:909)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:572)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:164)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMRebuildTask.run(PDOMRebuildTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2020-03-30 12:35:07.634
+!MESSAGE An internal error occurred during: "C/C++ Indexer".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getScannerInformation(ArduinoBuildConfiguration.java:615)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getScannerInfo(TranslationUnit.java:1070)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getBuildConfiguration(ProjectIndexerInputAdapter.java:160)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.getScannerInfo(AbstractIndexerTask.java:1030)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:909)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:572)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:164)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMRebuildTask.run(PDOMRebuildTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-30 12:35:33.635
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBuildModel(ArduinoBuildConfiguration.java:234)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.generateMakeFile(ArduinoBuildConfiguration.java:368)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.build(ArduinoBuildConfiguration.java:743)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:833)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:278)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:468)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:565)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:603)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:412)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:419)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:123)
+	at org.eclipse.launchbar.core.target.launch.LaunchConfigurationTargetedDelegate.buildForLaunch(LaunchConfigurationTargetedDelegate.java:56)
+	at org.eclipse.cdt.arduino.core.internal.launch.ArduinoLaunchConfigurationDelegate.buildForLaunch(ArduinoLaunchConfigurationDelegate.java:65)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 566 2020-03-30 12:35:33.642
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.cdt.core 4 75 2020-03-30 12:35:33.642
+!MESSAGE Errors running builder 'CDT Core Builder' on project 'Lab4_1_2'.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.getBuildModel(ArduinoBuildConfiguration.java:234)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.generateMakeFile(ArduinoBuildConfiguration.java:368)
+	at org.eclipse.cdt.arduino.core.internal.build.ArduinoBuildConfiguration.build(ArduinoBuildConfiguration.java:743)
+	at org.eclipse.cdt.core.build.CBuilder.build(CBuilder.java:45)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:833)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:278)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:468)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:565)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:603)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:412)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:419)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:123)
+	at org.eclipse.launchbar.core.target.launch.LaunchConfigurationTargetedDelegate.buildForLaunch(LaunchConfigurationTargetedDelegate.java:56)
+	at org.eclipse.cdt.arduino.core.internal.launch.ArduinoLaunchConfigurationDelegate.buildForLaunch(ArduinoLaunchConfigurationDelegate.java:65)
+	at org.eclipse.launchbar.ui.internal.commands.BuildActiveCommandHandler$1$1.run(BuildActiveCommandHandler.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2020-03-30 12:37:08.156 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=11.0.6
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 4 566 2020-03-30 12:45:14.063
+!MESSAGE Could not save master table to file '/home/mdiannna/eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources'.
+!STACK 0
+java.io.FileNotFoundException: /home/mdiannna/eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources (Permission denied)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:158)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1265)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1255)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1232)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1143)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:55)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.tm.terminal.connector.cdtserial 4 0 2020-03-30 12:49:07.322
+!MESSAGE Error opening /dev/ttyACM2: No such file or directory
+!STACK 0
+java.io.IOException: Error opening /dev/ttyACM2: No such file or directory
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:328)
+	at org.eclipse.tm.terminal.connector.cdtserial.connector.SerialConnector.connect(SerialConnector.java:78)
+	at org.eclipse.tm.internal.terminal.connector.TerminalConnector.connect(TerminalConnector.java:160)
+	at org.eclipse.tm.internal.terminal.emulator.VT100TerminalControl.connectTerminal(VT100TerminalControl.java:441)
+	at org.eclipse.tm.terminal.view.ui.tabs.TabFolderManager.createTabItem(TabFolderManager.java:327)
+	at org.eclipse.tm.terminal.view.ui.manager.ConsoleManager.openConsole(ConsoleManager.java:467)
+	at org.eclipse.tm.terminal.view.ui.manager.ConsoleManager.openConsole(ConsoleManager.java:407)
+	at org.eclipse.tm.terminal.view.ui.services.TerminalService$3.doRun(TerminalService.java:313)
+	at org.eclipse.tm.terminal.view.ui.services.TerminalService$3$1.run(TerminalService.java:286)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4910)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4432)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:660)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:559)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY org.eclipse.jface 2 0 2020-03-30 12:49:36.618
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-03-30 12:49:36.618
+!MESSAGE A conflict occurred for ALT+C:
+Binding(ALT+C,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.refactor.extract.constant,Extract Constant - Refactoring ,
+		Extracts a constant for the selected expression,
+		Category(org.eclipse.cdt.ui.category.refactoring,Refactor - C++,C/C++ Refactorings,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@77ecce1b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+C,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.command1,Terminal view insert,
+		,
+		Category(org.eclipse.tm.terminal.category1,Terminal view commands,Terminal view commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3fecb459,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.tm.terminal.TerminalContext,,,system)
+
+!ENTRY org.eclipse.jface 2 0 2020-03-30 12:49:36.636
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-03-30 12:49:36.636
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.text.c.toggle.comment,Toggle Comment,
+		Toggle comment the selected lines,
+		Category(org.eclipse.cdt.ui.category.source,Source,Source commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@387a9865,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.copy,Copy,
+		,
+		Category(org.eclipse.tm.terminal.category1,Terminal view commands,Terminal view commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@29f71567,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.tm.terminal.EditContext,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-03-30 12:49:36.636
+!MESSAGE A conflict occurred for ALT+ARROW_UP:
+Binding(ALT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.maximize,Maximize Active View or Editor,
+		,
+		Category(org.eclipse.tm.terminal.category1,Terminal view commands,Terminal view commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@73e3227c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.tm.terminal.EditContext,,,system)
+Binding(ALT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.moveLineUp,Move Lines Up,
+		Moves the selected lines up,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@32c26e28,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.core.resources 4 566 2020-03-30 12:51:07.446
+!MESSAGE Could not save master table to file '/home/mdiannna/eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources'.
+!STACK 0
+java.io.FileNotFoundException: /home/mdiannna/eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources (Permission denied)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:158)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1265)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1255)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1232)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1143)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:55)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 566 2020-03-30 12:56:34.899
+!MESSAGE Could not save master table to file '/home/mdiannna/eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources'.
+!STACK 0
+java.io.FileNotFoundException: /home/mdiannna/eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources (Permission denied)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:158)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1265)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1255)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1232)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1143)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:55)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.arduino.core 4 0 2020-03-30 12:57:21.307
+!MESSAGE Error opening /dev/ttyUSB1: No such file or directory
+!STACK 0
+java.io.IOException: Error opening /dev/ttyUSB1: No such file or directory
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.resume(SerialPort.java:396)
+	at org.eclipse.cdt.arduino.core.internal.launch.ArduinoLaunch.handleDebugEvents(ArduinoLaunch.java:61)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1194)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1228)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:458)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.arduino.core 4 0 2020-03-30 12:57:29.663
+!MESSAGE Error opening /dev/ttyUSB1: No such file or directory
+!STACK 0
+java.io.IOException: Error opening /dev/ttyUSB1: No such file or directory
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.resume(SerialPort.java:396)
+	at org.eclipse.cdt.arduino.core.internal.launch.ArduinoLaunch.handleDebugEvents(ArduinoLaunch.java:61)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1194)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1228)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:458)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 566 2020-03-30 13:02:03.586
+!MESSAGE Could not save master table to file '/home/mdiannna/eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources'.
+!STACK 0
+java.io.FileNotFoundException: /home/mdiannna/eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources (Permission denied)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:158)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1265)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1255)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1232)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1143)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:55)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.arduino.core 4 0 2020-03-30 13:04:06.856
+!MESSAGE Error opening /dev/ttyUSB1: No such file or directory
+!STACK 0
+java.io.IOException: Error opening /dev/ttyUSB1: No such file or directory
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.resume(SerialPort.java:396)
+	at org.eclipse.cdt.arduino.core.internal.launch.ArduinoLaunch.handleDebugEvents(ArduinoLaunch.java:61)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1194)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1228)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:458)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.arduino.core 4 0 2020-03-30 13:04:25.879
+!MESSAGE Error opening /dev/ttyUSB1: Permission denied
+!STACK 0
+java.io.IOException: Error opening /dev/ttyUSB1: Permission denied
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.resume(SerialPort.java:396)
+	at org.eclipse.cdt.arduino.core.internal.launch.ArduinoLaunch.handleDebugEvents(ArduinoLaunch.java:61)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1194)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1228)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:458)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.arduino.core 4 0 2020-03-30 13:06:40.135
+!MESSAGE Error opening /dev/ttyUSB1: No such file or directory
+!STACK 0
+java.io.IOException: Error opening /dev/ttyUSB1: No such file or directory
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.resume(SerialPort.java:396)
+	at org.eclipse.cdt.arduino.core.internal.launch.ArduinoLaunch.handleDebugEvents(ArduinoLaunch.java:61)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1194)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1228)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:458)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-03-30 13:07:54.227
+!MESSAGE Indexed 'Lab4_1_2' (5 sources, 44 headers) in 5.78 sec: 1,831 declarations; 2,146 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.core.resources 4 566 2020-03-30 13:09:06.379
+!MESSAGE Could not save master table to file '/home/mdiannna/eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources'.
+!STACK 0
+java.io.FileNotFoundException: /home/mdiannna/eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources (Permission denied)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:158)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1265)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1255)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1232)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1143)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:55)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 566 2020-03-30 13:14:16.707
+!MESSAGE Could not save master table to file '/home/mdiannna/eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources'.
+!STACK 0
+java.io.FileNotFoundException: /home/mdiannna/eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources (Permission denied)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:158)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1265)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1255)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1232)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1143)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:55)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 566 2020-03-30 13:19:23.989
+!MESSAGE Could not save master table to file '/home/mdiannna/eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources'.
+!STACK 0
+java.io.FileNotFoundException: /home/mdiannna/eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources (Permission denied)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:158)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1265)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1255)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1232)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1143)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:55)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

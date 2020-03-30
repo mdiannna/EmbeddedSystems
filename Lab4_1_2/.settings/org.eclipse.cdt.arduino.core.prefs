@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+libraries=["Adafruit BMP085 Library",{"package"\:"arduino","platform"\:"avr","library"\:"EEPROM"},"Keypad",{"package"\:"arduino","platform"\:"avr","library"\:"SPI"},"BMP180MI",{"package"\:"arduino","platform"\:"avr","library"\:"Wire"},{"package"\:"arduino","platform"\:"avr","library"\:"HID"},{"package"\:"arduino","platform"\:"avr","library"\:"SoftwareSerial"}]

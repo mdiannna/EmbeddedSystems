@@ -18,7 +18,8 @@
 */
 
 #include "SFE_BMP180.h"
-#include "Wire.h"
+#include <Arduino.h>
+#include <Wire.h>
 #include <stdio.h>
 #include <math.h>
 
