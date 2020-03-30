@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="ArduinoTerminalSettingsPage">
-		<item key="arduino.board" value="Arduino mega"/>
-		<item key="cdtserial.portName" value="/dev/ttyACM2"/>
+		<item key="arduino.board" value="Arduino Nano 1"/>
+		<item key="cdtserial.portName" value="/dev/ttyUSB1"/>
 		<item key="cdtserial.baudRate" value="9600"/>
 		<item key="cdtserial.byteSize" value="8"/>
 		<item key="cdtserial.parity" value="None"/>

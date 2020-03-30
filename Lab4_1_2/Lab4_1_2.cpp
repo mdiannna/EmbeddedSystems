@@ -4,7 +4,6 @@
 #include "temperature.h"
 #include "conditioner.h"
 #include <Arduino.h>
-#include "led.h"
 #define TIME_INTERVAL_MS 2000 //Read sensor each 2 seconds
 #define MAX_TEMP 26
 #define MIN_TEMP 24
