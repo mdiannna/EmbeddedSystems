@@ -855,7 +855,6 @@ void loop()
     prevTime = currentTime;
   currentTime = millis();
 
-    //TODO:calculate Speed
   //  motorSpeed = 110;
     unsigned long elapsedTime = CalculateElapsedTime(prevTime, currentTime);
     Serial.println("Elapsed Time:");

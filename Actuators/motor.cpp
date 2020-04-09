@@ -16,7 +16,6 @@ void InitMotorB() {
   	pinMode(in4, OUTPUT);
 }
 
-// TODO:
 void MotorForward(char motor, int speed) {
 	if(motor=='A') {
 		digitalWrite(in1, LOW);
@@ -32,7 +31,6 @@ void MotorForward(char motor, int speed) {
 }
 
 
-// TODO:
 void MotorBackward(char motor, int speed) {
 	if(motor=='A') {
 		digitalWrite(in1, HIGH);
@@ -49,7 +47,6 @@ void MotorBackward(char motor, int speed) {
 
 }
 
-// TODO: check
 void MotorStop(char motor) {
 	if(motor=='A') {
 		digitalWrite(in1, LOW);

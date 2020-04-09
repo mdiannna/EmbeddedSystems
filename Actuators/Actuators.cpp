@@ -22,7 +22,7 @@ void setup() {
 	InitCar();
 	InitLight();
 	printf("Initialization done");
- s = (char *) malloc(10*sizeof(char));
+ 	s = (char *) malloc(10*sizeof(char));
 }
 
 

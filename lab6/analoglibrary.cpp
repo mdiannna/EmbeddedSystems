@@ -11,8 +11,10 @@
 #include "mystdio.h"
 
 
+/**
+Convert the raw data value (0 - 1023) to voltage (0.0V - 5.0V):
+**/
 float ADCtoVoltage(float value) {
-	// Convert the raw data value (0 - 1023) to voltage (0.0V - 5.0V):
 	float voltage = value * (5.0 / 1024.0);
 	return voltage;
 }
@@ -47,35 +49,27 @@ void sort(float * arr) {
 	if(arr[1] < min) {
 		min = arr[1];
 		swap(arr, 0, 1);
-		// minInd = 1;
-
 	}
 
 	if(arr[2] < min) {
 		min = arr[2];
 		swap(arr, 0, 2);
-		// minInd = 2;
 	}
 
 
 	float max = arr[2];
 	char maxInd = 2;
 
-	// if(arr[0] > max) {
-	// 	max = arr[0];
-	// 	maxInd = 0;
-	// 	swap(arr, maxInd, 1);
-	// }
-
 	if(arr[1] > max) {
 		max = arr[1];
 		swap(arr, 2, 1);
-		// maxInd = 1;
 	}
 }
 
 
-// filter.cpp
+/**
+Salt and pepper filter
+**/
 float SaltAndPepperFilter(float * buff) {
 	Serial.println("Salt and pepper filter");
 	sort(buff);
@@ -87,7 +81,9 @@ float SaltAndPepperFilter(float * buff) {
 }
 
 
-//Filtru medie ponderata
+/**
+Filtru medie ponderata
+**/
 float WeightedAverageFilter(float * buff, int n) {
 	float weights[3] = {0.25, 0.5, 0.75};
 	float sum = 0;
