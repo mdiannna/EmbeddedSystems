@@ -3,6 +3,8 @@
 
 #include "timer-api.h"
 #include "tasks.h"
+
+// components
 #include "led.h"
 #include "myserial.h"
 #include "light.h"
@@ -11,6 +13,7 @@
 #include "encoder.h"
 #include "analoglibrary.h"
 #include "light.h"
+#include "mystdio.h"
 
 void timer_handle_interrupts(int timer) {
   if(--rec_cnt_A <=0) {
@@ -26,6 +29,7 @@ void timer_handle_interrupts(int timer) {
 
 void setup() {
   SerialInit();
+  MystdioInit();
   LEDs_Init();
   InitLight();
   ConditionerInit();
