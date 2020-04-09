@@ -1,7 +1,16 @@
 
-#define OFS_A 1000
-#define REC_A 1000
+
+#define REC_BMPTP 7000
+#define OFFS_BMPTP 0
+
+#define REC_BMPPPC 7000
+#define OFFS_BMPPPC 2000
+
+#define REC_BMPRPC 7000
+#define OFFS_BMPRPC 4000
+
+#define REC_CONDIT_ON_OFF 10000 //10 sec
+#define OFFS_CONDIT_ON_OFF 1500
 
 
-#define OFS_B 5000
-#define REC_B 500
+

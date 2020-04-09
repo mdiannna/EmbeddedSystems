@@ -15,15 +15,32 @@
 #include "light.h"
 #include "mystdio.h"
 
+
+double temperatureVal = 0.0;
+double pressureVal = 0.0;
+double relativePressureVal = 0.0;
+
+
+
 void timer_handle_interrupts(int timer) {
-  if(--rec_cnt_A <=0) {
-    TaskA();
-    rec_cnt_A = REC_A;
+  if(--rec_cnt_BMPTP <=0) {
+    TaskReadBMPTemperatureProvider();
+    rec_cnt_BMPTP = REC_BMPTP;
   }
   
-  if(--rec_cnt_B <=0) {
-    TaskA();
-    rec_cnt_B = REC_B;
+  if(--rec_cnt_BMPPPC <=0) {
+    TaskReadBMPPressureProviderConsumer();
+    rec_cnt_BMPPPC = REC_BMPPPC;
+  }
+
+  if(--rec_cnt_BMPRPC <=0) {
+    TaskReadBMPRelPressureConsumer();
+    rec_cnt_BMPRPC = REC_BMPRPC;
+  }
+
+  if(--rec_cnt_CONDIT_ON_OFF <=0) {
+    TaskConditionerOnOffConsumer();
+    rec_cnt_CONDIT_ON_OFF = REC_CONDIT_ON_OFF;
   }
 }
 
@@ -39,6 +56,18 @@ void setup() {
   LightSensorInit();
 }
 
+
 void loop() {
-  // put your main code here, to run repeatedly:
+  // TODO: test
+  printf("Current temperature:");
+  Serial.print(temperatureVal);
+  printf("\n");
+
+  printf("Current pressure:");
+  Serial.print(pressureVal);
+  printf("\n");
+
+  printf("Current relative pressure:");
+  Serial.print(relPressureVal);
+  printf("\n");  
 }

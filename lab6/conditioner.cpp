@@ -28,3 +28,18 @@ int IsConditionerTurnedOff() {
   }
   return 0;
 }
+
+
+int TemperatureExceedsMaxTemp(double t) {
+  if(t>=MAX_TEMP) {
+    return 1;
+  }
+  return 0;
+}
+
+int TemperatureBelowMinTemp(double t) {
+  if(t<=MIN_TEMP) {
+    return 1;
+  }
+  return 0;
+}
