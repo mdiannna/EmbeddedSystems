@@ -1,4 +1,5 @@
 #include "button.h"
+#include <Arduino.h>
 
 void ButtonInit() {
   pinMode(BUTTON_PIN, INPUT_PULLUP);
@@ -21,6 +22,3 @@ int IsButtonReleased() {
 //else
   return 0;
 }
-
-
-

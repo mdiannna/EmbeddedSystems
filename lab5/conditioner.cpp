@@ -1,4 +1,5 @@
 #include "led.h"
+#include "conditioner.h"
 
 void ConditionerInit() {
   LEDs_Init();

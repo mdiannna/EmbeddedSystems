@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include <stdio.h>
 #include "lcd.h"
-#include "keypad.h"
+#include "mykeypad.h"
 
 
 int MyPutChar( char c, FILE *t) {

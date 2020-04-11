@@ -1,7 +1,12 @@
+#include "encoder.h"
+#include <Arduino.h>
+#include "motor.h"
+#include "mystdio.h"
 
 int maxTimeOneRotation;
 
 void EncoderInit() {
+  printf("Encoder is initializing... please wait...");
   pinMode(ENCODER_PIN,INPUT);
   MotorForward(165);
 
@@ -25,5 +30,3 @@ double ReadEncoderValue() {
    int value = digitalRead(ENCODER_PIN);
    return value;
 }
-
-

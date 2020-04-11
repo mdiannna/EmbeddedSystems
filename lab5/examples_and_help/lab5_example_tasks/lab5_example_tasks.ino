@@ -31,14 +31,20 @@ void timer_handle_interrupts(int timer) {
   }
   
   if(--rec_cnt_B <=0) {
-    TaskA();
+    TaskB();
     rec_cnt_B = REC_B;
   }
   
 }
 
+void SerialInit() {
+  Serial.begin(9600);
+}
+
 void setup() {
   // put your setup code here, to run once:
+  SerialInit();
+   timer_init_ISR_1KHz(TIMER_DEFAULT);
 }
 
 void loop() {
