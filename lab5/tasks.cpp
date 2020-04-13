@@ -1,7 +1,7 @@
 #include "tasks.h"
-#include "pressure_temp_altitude.h"
+#include "bmp_pressure_temp_altitude.h"
 #include "conditioner.h"
-
+#include "bmp_pressure_temp_altitude.h"
 #include <Arduino.h>
 
 double temperatureVal = 0.0;
@@ -13,24 +13,18 @@ double relPressureVal = 0.0;
 void TaskReadBMPTemperatureProvider() {
   Serial.println("Task temperature");
   // Something wrong here
-	//temperatureVal = SensorGetTemperature();
+	temperatureVal = GetTemperature();
  Serial.print(temperatureVal);
 
 }
-// BMPTP task code
-void TaskReadBMPPressureProviderConsumer() {
-	if(temperatureVal > 0.0) {
-		pressureVal = SensorGetPressure(temperatureVal);
-		
-	}
+// BMPPP task code
+void TaskReadBMPPressureProvider() {
+		pressureVal = GetPressure();
 }
 
-// BMPRPC task code
-void TaskReadBMPRelPressureConsumer() {
-	if(pressureVal > 0.0) {
-		relPressureVal = SensorGetRelativePressure(pressureVal); 
-		// TODO: print Relative pressure in main loop	
-	}
+// BMPRP task code
+void TaskReadBMPRelPressure() {
+		relPressureVal = GetSeaLevelPressure(); 
 }
 
 // ConditOnOff code

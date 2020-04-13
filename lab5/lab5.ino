@@ -16,8 +16,9 @@
 #include "lightsensor.h"
 #include "mystdio.h"
 #include "conditioner.h"
-#include "pressure_temp_altitude.h"
-
+//#include "pressure_temp_altitude.h"
+//#include "bmp_pressure_temp_altitude.h"
+#include "BMP085NB.h"
 
 
 int rec_cnt_BMPTP = OFFS_BMPTP;
@@ -46,15 +47,52 @@ void TaskC() {
   
 }
 
+void TaskTemperatureNewBMP() {
+  Serial.println("Get temperature with new BMP sensor");
+ // temperatureVal = GetTemperature();
+}
+
 double SensorGetTemperature2(){
  double T = 0.02;
     return T;
     }
 
+
+
+
+BMP085NB bmp;
+
+int temperature = 0;
+long pressure = 0;
+float alti = 130.0;
+
+void BMPInitNB() {
+  bmp.initialize();
+  bmp.setSeaLevelPressure(100600);
+}
+
+void BMPReadData() {
+  Serial.println("Read data");
+  bmp.pollData(&temperature, &pressure, &alti);  
+  Serial.println("Read data");
+  
+  if (bmp.newData) {
+      Serial.print("Temp: ");
+    Serial.print(temperature / 10);
+    Serial.print("degC Pres: ");
+    Serial.print(pressure, DEC);
+    Serial.print("Pa Alt: ");
+    Serial.print(alti);
+
+  }
+}
     
-// BMPTP task code
-void TaskReadBMPTemperatureProvider2() {
-  Serial.println("Task temp");
+void TaskBMPReadValues() {
+Serial.println("BMP read data");
+ 
+ LED_On();
+ BMPReadData(); 
+ LED_Off();
 }
 
 void timer_handle_interrupts(int timer) {
@@ -68,8 +106,7 @@ void timer_handle_interrupts(int timer) {
     rec_cnt_B = REC_B;
   }
   if(--rec_cnt_BMPTP <=0) {
-   // TaskA();
-    TaskReadBMPTemperatureProvider();
+    TaskBMPReadValues();
     rec_cnt_BMPTP = REC_BMPTP;
   }
 //  
@@ -89,6 +126,8 @@ void timer_handle_interrupts(int timer) {
 //  }
 }
 
+
+
 void setup() {
  
 //
@@ -99,7 +138,10 @@ void setup() {
   ConditionerInit();
 //  EncoderInit();
   InitCar();
-  InitBMPSensor(); // for temperature, altitude and pressure
+  //InitBMPSensor(); // for temperature, altitude and pressure
+//  InitBMPSensor() ;
+BMPInitNB();
+Serial.println("BMP Init");
   LightSensorInit();
   delay(1000);
   printf("Initializing timer");

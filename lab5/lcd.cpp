@@ -1,8 +1,10 @@
 
 #include <Wire.h>
 #include <stdio.h>
+#include <Arduino.h>
 #include "lcd.h"
 #include <LiquidCrystal_I2C.h>
+
 //initialize the liquid crystal library
 //the first parameter is the I2C address
 //the second parameter is how many rows are on your screen

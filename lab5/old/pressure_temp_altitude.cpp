@@ -124,28 +124,28 @@ double SensorGetTemperature1(){
 // async
 double SensorGetTemperature(){
   char status;
-  double T;
+  double T = 0.0;
 
-  status = sensor.startTemperature();
-    if (status != 0)
-    {
-      Serial.println(status);
-      // Wait for the measurement to complete:
-      delay(status);
-
-
-      status = sensor.getTemperature(T);
-      if (status != 0)
-      {
-        // Print out the measurement:
-        // Serial.print("temperature: ");
-        // Serial.print(T,2);
-        // Serial.print(" deg C, ");
-        return T;
-      }
-      else Serial.println("error retrieving temperature measurement\n");
-    }
-    else Serial.println("error starting temperature measurement\n");
+ // status = sensor.startTemperature();
+//    if (status != 0)
+////    {
+////      Serial.println(status);
+////      // Wait for the measurement to complete:
+////      delay(status);
+////
+//
+//      status = sensor.getTemperature(T);
+//      if (status != 0)
+//      {
+//        // Print out the measurement:
+//        // Serial.print("temperature: ");
+//        // Serial.print(T,2);
+//        // Serial.print(" deg C, ");
+//        return T;
+//      }
+//      else Serial.println("error retrieving temperature measurement\n");
+////    }
+////    else Serial.println("error starting temperature measurement\n");
 
     return T;
 }
