@@ -93,8 +93,8 @@ void setup() {
 
 void loop() {
   // TODO: test
-//  printf("\n\rCurrent temperature:");
-//  Serial.print(temperatureVal);
+  printf("\n\rCurrent temperature:");
+  Serial.print(temperatureVal);
 //  printf("\n");
 //
 //  printf("\nCurrent pressure:");
