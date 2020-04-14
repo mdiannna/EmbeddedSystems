@@ -39,16 +39,18 @@ void TaskB() {
 }
 
 
-#define NR_OF_TASKS 4
-int rec_cnts[NR_OF_TASKS] = {OFS_A, OFS_B, OFFS_TP, OFFS_CONDIT_ON_OFF};
-int rec_values[NR_OF_TASKS] = {REC_A, REC_B, REC_TP, REC_CONDIT_ON_OFF};
-void (*fp[4])() = {TaskA, TaskB, TaskReadTemperatureProvider, TaskConditionerOnOffConsumer};
+#define NR_OF_TASKS 5
+int rec_cnts[NR_OF_TASKS] = { OFS_A, OFS_B, OFFS_TP, OFFS_CONDIT_ON_OFF, OFFS_GET_KPD };
+int rec_values[NR_OF_TASKS] = { REC_A, REC_B, REC_TP, REC_CONDIT_ON_OFF, REC_GET_KPD };
+void (*fp[NR_OF_TASKS])() = { 
+                    TaskA,
+                    TaskB, 
+                    TaskReadTemperatureProvider, 
+                    TaskConditionerOnOffConsumer, 
+                    TaskReadKeypadChar 
+                };
 
 void timer_handle_interrupts(int timer) {
-  // void (*f)(int); daca functia primeste int ca parametru
-  // void (*f)();
-  // f = &TaskA;
-
   for(int i=0; i<NR_OF_TASKS; i++) {
     if(--rec_cnts[i] <=0) {
      (*fp[i])();
@@ -58,11 +60,6 @@ void timer_handle_interrupts(int timer) {
  //  if(--rec_cnt_A <=0) {
  //    TaskA();
  //    rec_cnt_A = REC_A;
- //  }
-  
- //  if(--rec_cnt_B <=0) {
- //    TaskB();
- //    rec_cnt_B = REC_B;
  //  }
  //  if(--rec_cnt_TP <=0) {
  //    TaskReadTemperatureProvider();
@@ -93,7 +90,10 @@ void setup() {
 
 
 void loop() {
-  printf("\n\rCurrent temperature:");
+  printf("\n\rTemperature:");
   Serial.print(temperatureVal);
-
+  Serial.print(" Char keypad:");
+  Serial.print(charKeypad);
+//  Serial.print(" Password:");
+//  Serial.print(password);
 }

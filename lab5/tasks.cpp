@@ -2,9 +2,10 @@
 #include "conditioner.h"
 #include "temperature.h"
 #include <Arduino.h>
+#include "mykeypad.h"
 
 float temperatureVal = 0.0;
-
+char charKeypad = '-';
 
 // TP task code
 void TaskReadTemperatureProvider() {
@@ -21,4 +22,15 @@ void TaskConditionerOnOffConsumer() {
     {
       TurnConditionerOff();
     }
+}
+
+void TaskReadSerialChar() {
+// TODO
+}
+
+void TaskReadKeypadChar() {
+	char keypressed = kpd.getKey();
+   	if (keypressed != NO_KEY)
+   	{    charKeypad = keypressed;
+   	}  
 }
