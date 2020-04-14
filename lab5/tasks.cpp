@@ -3,11 +3,7 @@
 #include "temperature.h"
 #include <Arduino.h>
 
-// double temperatureVal = 0.0;
-
 float temperatureVal = 0.0;
-double pressureVal = 0.0;
-double relPressureVal = 0.0;
 
 
 // TP task code
