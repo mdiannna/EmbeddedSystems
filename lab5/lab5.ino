@@ -24,13 +24,18 @@ int rec_cnt_CONDIT_ON_OFF = OFFS_CONDIT_ON_OFF;
 
 
 #define NR_OF_TASKS 4
-int rec_cnts[NR_OF_TASKS] = { OFFS_TP, OFFS_CONDIT_ON_OFF, OFFS_GET_KPD, OFFS_READ_SCHAR };
-int rec_values[NR_OF_TASKS] = { REC_TP, REC_CONDIT_ON_OFF, REC_GET_KPD, REC_READ_SCHAR };
+// int rec_cnts[NR_OF_TASKS] = { OFFS_TP, OFFS_CONDIT_ON_OFF, OFFS_GET_KPD, OFFS_READ_SCHAR, OFFS_CHK_PWD };
+int rec_cnts[NR_OF_TASKS] = { OFFS_TP, OFFS_CONDIT_ON_OFF, OFFS_GET_KPD, OFFS_TURN_LIGHTS_ON};
+// int rec_values[NR_OF_TASKS] = { REC_TP, REC_CONDIT_ON_OFF, REC_GET_KPD, REC_READ_SCHAR, REC_CHK_PWD };
+// int rec_values[NR_OF_TASKS] = { REC_TP, REC_CONDIT_ON_OFF, REC_GET_KPD, REC_CHK_PWD, REC_TURN_LIGHTS_ON };
+int rec_values[NR_OF_TASKS] = { REC_TP, REC_CONDIT_ON_OFF, REC_GET_KPD, REC_TURN_LIGHTS_ON };
 void (*fp[NR_OF_TASKS])() = { 
                     TaskReadTemperatureProvider, 
                     TaskConditionerOnOffConsumer, 
                     TaskReadKeypadCharPwd,
-                    TaskReadSerialChar
+                    // TaskReadSerialChar,
+                    // TaskChechPassword,
+                    TaskTurnCarLightsOn
                 };
 
 void timer_handle_interrupts(int timer) {
@@ -54,7 +59,7 @@ void setup() {
   //  EncoderInit();
   InitCar();
   LightSensorInit();
-  PasswordInit();
+  // PasswordInit();
   printf("Initializing timer");
   delay(1000);
   timer_init_ISR_1KHz(TIMER_DEFAULT);
@@ -65,8 +70,11 @@ void loop() {
   printf("\n\rTemperature:");
   Serial.print(temperatureVal);
   printf("\n\r Char keypad: %c", charKeypad);
-  printf(" Password: %s", password);
-  printf(" Correct pwd?: %d", passwordIsCorrect);
+  // printf(" Password:");
+  // Serial.print(password);
+  // printf(" Correct pwd?: %d", passwordIsCorrect);
   printf("\n\rChar serial:%c", charSerial);
+  Serial.println("Is light on???");
+  Serial.println(IsLightOn());
  
 }

@@ -64,4 +64,3 @@ void LED_On() {
 void LED_Off() {
   Turn_LED_Off(BLUE_LED_PIN);
 }
-

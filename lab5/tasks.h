@@ -14,11 +14,15 @@
 #define OFFS_GET_KPD 1000
 
 
-#define REC_READ_SCHAR 100
+#define REC_READ_SCHAR 500
 #define OFFS_READ_SCHAR 550
 
-#define REC_CHK_PWD 120
+#define REC_CHK_PWD 1000
 #define OFFS_CHK_PWD 600
+
+
+#define REC_TURN_LIGHTS_ON 1000
+#define OFFS_TURN_LIGHTS_ON 1000
 
 extern float temperatureVal;
 extern double pressureVal;
@@ -37,4 +41,11 @@ void TaskConditionerOnOffConsumer();
 void TaskReadKeypadCharPwd();
 
 // READ_SCHAR code
-void TaskReadSerialChar();
+// void TaskReadSerialChar();
+
+
+// TASK_CHK_PWD
+void TaskChechPassword();
+
+// TURN_LIGHTS_ON
+void TaskTurnCarLightsOn();

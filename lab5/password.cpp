@@ -5,24 +5,21 @@
 #include <Arduino.h>
 
 char * CORRECT_PASSWORD = "1234#";
-char * password;
-int passwordIndex;
 
-int PasswordIsCorrect(char * password) {
-  return strcmp(CORRECT_PASSWORD, password);
+
+int PasswordIsCorrect(char * pwd) {
+  if(strcmp(CORRECT_PASSWORD, pwd)==0) {
+  	return 1;
+  }
+  return 0;
 }
 
 void PasswordInit() {
-	password = (char *) malloc (32);
-	passwordIndex = 0;
-}
-
-
-void ResetPassword() {
-	// Serial.println("PASSWORD RESET");
+	password = (char *) malloc (5*sizeof(char));
 	password = "";
 	passwordIndex = 0;
 }
+
 
 //char* ReadPassword() {
 //  char * buf = (char *) malloc (32);

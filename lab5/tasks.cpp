@@ -5,11 +5,16 @@
 #include "mykeypad.h"
 #include "password.h"
 #include "mystdio.h"
+#include "car.h"
+#include "light.h"
 
 float temperatureVal = 0.0;
 char charKeypad = '-';
 int passwordIsCorrect = 0;
 char charSerial;
+char * password;
+
+int passwordIndex;
 
 // TP task code
 void TaskReadTemperatureProvider() {
@@ -30,6 +35,7 @@ void TaskConditionerOnOffConsumer() {
 }
 
 void TaskReadSerialChar() {
+	Serial.println("Write char:");
 	if (Serial.available() > 0) {
     	charSerial = Serial.read();
     }
@@ -41,24 +47,42 @@ void TaskReadKeypadCharPwd() {
    	if (keypressed != NO_KEY)
    	{    
 		charKeypad = keypressed;
-		password[passwordIndex] = charKeypad;
-		passwordIndex++; 
+		// password[passwordIndex] = charKeypad;
+		// passwordIndex++; 
 		
-		if(passwordIndex>=10) {
-			password = "";
-			passwordIndex = 0;
-		}
+		// if(passwordIndex>=3) {
+		// 	password = "";
+		// 	passwordIndex = 0;
+		// }
 	}  
 }
 
-// TASK_CHK_PWD
-void TaskChechPassword() {
-	if(charKeypad=='#') {
-		passwordIsCorrect = 0;
-		if(PasswordIsCorrect(password)){
-			passwordIsCorrect = 1;
+// // TASK_CHK_PWD
+// void TaskChechPassword() {
+// 	if(charKeypad=='#') {
+// 		passwordIsCorrect = 0;
+// 		if(PasswordIsCorrect(password)==1	){
+// 			passwordIsCorrect = 1;
+// 		}
+// 		password = "";
+// 		// password[0] = '*';
+// 		// password[1] = '*';
+// 		// password[2] = '*';
+// 		// password[3] = '*';
+
+// 		passwordIndex = 0;
+//     	charKeypad='-';
+// 	} 
+// }
+
+
+// TURN_LIGHTS_ON
+void TaskTurnCarLightsOn() {
+	if(charKeypad=='*'){
+		if(IsLightOn()) {
+			LightOff();
+		} else {
+			LightOn();
 		}
-		password = "";
-		passwordIndex = 0;
-	} 
+	}
 }
