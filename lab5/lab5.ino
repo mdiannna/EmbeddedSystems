@@ -16,6 +16,7 @@
 #include "lightsensor.h"
 #include "mystdio.h"
 #include "conditioner.h"
+#include "password.h"
 //#include "temperature.h"
 
 int rec_cnt_TP = OFFS_TP;
@@ -47,7 +48,7 @@ void (*fp[NR_OF_TASKS])() = {
                     TaskB, 
                     TaskReadTemperatureProvider, 
                     TaskConditionerOnOffConsumer, 
-                    TaskReadKeypadChar 
+                    TaskReadKeypadCharPwd 
                 };
 
 void timer_handle_interrupts(int timer) {
@@ -80,20 +81,21 @@ void setup() {
   LEDs_Init();
   InitLight();
   ConditionerInit();
-//  EncoderInit();
+  PasswordInit();
+  //  EncoderInit();
   InitCar();
   LightSensorInit();
-  delay(1000);
+  PasswordInit();
   printf("Initializing timer");
- timer_init_ISR_1KHz(TIMER_DEFAULT);
+  delay(1000);
+  timer_init_ISR_1KHz(TIMER_DEFAULT);
 }
 
 
 void loop() {
   printf("\n\rTemperature:");
   Serial.print(temperatureVal);
-  Serial.print(" Char keypad:");
-  Serial.print(charKeypad);
-//  Serial.print(" Password:");
-//  Serial.print(password);
+  printf(" Char keypad: %c", charKeypad);
+  printf(" Password: %s", password);
+  printf(" Correct pwd?: %d", passwordIsCorrect);
 }

@@ -19,7 +19,7 @@ extern float temperatureVal;
 extern double pressureVal;
 extern double relPressureVal;
 extern char charKeypad;
-
+extern int passwordIsCorrect;
 
 // TP task code
 void TaskReadTemperatureProvider();
@@ -28,4 +28,4 @@ void TaskReadTemperatureProvider();
 void TaskConditionerOnOffConsumer();
 
 // GET_KPD code
-void TaskReadKeypadChar();
+void TaskReadKeypadCharPwd();
