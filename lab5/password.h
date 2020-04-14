@@ -7,8 +7,6 @@ extern int passwordIndex;
 
 void PasswordInit();
 int PasswordIsCorrect(char * password);
-
-void AddCharToPassword(char);
 void ResetPassword();
 
 #endif

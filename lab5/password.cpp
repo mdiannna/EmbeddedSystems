@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <Arduino.h>
 
-char * CORRECT_PASSWORD = "1235";
+char * CORRECT_PASSWORD = "1234#";
 char * password;
 int passwordIndex;
 
@@ -17,13 +17,9 @@ void PasswordInit() {
 	passwordIndex = 0;
 }
 
-void AddCharToPassword(char key) {
-  password[passwordIndex] = key;
-  passwordIndex++;
-}
 
 void ResetPassword() {
-	Serial.println("PASSWORD RESET");
+	// Serial.println("PASSWORD RESET");
 	password = "";
 	passwordIndex = 0;
 }

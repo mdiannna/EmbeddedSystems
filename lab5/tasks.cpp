@@ -9,9 +9,11 @@
 float temperatureVal = 0.0;
 char charKeypad = '-';
 int passwordIsCorrect = 0;
+char charSerial;
 
 // TP task code
 void TaskReadTemperatureProvider() {
+	Serial.println("Read temperature");
   temperatureVal = ReadTemperature();
 }
 
@@ -28,7 +30,9 @@ void TaskConditionerOnOffConsumer() {
 }
 
 void TaskReadSerialChar() {
-// TODO
+	if (Serial.available() > 0) {
+    	charSerial = Serial.read();
+    }
 }
 
 
@@ -36,15 +40,25 @@ void TaskReadKeypadCharPwd() {
 	char keypressed = kpd.getKey();
    	if (keypressed != NO_KEY)
    	{    
-	charKeypad = keypressed;
-	if(charKeypad=='#' && PasswordIsCorrect(password)){
-		passwordIsCorrect = 1;
-		ResetPassword();
-	} else
+		charKeypad = keypressed;
+		password[passwordIndex] = charKeypad;
+		passwordIndex++; 
+		
 		if(passwordIndex>=10) {
-			ResetPassword();
-		} else {
-			AddCharToPassword(charKeypad);    
+			password = "";
+			passwordIndex = 0;
 		}
 	}  
+}
+
+// TASK_CHK_PWD
+void TaskChechPassword() {
+	if(charKeypad=='#') {
+		passwordIsCorrect = 0;
+		if(PasswordIsCorrect(password)){
+			passwordIsCorrect = 1;
+		}
+		password = "";
+		passwordIndex = 0;
+	} 
 }
