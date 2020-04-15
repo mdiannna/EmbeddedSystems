@@ -33,6 +33,8 @@
 #define REC_SHOW_TEMP_LCD 1000
 #define OFFS_SHOW_TEMP_LCD 2000
 
+#define REC_ROTATE_MOTOR 300
+#define OFFS_ROTATE_MOTOR 1100
 
 extern float temperatureVal;
 extern double pressureVal;
@@ -70,3 +72,7 @@ void TaskReadValueLightSensorProvider();
 
 //SHOW_TEMP_LCD
 void TaskShowTempLCDConsumer();
+
+
+// ROTATE_MOTOR
+void TaskRotateMotor();

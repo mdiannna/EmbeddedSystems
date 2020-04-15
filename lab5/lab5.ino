@@ -24,12 +24,25 @@ int rec_cnt_TP = OFFS_TP;
 int rec_cnt_CONDIT_ON_OFF = OFFS_CONDIT_ON_OFF;
 
 
-#define NR_OF_TASKS 6
-// int rec_cnts[NR_OF_TASKS] = { OFFS_TP, OFFS_CONDIT_ON_OFF, OFFS_GET_KPD, OFFS_READ_SCHAR, OFFS_CHK_PWD };
-int rec_cnts[NR_OF_TASKS] = { OFFS_TP, OFFS_CONDIT_ON_OFF, OFFS_GET_KPD, OFFS_TURN_LIGHTS_ON, OFFS_BTN_LED_1, OFFS_READ_LIGHT_SENSOR};
-// int rec_values[NR_OF_TASKS] = { REC_TP, REC_CONDIT_ON_OFF, REC_GET_KPD, REC_READ_SCHAR, REC_CHK_PWD };
-// int rec_values[NR_OF_TASKS] = { REC_TP, REC_CONDIT_ON_OFF, REC_GET_KPD, REC_CHK_PWD, REC_TURN_LIGHTS_ON };
-int rec_values[NR_OF_TASKS] = { REC_TP, REC_CONDIT_ON_OFF, REC_GET_KPD, REC_TURN_LIGHTS_ON, REC_BTN_LED_1, REC_READ_LIGHT_SENSOR };
+#define NR_OF_TASKS 7
+int rec_cnts[NR_OF_TASKS] = { 
+                              OFFS_TP, 
+                              OFFS_CONDIT_ON_OFF, 
+                              OFFS_GET_KPD, 
+                              OFFS_TURN_LIGHTS_ON, 
+                              OFFS_BTN_LED_1, 
+                              OFFS_READ_LIGHT_SENSOR,
+                              OFFS_ROTATE_MOTOR
+                            };
+int rec_values[NR_OF_TASKS] = { 
+                                REC_TP, 
+                                REC_CONDIT_ON_OFF, 
+                                REC_GET_KPD, 
+                                REC_TURN_LIGHTS_ON, 
+                                REC_BTN_LED_1, 
+                                REC_READ_LIGHT_SENSOR,
+                                REC_ROTATE_MOTOR 
+                              };
 void (*fp[NR_OF_TASKS])() = { 
                     TaskReadTemperatureProvider, 
                     TaskConditionerOnOffConsumer, 
@@ -40,7 +53,7 @@ void (*fp[NR_OF_TASKS])() = {
                     TaskButtonLedLab1,
                     TaskReadValueLightSensorProvider,
                     // TaskShowTempLCDConsumer,
-
+                    TaskRotateMotor
                 };
 
 void timer_handle_interrupts(int timer) {

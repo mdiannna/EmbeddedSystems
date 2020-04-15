@@ -84,10 +84,11 @@ void TaskReadKeypadCharPwd() {
 
 // TURN_LIGHTS_ON
 void TaskTurnCarLightsOn() {
-	if(charKeypad=='*'){
-		if(IsLightOn()) {
-			LightOff();
-		} else {
+	if(charKeypad=='#' && IsLightOn() ){
+		LightOff();
+	} else 
+		if(charKeypad=='*' && IsLightOn()==0 ){
+		{
 			LightOn();
 		}
 	}
@@ -116,8 +117,41 @@ void TaskReadValueLightSensorProvider() {
 
 //SHOW_TEMP_LCD
 void TaskShowTempLCDConsumer(){
-	// Serial.println("!!!!!!!!!!!!");
 	LCD_SetCursor(0,0);
-	PutCharLCD('=');
-	// WriteLCD("Temperature:");
+	WriteLCD("Temp: ");
+	WriteLCD(temperatureVal);
+}
+
+// ROTATE_MOTOR - lab 3 Actuators
+void TaskRotateMotor() {
+	if( charKeypad=='0') {
+		StopCar();
+	} else if(charKeypad=='1') {
+		MoveForward();
+		SetCarSpeed(20);
+	} else if(charKeypad=='2') {
+		MoveForward();
+		SetCarSpeed(30);
+	} else if(charKeypad=='3') {
+		MoveForward();
+		SetCarSpeed(40);
+	} else if(charKeypad=='4') {
+		MoveForward();
+		SetCarSpeed(50);
+	} else if(charKeypad=='5') {
+		MoveForward();
+		SetCarSpeed(60);
+	} else if(charKeypad=='6') {
+		MoveForward();
+		SetCarSpeed(70);
+	} else if(charKeypad=='7') {
+		MoveForward();
+		SetCarSpeed(80);
+	} else if(charKeypad=='8') {
+		MoveForward();
+		SetCarSpeed(90);
+	} else if(charKeypad=='9') {
+		MoveForward();
+		SetCarSpeed(100);
+	}
 }
