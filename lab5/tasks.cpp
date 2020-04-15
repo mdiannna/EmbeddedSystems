@@ -11,6 +11,7 @@
 #include "led.h"
 #include "lightsensor.h"
 #include "lcd.h"
+#include "motor.h"
 
 float temperatureVal = 0.0;
 char charKeypad = '-';
@@ -125,7 +126,8 @@ void TaskShowTempLCDConsumer(){
 // ROTATE_MOTOR - lab 3 Actuators
 void TaskRotateMotor() {
 	if( charKeypad=='0') {
-		StopCar();
+		// StopCar();
+		MotorStop('A');
 	} else if(charKeypad=='1') {
 		MoveForwardA(20);
 	} else if(charKeypad=='2') {
