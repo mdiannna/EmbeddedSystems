@@ -71,12 +71,11 @@ void sort(float * arr) {
 Salt and pepper filter
 **/
 float SaltAndPepperFilter(float * buff) {
-	Serial.println("Salt and pepper filter");
+	// Serial.println("Salt and pepper filter");
 	sort(buff);
 	float median = buff[1];
-	printf("Median:");
-
-	Serial.println(median);
+	// printf("Median:");
+	// Serial.println(median);
 	return median;
 }
 

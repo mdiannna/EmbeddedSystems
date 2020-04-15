@@ -9,19 +9,22 @@
 #include "light.h"
 #include "button.h"
 #include "led.h"
+#include "lightsensor.h"
 
 float temperatureVal = 0.0;
 char charKeypad = '-';
 int passwordIsCorrect = 0;
 char charSerial;
 char * password;
+float lightValue = 0;
+float luxValue = 0;
 
 int passwordIndex;
 
 // TP task code
 void TaskReadTemperatureProvider() {
 	Serial.println("Read temperature");
-  temperatureVal = ReadTemperature();
+  	temperatureVal = ReadTemperature();
 }
 
 // ConditOnOff code
@@ -98,4 +101,14 @@ void TaskButtonLedLab1() {
 			LED_On();
 		}
 	}
+}
+
+
+// READ_LIGHT_SENSOR
+void TaskReadValueLightSensorProvider() {
+	float lightLevel = ReadLightLevel();
+	float filteredValue = MyFilter(lightLevel);
+
+	lightValue = filteredValue;
+	luxValue = calcLux(filteredValue);
 }

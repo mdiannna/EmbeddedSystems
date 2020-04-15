@@ -27,12 +27,17 @@
 #define REC_BTN_LED_1 1000
 #define OFFS_BTN_LED_1 300
 
+#define REC_READ_LIGHT_SENSOR 3000
+#define OFFS_READ_LIGHT_SENSOR 3000
+
 extern float temperatureVal;
 extern double pressureVal;
 extern double relPressureVal;
 extern char charKeypad;
 extern int passwordIsCorrect;
 extern char charSerial;
+extern float lightValue;
+extern float luxValue;
 
 // TP task code
 void TaskReadTemperatureProvider();
@@ -55,3 +60,6 @@ void TaskTurnCarLightsOn();
 
 // BTN_LED_1
 void TaskButtonLedLab1();
+
+// READ_LIGHT_SENSOR
+void TaskReadValueLightSensorProvider();
