@@ -17,6 +17,7 @@
 #include "mystdio.h"
 #include "conditioner.h"
 #include "password.h"
+#include "lcd.h"
 //#include "temperature.h"
 
 int rec_cnt_TP = OFFS_TP;
@@ -37,7 +38,9 @@ void (*fp[NR_OF_TASKS])() = {
                     // TaskChechPassword,
                     TaskTurnCarLightsOn,
                     TaskButtonLedLab1,
-                    TaskReadValueLightSensorProvider
+                    TaskReadValueLightSensorProvider,
+                    // TaskShowTempLCDConsumer,
+
                 };
 
 void timer_handle_interrupts(int timer) {
@@ -62,6 +65,7 @@ void setup() {
   InitCar();
   LightSensorInit();
   LightSensorFiltersInit();
+  LcdInit();
   // PasswordInit();
   printf("Initializing timer");
   delay(1000);
@@ -83,4 +87,12 @@ void loop() {
   Serial.print(lightValue);
   printf(" lumens:");
   Serial.print(luxValue);
+  
+  LCD_SetCursor(0,0);
+  WriteLCD("Temp: ");
+  WriteLCD(temperatureVal);
+  LCD_SetCursor(0,1);
+  WriteLCD("Light: ");
+  WriteLCD(lightValue);
+  
 }

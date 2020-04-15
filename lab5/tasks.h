@@ -28,7 +28,11 @@
 #define OFFS_BTN_LED_1 300
 
 #define REC_READ_LIGHT_SENSOR 3000
-#define OFFS_READ_LIGHT_SENSOR 3000
+#define OFFS_READ_LIGHT_SENSOR 1000
+
+#define REC_SHOW_TEMP_LCD 1000
+#define OFFS_SHOW_TEMP_LCD 2000
+
 
 extern float temperatureVal;
 extern double pressureVal;
@@ -63,3 +67,6 @@ void TaskButtonLedLab1();
 
 // READ_LIGHT_SENSOR
 void TaskReadValueLightSensorProvider();
+
+//SHOW_TEMP_LCD
+void TaskShowTempLCDConsumer();

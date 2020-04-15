@@ -6,7 +6,7 @@
 
 int MyPutChar( char c, FILE *t) {
 	Serial.write( c );
-	PutCharLCD(c);
+	// PutCharLCD(c);
 }
 
 char MyGetChar( FILE *stream) {

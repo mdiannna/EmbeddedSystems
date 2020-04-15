@@ -9,8 +9,9 @@
 //the first parameter is the I2C address
 //the second parameter is how many rows are on your screen
 //the third parameter is how many columns are on your screen
-LiquidCrystal_I2C lcd(0x27, 16, 2);
 
+// For real hardware:
+LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 void lcdOn() {
   lcd.backlight();
@@ -30,4 +31,22 @@ void LcdInit() {
 
 void PutCharLCD(char c) {
   lcd.print(c);
+}
+
+void WriteLCD(char * s) {
+	lcd.print(s);
+}
+
+
+void WriteLCD(int s) {
+	lcd.print(s);
+}
+
+
+void WriteLCD(float s) {
+	lcd.print(s);
+}
+
+void LCD_SetCursor(int i, int j) {
+	lcd.setCursor(i,j);
 }

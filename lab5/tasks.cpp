@@ -10,6 +10,7 @@
 #include "button.h"
 #include "led.h"
 #include "lightsensor.h"
+#include "lcd.h"
 
 float temperatureVal = 0.0;
 char charKeypad = '-';
@@ -111,4 +112,12 @@ void TaskReadValueLightSensorProvider() {
 
 	lightValue = filteredValue;
 	luxValue = calcLux(filteredValue);
+}
+
+//SHOW_TEMP_LCD
+void TaskShowTempLCDConsumer(){
+	// Serial.println("!!!!!!!!!!!!");
+	LCD_SetCursor(0,0);
+	PutCharLCD('=');
+	// WriteLCD("Temperature:");
 }
