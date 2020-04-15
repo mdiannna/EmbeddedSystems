@@ -16,6 +16,7 @@
 #define in4 4
 #define enB 3
 
+#define MAX_MOTOR_SPEED 120
 
 void InitMotor(); //motor A
 void InitMotorA(); //motor A

@@ -12,6 +12,8 @@
 #include "lightsensor.h"
 #include "lcd.h"
 #include "motor.h"
+#include "encoder.h"
+#include "mypid.h"
 
 float temperatureVal = 0.0;
 char charKeypad = '-';
@@ -20,6 +22,7 @@ char charSerial;
 char * password;
 float lightValue = 0;
 float luxValue = 0;
+int motorSpeed = 0;
 
 int passwordIndex;
 
@@ -147,4 +150,30 @@ void TaskRotateMotor() {
 	} else if(charKeypad=='9') {
 		MoveForwardA(100);
 	}
+}
+
+
+int oldEncState =0;
+
+// READ_ENCODER 
+void TaskReadEncoder() {
+	static int encoderSpeedLocal = 0;
+	int newEncState = digitalRead(ENCODER_PIN);
+
+	if(newEncState!=oldEncState) {
+		motorSpeed = encoderSpeedLocal;
+		encoderSpeedLocal = 0;
+	} else {
+		encoderSpeedLocal++;
+	}
+	oldEncState = newEncState
+;}
+
+// MOTOR_PID
+void TaskMotorPIDControl() {
+	// global motorSpeed
+	PID_SetInput(motorSpeed);
+	double output = PID_GetOutput();
+	// MotorForward('B', output);
+	MotorForward('B', 60);
 }

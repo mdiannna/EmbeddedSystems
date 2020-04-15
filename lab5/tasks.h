@@ -36,6 +36,13 @@
 #define REC_ROTATE_MOTOR 300
 #define OFFS_ROTATE_MOTOR 1100
 
+// READ_ENCODER
+#define REC_READ_ENCODER 1 //1ms
+#define OFFS_READ_ENCODER 0 
+
+#define REC_MOTOR_PID 1000 //1sec
+#define OFFS_MOTOR_PID 500
+
 extern float temperatureVal;
 extern double pressureVal;
 extern double relPressureVal;
@@ -44,6 +51,7 @@ extern int passwordIsCorrect;
 extern char charSerial;
 extern float lightValue;
 extern float luxValue;
+extern int motorSpeed;
 
 // TP task code
 void TaskReadTemperatureProvider();
@@ -56,7 +64,6 @@ void TaskReadKeypadCharPwd();
 
 // READ_SCHAR code
 // void TaskReadSerialChar();
-
 
 // TASK_CHK_PWD
 void TaskChechPassword();
@@ -73,6 +80,11 @@ void TaskReadValueLightSensorProvider();
 //SHOW_TEMP_LCD
 void TaskShowTempLCDConsumer();
 
-
 // ROTATE_MOTOR
 void TaskRotateMotor();
+
+// READ_ENCODER 
+void TaskReadEncoder();
+
+// MOTOR_PID
+void TaskMotorPIDControl();
