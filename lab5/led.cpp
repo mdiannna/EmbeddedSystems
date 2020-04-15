@@ -11,7 +11,9 @@ void LED_Init(int led_pin) {
 void LEDs_Init() {
   LED_Init(RED_LED_PIN);
   LED_Init(GREEN_LED_PIN);
+  LED_Init(GREEN_LED_PASSWORD_PIN);
   LED_Init(BLUE_LED_PIN);
+  LED_Init(RED_LED_PASSWORD_PIN);
 }
 
 int Is_RED_LED_On() {
@@ -25,6 +27,25 @@ int Is_RED_LED_On() {
 
 int Is_GREEN_LED_On() {
   int LEDState = digitalRead(GREEN_LED_PIN);
+  if(LEDState==LED_ON) {
+    return 1;
+  }
+//else
+  return 0;
+}
+
+
+int Is_RED_LED_Password_On() {
+  int LEDState = digitalRead(RED_LED_PASSWORD_PIN);
+  if(LEDState==LED_ON) {
+    return 1;
+  }
+//else
+  return 0;
+}
+
+int Is_GREEN_LED_Password_On() {
+  int LEDState = digitalRead(GREEN_LED_PASSWORD_PIN);
   if(LEDState==LED_ON) {
     return 1;
   }

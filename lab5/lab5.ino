@@ -23,19 +23,20 @@ int rec_cnt_TP = OFFS_TP;
 int rec_cnt_CONDIT_ON_OFF = OFFS_CONDIT_ON_OFF;
 
 
-#define NR_OF_TASKS 4
+#define NR_OF_TASKS 5
 // int rec_cnts[NR_OF_TASKS] = { OFFS_TP, OFFS_CONDIT_ON_OFF, OFFS_GET_KPD, OFFS_READ_SCHAR, OFFS_CHK_PWD };
-int rec_cnts[NR_OF_TASKS] = { OFFS_TP, OFFS_CONDIT_ON_OFF, OFFS_GET_KPD, OFFS_TURN_LIGHTS_ON};
+int rec_cnts[NR_OF_TASKS] = { OFFS_TP, OFFS_CONDIT_ON_OFF, OFFS_GET_KPD, OFFS_TURN_LIGHTS_ON, OFFS_BTN_LED_1};
 // int rec_values[NR_OF_TASKS] = { REC_TP, REC_CONDIT_ON_OFF, REC_GET_KPD, REC_READ_SCHAR, REC_CHK_PWD };
 // int rec_values[NR_OF_TASKS] = { REC_TP, REC_CONDIT_ON_OFF, REC_GET_KPD, REC_CHK_PWD, REC_TURN_LIGHTS_ON };
-int rec_values[NR_OF_TASKS] = { REC_TP, REC_CONDIT_ON_OFF, REC_GET_KPD, REC_TURN_LIGHTS_ON };
+int rec_values[NR_OF_TASKS] = { REC_TP, REC_CONDIT_ON_OFF, REC_GET_KPD, REC_TURN_LIGHTS_ON, REC_BTN_LED_1 };
 void (*fp[NR_OF_TASKS])() = { 
                     TaskReadTemperatureProvider, 
                     TaskConditionerOnOffConsumer, 
                     TaskReadKeypadCharPwd,
                     // TaskReadSerialChar,
                     // TaskChechPassword,
-                    TaskTurnCarLightsOn
+                    TaskTurnCarLightsOn,
+                    TaskButtonLedLab1
                 };
 
 void timer_handle_interrupts(int timer) {
@@ -76,5 +77,4 @@ void loop() {
   printf("\n\rChar serial:%c", charSerial);
   Serial.println("Is light on???");
   Serial.println(IsLightOn());
- 
 }

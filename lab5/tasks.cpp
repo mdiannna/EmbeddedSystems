@@ -7,6 +7,8 @@
 #include "mystdio.h"
 #include "car.h"
 #include "light.h"
+#include "button.h"
+#include "led.h"
 
 float temperatureVal = 0.0;
 char charKeypad = '-';
@@ -83,6 +85,17 @@ void TaskTurnCarLightsOn() {
 			LightOff();
 		} else {
 			LightOn();
+		}
+	}
+}
+
+// BTN_LED_1
+void TaskButtonLedLab1() {
+	if(IsButtonPressed()==1) {
+		if(Is_LED_On()) {
+			LED_Off();
+		} else {
+			LED_On();
 		}
 	}
 }

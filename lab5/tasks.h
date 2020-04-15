@@ -24,6 +24,9 @@
 #define REC_TURN_LIGHTS_ON 1000
 #define OFFS_TURN_LIGHTS_ON 1000
 
+#define REC_BTN_LED_1 1000
+#define OFFS_BTN_LED_1 300
+
 extern float temperatureVal;
 extern double pressureVal;
 extern double relPressureVal;
@@ -49,3 +52,6 @@ void TaskChechPassword();
 
 // TURN_LIGHTS_ON
 void TaskTurnCarLightsOn();
+
+// BTN_LED_1
+void TaskButtonLedLab1();
