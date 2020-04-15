@@ -127,31 +127,22 @@ void TaskRotateMotor() {
 	if( charKeypad=='0') {
 		StopCar();
 	} else if(charKeypad=='1') {
-		MoveForward();
-		SetCarSpeed(20);
+		MoveForwardA(20);
 	} else if(charKeypad=='2') {
-		MoveForward();
-		SetCarSpeed(30);
+		MoveForwardA(30);
 	} else if(charKeypad=='3') {
-		MoveForward();
-		SetCarSpeed(40);
+		MoveForwardA(40);
 	} else if(charKeypad=='4') {
-		MoveForward();
-		SetCarSpeed(50);
+		MoveForwardA(50);
 	} else if(charKeypad=='5') {
-		MoveForward();
-		SetCarSpeed(60);
+		MoveForwardA(60);
 	} else if(charKeypad=='6') {
-		MoveForward();
-		SetCarSpeed(70);
+		MoveForwardA(70);
 	} else if(charKeypad=='7') {
-		MoveForward();
-		SetCarSpeed(80);
+		MoveForwardA(80);
 	} else if(charKeypad=='8') {
-		MoveForward();
-		SetCarSpeed(90);
+		MoveForwardA(90);
 	} else if(charKeypad=='9') {
-		MoveForward();
-		SetCarSpeed(100);
+		MoveForwardA(100);
 	}
 }

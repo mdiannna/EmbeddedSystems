@@ -38,6 +38,16 @@ void MoveForward(int power) {
 	MotorForward('B', PowerToSpeed(power));
 }
 
+void MoveForwardA(int power) {
+	direction = 'f';
+	MotorForward('A', PowerToSpeed(power));
+}
+
+void MoveForwardB(int power) {
+	direction = 'f';
+	MotorForward('B', PowerToSpeed(power));
+}
+
 void MoveBackward(int power) {
 	direction = 'b';
 	MotorBackward('A', PowerToSpeed(power));

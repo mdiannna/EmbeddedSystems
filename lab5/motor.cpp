@@ -21,6 +21,11 @@ void InitMotorB() {
     pinMode(in4, OUTPUT);
 }
 
+void MotorsInit() {
+    InitMotorA();
+    InitMotorB();
+}
+
 // Motor A
 void MotorForward(int speed) {
     digitalWrite(in1, LOW);

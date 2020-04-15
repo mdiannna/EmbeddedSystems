@@ -8,9 +8,13 @@
 #define in2 12
 
 // Motor B
-#define enB 13
-#define in3 22
-#define in4 24
+// #define in3 22
+// #define in4 24
+// #define enB 13
+
+#define in3 5
+#define in4 4
+#define enB 3
 
 
 void InitMotor(); //motor A
@@ -27,6 +31,7 @@ void MotorBackward(char motor, int speed);
 void MotorStop(); //motor A
 void MotorStop(char motor);
 void MotorsStop(); // both motors
+void MotorsInit(); // both motors
 
 
 
