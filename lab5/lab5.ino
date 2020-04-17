@@ -1,5 +1,3 @@
-//https://github.com/sadr0b0t/arduino-timer-api/tree/master/src/avr
-//https://habr.com/en/post/337430/
 
 #include "timer-api.h"
 #include "tasks.h"
