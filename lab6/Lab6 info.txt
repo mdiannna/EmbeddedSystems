@@ -1,0 +1,12 @@
+https://www.youtube.com/watch?v=vj0SUYo8f_A
+
+https://github.com/SensorsIot/ThreeSensorsTiny/blob/master/ThreeSensors_Mega/ThreeSensors_Mega.ino
+
+https://www.thegeekpub.com/18351/how-i2c-works-i2c-explained-simply/
+
+Ultrasonic tutorIAL
+https://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/
+
+
+
+DE CITIT DATELE PRIN I2C, DAR PROTOCOLUL DE COMUNICARE PRIN SERIAL - RX, TX
