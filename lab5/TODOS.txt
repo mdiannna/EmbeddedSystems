@@ -1,3 +1,0 @@
-todo: - add motor B with encoder and change pin 6 from motor A encoder to motor B encoder
-- tune PID
-- test and raport
