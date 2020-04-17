@@ -1,9 +1,4 @@
 
-//
-//#define REC_BMPTP 7000
-//#define OFFS_BMPTP 0
-
-
 #define REC_TP 1000
 #define OFFS_TP 1500
 

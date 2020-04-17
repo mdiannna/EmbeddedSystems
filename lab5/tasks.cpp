@@ -170,6 +170,7 @@ void TaskReadEncoder() {
 ;}
 
 // MOTOR_PID
+// doesn't work properly
 void TaskMotorPIDControl() {
 	// global motorSpeed
 	PID_SetInput(motorSpeed);

@@ -19,7 +19,6 @@
 #include "password.h"
 #include "lcd.h"
 #include "mypid.h"
-//#include "temperature.h"
 
 int rec_cnt_TP = OFFS_TP;
 int rec_cnt_CONDIT_ON_OFF = OFFS_CONDIT_ON_OFF;
@@ -98,9 +97,7 @@ void loop() {
   printf("\n\rTemperature:");
   Serial.print(temperatureVal);
   printf("\n\r Char keypad: %c", charKeypad);
-  // printf(" Password:");
-  // Serial.print(password);
-  // printf(" Correct pwd?: %d", passwordIsCorrect);
+  
   printf("\n\rChar serial:%c", charSerial);
   Serial.println("Is light on???");
   Serial.println(IsLightOn());
