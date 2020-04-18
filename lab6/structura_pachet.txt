@@ -1,0 +1,9 @@
+indicator de start pachet
+indicator de sfarsit
+contorizare pachete
+ID emitator
+ID receptor
+tipul pachetului
+<alte campuri optional>
+date pachet - Payload
+suma de control - suma tuturor valorilor numerice din pachet
