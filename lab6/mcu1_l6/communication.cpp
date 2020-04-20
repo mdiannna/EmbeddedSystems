@@ -17,6 +17,7 @@ end indicator
 // package number
 uint8_t p_nr = 0;
 
+char mystr[100];
 
 void CommunicationInit() {
 	Serial.begin(9600);	
@@ -55,18 +56,12 @@ int calculateChecksum(char * message, uint8_t type, uint8_t p_nr) {
 
 }
 
-void ReceivePacket() {
-	// while(Serial.available()) {
-	// 	char c = Serial.read();
-	// 	Serial.println("!!++++++++++++");
-	// 	Serial.println(c);
-	// 	Serial.println("!!++++++++++++");
-	// }
+int ReceivePacket() {
+	Serial.readBytes(mystr,50); //Read the serial data and store in var
+  	Serial.println(mystr);
+  	// if(... type==SEND_SENSOR_DATA) {
 
-	if(Serial.available()) {
-		String in = Serial.readString();
-		Serial.println("++++++++++++");
-		Serial.println(in);
-		Serial.println("++++++++++++");
-	}
+  	// 	return COMMAND_SEND_SENSOR_DATA;
+  	// }
+  	return 0;
 }
