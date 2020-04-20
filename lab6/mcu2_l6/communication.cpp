@@ -57,7 +57,7 @@ int calculateChecksum(char * message, uint8_t type, uint8_t p_nr) {
 	Serial.print(checksum);
 
 	Serial.print(" ");
-	Serial.println("ETX");
+	Serial.print("ETX");
 
 }
 
