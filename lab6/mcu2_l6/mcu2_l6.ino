@@ -2,14 +2,12 @@
 #include <Arduino.h>
 #include "communication.h"
 
-void SerialInit() {
-	Serial.begin(9600);	
-}
 
 void setup() {
-	SerialInit();
+	CommunicationInit();
 	// TODO:
 	// I2CInit()
+	Serial.println("Init done MCU2");
 	delay(1000);
 	SendHello();
 	

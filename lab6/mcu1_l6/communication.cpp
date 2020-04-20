@@ -1,6 +1,5 @@
 #include "communication.h"
 #include <Arduino.h>
-#include <stdlib.h>
 
 // Package structure:
 /*
@@ -18,23 +17,18 @@ end indicator
 // package number
 uint8_t p_nr = 0;
 
-// Creating packages
-void encoding(char * message) {
-
-}
 
 void CommunicationInit() {
 	Serial.begin(9600);	
 }
 
 int calculateChecksum(char * message, uint8_t type, uint8_t p_nr) {
-	// TODO:
 	// return 13 + length(MY_ID) + length(RECEIVER_ID) + length(message) + length(type) + length(checksum);
-  return 21 + strlen(message);
+  	return 21 + strlen(message);
 }
 
  void SendPacket(char * message, uint8_t type) {
-//void SendPacket(uint8_t message, uint8_t type) {
+//void sendPacket(uint8_t message, uint8_t type) {
 	// start indicator
 	Serial.print("STX");
 	Serial.print(" ");
@@ -61,25 +55,18 @@ int calculateChecksum(char * message, uint8_t type, uint8_t p_nr) {
 
 }
 
+void ReceivePacket() {
+	// while(Serial.available()) {
+	// 	char c = Serial.read();
+	// 	Serial.println("!!++++++++++++");
+	// 	Serial.println(c);
+	// 	Serial.println("!!++++++++++++");
+	// }
 
-// TODO
-// Extracting data from packages
-void DecodePacket() {
-
-}
-
-// MCU2 sends query to MCU1 to send data
-void QuerySensorData() {
-	SendPacket("QUERY_SENSOR_DATA", TYPE_QUERY_DATA_I2C);
-}
-
-void SendHello() {
-	SendPacket("Hello!", TYPE_HELLO);
-}
-
-int ReceiveData() {
-	// TODO
-	// parseInt(Serial.read(....))
-	int data = 10;
-	return data;
+	if(Serial.available()) {
+		String in = Serial.readString();
+		Serial.println("++++++++++++");
+		Serial.println(in);
+		Serial.println("++++++++++++");
+	}
 }
