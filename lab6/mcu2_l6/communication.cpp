@@ -1,6 +1,7 @@
 #include "communication.h"
 #include <Arduino.h>
 #include <stdlib.h>
+#include <Wire.h>
 
 // Package structure:
 /*
@@ -18,6 +19,7 @@ end indicator
 // package number
 uint8_t p_nr = 0;
 
+int data = -1;
 // Creating packages
 void encoding(char * message) {
 
@@ -36,9 +38,9 @@ int calculateChecksum(char * message, uint8_t type, uint8_t p_nr) {
 //void sendPacket(uint8_t message, uint8_t type) {
   // start indicator
   Serial.print("STX");
-  Serial.print("0");
+  Serial.print(" ");
   if(p_nr < 10) {
-    Serial.print(" ");
+    Serial.print("0");
   } else if(p_nr >99) {
     p_nr = 0;
   }
@@ -79,9 +81,8 @@ void SendHello() {
 	SendPacket("Hello!", TYPE_HELLO);
 }
 
+
+
 int ReceiveData() {
-	// TODO
-	// parseInt(Serial.read(....))
-	int data = 10;
 	return data;
 }

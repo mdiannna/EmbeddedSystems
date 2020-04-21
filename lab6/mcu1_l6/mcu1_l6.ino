@@ -1,5 +1,8 @@
+// Master I2C
+
 #include <Arduino.h>
 #include "communication.h"
+#include "myi2c.h"
 
 const int pingPin = 7; // Trigger Pin of Ultrasonic Sensor
 const int echoPin = 6; // Echo Pin of Ultrasonic Sensor
@@ -16,6 +19,7 @@ char a;
 
 void setup() {
 	CommunicationInit();
+    InitI2C();
 	Serial.println("Initialization done");
 }
 
@@ -32,9 +36,16 @@ int GetSensorData() {
     duration = pulseIn(echoPin, HIGH);
     cm = microsecondsToCentimeters(duration);
 
+    Serial.print("Real cm:");
     Serial.print(cm);
-    Serial.print("cm");
     Serial.println();
+    
+    cm += random(1, 10);
+    Serial.print("Send cm:");
+    Serial.print(cm);
+    Serial.println();
+
+    // Simulation without sensor:
     return cm;
 }
 
@@ -42,9 +53,7 @@ void loop() {
 	int command = ReceivePacket();
 	if(command == COMMAND_SEND_SENSOR_DATA) {
 		int cm = GetSensorData();
-    //   TODO:
-    Serial.println("TODO:--- SENDI2C---");
-    //    SendI2C(cm);
+        SendI2C(cm);
   }
 	delay(1000);
 }

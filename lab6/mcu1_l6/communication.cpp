@@ -74,10 +74,12 @@ int calculateChecksum(char * message, uint8_t type, uint8_t p_nr) {
 // }
 	
 int ReceivePacket() {
-	int validPacket = 1;
-  if(Serial.available() ){
-	mystr = Serial.readString(); //Read the serial data and store in var
-  	Serial.println("----"+mystr+"----");
+    int validPacket = 1;
+    if(Serial.available() ){
+    mystr = Serial.readString(); //Read the serial data and store in var
+    Serial.println("--------------------------");
+    Serial.println("----"+mystr+"----");
+    Serial.println("--------------------------");
 
   	// size_t etx_pos = strstr(mystr, "ETX");
   	size_t stx_pos = mystr.indexOf("STX");
@@ -86,10 +88,12 @@ int ReceivePacket() {
 
   	if(stx_pos>2) {
   		validPacket = 0;
-  		Serial.println("PACKET NOT VALID");
+      Serial.println();
+  		Serial.println("!!! PACKET NOT VALID !!!");
+      Serial.println();
   		return -1;
   	} 
-
+Serial.println();
   	size_t etx_pos = mystr.indexOf("ETX");
   	Serial.print("ETX found at");
   	Serial.println(etx_pos);

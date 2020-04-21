@@ -1,3 +1,5 @@
+#include <LiquidCrystal_I2C.h>
+
 #include "button.h"
 #include "led.h"
 #include "mykeypad.h"

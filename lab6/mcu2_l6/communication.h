@@ -9,9 +9,12 @@
 #define TYPE_HELLO 1
 #define TYPE_QUERY_DATA_I2C 2
 
+extern int data;
+
 void CommunicationInit();
 void QuerySensorData();
 int ReceiveData();
 void SendHello();
+
 
 #endif
