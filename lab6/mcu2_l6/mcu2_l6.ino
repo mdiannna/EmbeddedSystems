@@ -2,14 +2,12 @@
 #include <Arduino.h>
 #include "communication.h"
 
-void SerialInit() {
-	Serial.begin(9600);	
-}
 
 void setup() {
-	SerialInit();
+	CommunicationInit();
 	// TODO:
 	// I2CInit()
+	Serial.println("Init done MCU2");
 	delay(1000);
 	SendHello();
 	
@@ -26,13 +24,13 @@ void setup() {
 void loop() {
 	// cerere prin serial de date de la MCU1
 	QuerySensorData();
-	delay(100);
+	// delay(100);
 
-	int data = ReceiveData();
-	if(data != -1) {
-		Serial.print("Received data:");
-		Serial.println(data);
-	}
+	// int data = ReceiveData();
+	// if(data != -1) {
+	// 	Serial.print("Received data:");
+	// 	Serial.println(data);
+	// }
 	
 	delay(2000);
 }

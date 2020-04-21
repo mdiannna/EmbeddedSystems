@@ -23,14 +23,18 @@ void encoding(char * message) {
 
 }
 
+void CommunicationInit() {
+	Serial.begin(9600);	
+}
+
 int calculateChecksum(char * message, uint8_t type, uint8_t p_nr) {
 	// TODO:
 	// return 13 + length(MY_ID) + length(RECEIVER_ID) + length(message) + length(type) + length(checksum);
   return 21 + strlen(message);
 }
 
- void sendPacket(char * message, uint8_t type) {
-//void sendPacket(uint8_t message, uint8_t type) {
+ void SendPacket(char * message, uint8_t type) {
+//void SendPacket(uint8_t message, uint8_t type) {
 	// start indicator
 	Serial.print("STX");
 	Serial.print(" ");
@@ -53,24 +57,24 @@ int calculateChecksum(char * message, uint8_t type, uint8_t p_nr) {
 	Serial.print(checksum);
 
 	Serial.print(" ");
-	Serial.println("ETX");
+	Serial.print("ETX");
 
 }
 
 
 // TODO
 // Extracting data from packages
-void decodePacket() {
+void DecodePacket() {
 
 }
 
 // MCU2 sends query to MCU1 to send data
 void QuerySensorData() {
-	sendPacket("QUERY_SENSOR_DATA", TYPE_QUERY_DATA_I2C);
+	SendPacket("QUERY_SENSOR_DATA", TYPE_QUERY_DATA_I2C);
 }
 
 void SendHello() {
-	sendPacket("Hello!", TYPE_HELLO);
+	SendPacket("Hello!", TYPE_HELLO);
 }
 
 int ReceiveData() {
