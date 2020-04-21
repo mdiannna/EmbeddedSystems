@@ -19,24 +19,32 @@ void setup() {
 	Serial.println("Initialization done");
 }
 
+int GetSensorData() {
+  long duration, inches, cm;
+    pinMode(pingPin, OUTPUT);
+    digitalWrite(pingPin, LOW);
+    delayMicroseconds(2);
+    digitalWrite(pingPin, HIGH);
+    delayMicroseconds(10);
+    digitalWrite(pingPin, LOW);
+
+    pinMode(echoPin, INPUT);
+    duration = pulseIn(echoPin, HIGH);
+    cm = microsecondsToCentimeters(duration);
+
+    Serial.print(cm);
+    Serial.print("cm");
+    Serial.println();
+    return cm;
+}
+
 void loop() {
 	int command = ReceivePacket();
 	if(command == COMMAND_SEND_SENSOR_DATA) {
-		long duration, inches, cm;
-		pinMode(pingPin, OUTPUT);
-		digitalWrite(pingPin, LOW);
-		delayMicroseconds(2);
-		digitalWrite(pingPin, HIGH);
-		delayMicroseconds(10);
-		digitalWrite(pingPin, LOW);
-
-		pinMode(echoPin, INPUT);
-		duration = pulseIn(echoPin, HIGH);
-		cm = microsecondsToCentimeters(duration);
-
-		Serial.print(cm);
-		Serial.print("cm");
-		Serial.println();
-	}
+		int cm = GetSensorData();
+    //   TODO:
+    Serial.println("TODO:--- SENDI2C---");
+    //    SendI2C(cm);
+  }
 	delay(1000);
 }

@@ -39,9 +39,11 @@ int calculateChecksum(char * message, uint8_t type, uint8_t p_nr) {
 	// start indicator
 	Serial.print("STX");
 	Serial.print(" ");
-	if(p_nr+1 < 10) {
-		Serial.print(" ");
-	}
+	if(p_nr < 10) {
+		Serial.print("0");
+	} else if(p_nr >99) {
+    p_nr = 0;
+  }
 	Serial.print(p_nr++);
 	Serial.print(" ");
   // Sender ID
@@ -61,53 +63,80 @@ int calculateChecksum(char * message, uint8_t type, uint8_t p_nr) {
 	Serial.print(checksum);
 
 	Serial.print(" ");
-	Serial.println("ETX");
-
+	Serial.print("ETX");
 }
 
-char * substring(char * s, int start, int n_chars) {
-	char subbuff[n_chars+1];
-	memcpy( subbuff, &s[start], n_chars );
-	subbuff[n_chars] = '\0';
-	return subbuff;
-}
-
+// char * mysubstring(char * s, int start, int n_chars) {
+// 	char subbuff[n_chars+1];
+// 	memcpy( subbuff, &s[start], n_chars );
+// 	subbuff[n_chars] = '\0';
+// 	return subbuff;
+// }
+	
 int ReceivePacket() {
 	int validPacket = 1;
-
+  if(Serial.available() ){
 	mystr = Serial.readString(); //Read the serial data and store in var
   	Serial.println("----"+mystr+"----");
 
   	// size_t etx_pos = strstr(mystr, "ETX");
+  	size_t stx_pos = mystr.indexOf("STX");
+  	Serial.print("STX found at");
+  	Serial.print(stx_pos);
+
+  	if(stx_pos>2) {
+  		validPacket = 0;
+  		Serial.println("PACKET NOT VALID");
+  		return -1;
+  	} 
+
   	size_t etx_pos = mystr.indexOf("ETX");
   	Serial.print("ETX found at");
-  	Serial.print(etx_pos);
+  	Serial.println(etx_pos);
 
-  	// int messageLen = strlen(mystr);
   	int messageLen = etx_pos+3;
-  	// char * startIndicator = substring(mystr,0, 3);
+  	// FOR DEBUG:
+	Serial.print("--Message length:");
+	Serial.println(messageLen);
+
   	if(messageLen-6 <0) {
   		validPacket = 0;
   		Serial.println("PACKET NOT VALID");
-  	} else {
-		// char * checksum = substring(mystr, messageLen-6, 2);
-		// char * endIndicator = substring(mystr, messageLen-3, 3);
-		char * checksum;
-		memcpy(checksum, &mystr[messageLen-6], 2 );
-		// FOR DEBUG:
-		Serial.println("--Message length:");
-		Serial.print(messageLen);
-		// Serial.println("--Start indicator:");
-		// Serial.print(startIndicator);
+  		return -1;
+  	} 
 
-		Serial.println("Checkum:");
-		Serial.print(checksum);
-		// Serial.println("--Start indicator:");
-		// Serial.print(startIndicator);
-	}
-  	// if(... type==SEND_SENSOR_DATA) {
+  	String checksum_s = mystr.substring(messageLen-6, messageLen-4);
+  	Serial.print("Checkum:");
+	  Serial.println(checksum_s);
+   int checksum = checksum_s.toInt();
+   Serial.println(checksum);
 
-  	// 	return COMMAND_SEND_SENSOR_DATA;
-  	// }
+  if(checksum != messageLen) {
+    validPacket = 0;
+    Serial.println("PACKET NOT VALID");
+    return -1;
+  }
+	
+	String packageCnt = mystr.substring(4, 6);
+	Serial.print("Package counter");
+	Serial.println(packageCnt);
+ Serial.println(packageCnt.toInt());
+
+	String type_s = mystr.substring(13, 15);
+	Serial.print("Type:");
+	Serial.println(type_s);
+  int type = type_s.toInt();
+  Serial.println(type);
+	return type;
+  
+//  	 if(type==COMMAND_SEND_SENSOR_DATA) {
+//      Serial.println("COMMAND_SEND SENSOR_DATA");
+//         return COMMAND_SEND_SENSOR_DATA;
+//  	 }
+
   	return 0;
+  }
+  else {
+    return -2;
+  }
 }

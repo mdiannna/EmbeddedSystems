@@ -9,8 +9,8 @@
 
 #define TYPE_HELLO 1
 #define TYPE_QUERY_DATA_I2C 2
-
 #define COMMAND_SEND_SENSOR_DATA 2
+#define SENSOR_DATA_CM 3
 
 void CommunicationInit();
 void SendPacket(char * message, uint8_t type); 

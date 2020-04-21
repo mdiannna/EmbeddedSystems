@@ -28,39 +28,41 @@ void CommunicationInit() {
 }
 
 int calculateChecksum(char * message, uint8_t type, uint8_t p_nr) {
-	// TODO:
-	// return 13 + length(MY_ID) + length(RECEIVER_ID) + length(message) + length(type) + length(checksum);
-  return 21 + strlen(message);
+  // return 13 + length(MY_ID) + length(RECEIVER_ID) + length(message) + length(type) + length(checksum);
+    return 22 + strlen(message);
 }
 
  void SendPacket(char * message, uint8_t type) {
-//void SendPacket(uint8_t message, uint8_t type) {
-	// start indicator
-	Serial.print("STX");
-	Serial.print(" ");
-	Serial.print(p_nr++);
-	Serial.print(" ");
+//void sendPacket(uint8_t message, uint8_t type) {
+  // start indicator
+  Serial.print("STX");
+  Serial.print("0");
+  if(p_nr < 10) {
+    Serial.print(" ");
+  } else if(p_nr >99) {
+    p_nr = 0;
+  }
+  Serial.print(p_nr++);
+  Serial.print(" ");
   // Sender ID
-	Serial.print(MCU2_ID, HEX);
+  Serial.print(MCU2_ID, HEX);
   // Receiver ID
-	Serial.print(" ");
-	Serial.print(MCU1_ID, HEX);
+  Serial.print(" ");
+  Serial.print(MCU1_ID, HEX);
 
-	Serial.print(" ");
-	// Serial.print(QUERY_DATA_TYPE);
-	Serial.print(type);
-	Serial.print(" ");
-	Serial.print(message);
-	Serial.print(" ");
+  Serial.print(" ");
+  // Serial.print(QUERY_DATA_TYPE);
+  Serial.print(type);
+  Serial.print(" ");
+  Serial.print(message);
+  Serial.print(" ");
 
-	int checksum = calculateChecksum(message, type, p_nr);
-	Serial.print(checksum);
+  int checksum = calculateChecksum(message, type, p_nr);
+  Serial.print(checksum);
 
-	Serial.print(" ");
-	Serial.print("ETX");
-
+  Serial.print(" ");
+  Serial.print("ETX");
 }
-
 
 // TODO
 // Extracting data from packages

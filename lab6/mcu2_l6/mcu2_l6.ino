@@ -24,13 +24,13 @@ void setup() {
 void loop() {
 	// cerere prin serial de date de la MCU1
 	QuerySensorData();
-	// delay(100);
+	delay(100);
 
-	// int data = ReceiveData();
-	// if(data != -1) {
-	// 	Serial.print("Received data:");
-	// 	Serial.println(data);
-	// }
+	 int data = ReceiveData();
+	 if(data != -1) {
+	 	Serial.print("Received data:");
+	 	Serial.println(data);
+	 }
 	
-	delay(2000);
+	delay(5000);
 }
