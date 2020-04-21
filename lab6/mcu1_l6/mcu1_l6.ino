@@ -13,10 +13,6 @@ long microsecondsToCentimeters(long microseconds)
    return microseconds / 29 / 2;
 }
 
-
-// String a;
-char a;
-
 void setup() {
 	CommunicationInit();
     InitI2C();
@@ -39,7 +35,7 @@ int GetSensorData() {
     Serial.print("Real cm:");
     Serial.print(cm);
     Serial.println();
-    
+
     cm += random(1, 10);
     Serial.print("Send cm:");
     Serial.print(cm);

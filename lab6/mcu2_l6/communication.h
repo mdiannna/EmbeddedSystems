@@ -2,7 +2,6 @@
 #ifndef COMMUNICATION_H_
 #define COMMUNICATION_H_
 
-// TODO:
 #define MCU1_ID 0x22
 #define MCU2_ID 0x33
 

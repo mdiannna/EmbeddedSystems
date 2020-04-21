@@ -20,10 +20,6 @@ end indicator
 uint8_t p_nr = 0;
 
 int data = -1;
-// Creating packages
-void encoding(char * message) {
-
-}
 
 void CommunicationInit() {
 	Serial.begin(9600);	
@@ -35,7 +31,6 @@ int calculateChecksum(char * message, uint8_t type, uint8_t p_nr) {
 }
 
  void SendPacket(char * message, uint8_t type) {
-//void sendPacket(uint8_t message, uint8_t type) {
   // start indicator
   Serial.print("STX");
   Serial.print(" ");
@@ -66,11 +61,6 @@ int calculateChecksum(char * message, uint8_t type, uint8_t p_nr) {
   Serial.print("ETX");
 }
 
-// TODO
-// Extracting data from packages
-void DecodePacket() {
-
-}
 
 // MCU2 sends query to MCU1 to send data
 void QuerySensorData() {

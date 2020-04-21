@@ -13,9 +13,7 @@ void InitI2C() {
 
 void setup() {
 	CommunicationInit();
-	// TODO:
 	InitI2C();
-	
 
 	Serial.println("Init done MCU2");
 	delay(1000);
@@ -37,10 +35,8 @@ void ReceiveEvent(int bytes) {
  	Serial.println();
 }
 
-// TODO: se poate de pus totul ca ReadSensorData();
 void loop() {
 	// cerere prin serial de date de la MCU1
 	QuerySensorData();
-	
 	delay(5000);
 }
