@@ -1,0 +1,106 @@
+Init done MCU2
+STX 00 33 22 1 Hello! 28 ETXSTX 01 33 22 2 QUERY_SENSOR_DATA 39 ETXSTX 02 33 22 2 QUERY_SENSOR_DATA 39 ETX
+I2C receive sensor data: 9
+STX 03 33 22 2 QUERY_SENSOR_DATA 39 ETX
+I2C receive sensor data: 7
+STX 04 33 22 2 QUERY_SENSOR_DATA 39 ETX
+I2C receive sensor data: 9
+STX 05 33 22 2 QUERY_SENSOR_DATA 39 ETX
+I2C receive sensor data: 9
+STX 06 33 22 2 QUERY_SENSOR_DATA 39 ETX
+I2C receive sensor data: 2
+STX 07 33 22 2 QUERY_SENSOR_DATA 39 ETX
+I2C receive sensor data: 1
+STX 08 33 22 2 QUERY_SENSOR_DATA 39 ETX
+I2C receive sensor data: 9
+STX 09 33 22 2 QUERY_SENSOR_DATA 39 ETX
+I2C receive sensor data: 7
+STX 10 33 22 2 QUERY_SENSOR_DATA 39 ETXSTX 11 33 22 2 QUERY_SENSOR_DATA 39 ETXSTX 12 33 22 2 QUERY_SENSOR_DATA 39 ETXSTX 13 33 22 2 QUERY_SENSOR_DATA 39 ETXSTX 14 33 22 2 QUERY_SENSOR_DATA 39 ETXSTX 15 33 22 2 QUERY_SENSOR_DATA 39 ETXSTX 16 33 22 2 QUERY_SENSOR_DATA 39 ETXSTX 17 33 22 2 QUERY_SENSOR_DATA 39 ETXSTX 18 33 22 2 QUERY_SENSOR_DATA 39 ETXSTX 19 33 22 2 QUERY_SENSOR_DATA 39 ETX
+I2C receive sensor data: 44
+STX 20 33 22 2 QUERY_SENSOR_DATA 39 ETXSTX 21 33 22 2 QUERY_SENSOR_DATA 39 ETXInitialization done
+--------------------------
+----���������UIe}M9M=I}Q�39 ETX----
+--------------------------
+STX found at65535
+!!! PACKET NOT VALID !!!
+
+--------------------------
+----STX 04 33 22 2 QUERY_SENSOR_DATA 39 ETX----
+--------------------------
+STX found at0
+ETX found at36
+--Message length:39
+Checkum:39
+39
+Package counter04
+4
+Type:2 
+2
+Real cm:0
+Send cm:5
+--------------------------
+----
+I2C receive sensor data: 5
+----
+--------------------------
+STX found at65535
+!!! PACKET NOT VALID !!!
+
+--------------------------
+----STX 05 33 22 2 QUERY_SENSOR_DATA 39 ETX----
+--------------------------
+STX found at0
+ETX found at36
+--Message length:39
+Checkum:39
+39
+Package counter05
+5
+Type:2 
+2
+Real cm:0
+Send cm:8
+--------------------------
+----
+I2C receive sensor data: 8
+----
+--------------------------
+STX found at65535
+!!! PACKET NOT VALID !!!
+
+--------------------------
+----STX 06 33 22 2 QUERY_SENSOR_DATA 39 ETX----
+--------------------------
+STX found at0
+ETX found at36
+--Message length:39
+Checkum:39
+39
+Package counter06
+6
+Type:2 
+2
+Real cm:0
+Send cm:6
+--------------------------
+----
+I2C receive sensor data: 6
+----
+--------------------------
+STX found at65535
+!!! PACKET NOT VALID !!!
+
+--------------------------
+----STX 07 33 22 2 QUERY_SENSOR_DATA 39 ETX----
+--------------------------
+STX found at0
+ETX found at36
+--Message length:39
+Checkum:39
+39
+Package counter07
+7
+Type:2 
+2
+Real cm:0
+Send cm:3
