@@ -1,15 +1,18 @@
-#define NORTH_PIN         1
-#define EAST_PIN          2
-#define EAST_RED_PIN      3
-#define EAST_YELLOW_PIN   4
-#define EAST_GREEN_PIN    5
-#define NORTH_RED_PIN     6
-#define NORTH_YELLOW_PIN  7
-#define NORTH_GREEN_PIN   8
+#define NORTH_PIN         9
+#define EAST_PIN          10
+
+#define EAST_RED_PIN      2
+#define EAST_YELLOW_PIN   3
+#define EAST_GREEN_PIN    4
+#define NORTH_RED_PIN     5
+#define NORTH_YELLOW_PIN  6
+#define NORTH_GREEN_PIN   7
+
 #define goN    0   // 0b00
 #define waitN  1   // 0b01
 #define goE    2  // 0b00
 #define waitE  3   // 0b01
+
 
 
 struct State {
@@ -21,11 +24,11 @@ struct State {
 
 typedef const struct State STyp;
 
-STyp FSM[4] = {
+STyp FSM[6] = {
 	{0b100001, 3000, {goN, waitN, goN,   waitN}},
-	{0b100010, 500,  {goE, goE,   goE,   goE}},
-	{0b001100, 3000, {goE, goE,   waitE, waitE}},
-	{0b010100, 500,  {goN, goN,   goN,   goN}}
+	{0b010010, 500,  {goE, goE,   goE,   goE}},
+  {0b001100, 3000, {goE, goE,   waitE, waitE}},
+	{0b010010, 500,  {goN, goN,   goN,   goN}}, 
 };
 
 int FSM_State = goN;
@@ -34,33 +37,37 @@ void setup() {
 	pinMode(NORTH_PIN, INPUT);
 	pinMode(EAST_PIN, INPUT);
 
-	pinMode(EAST_RED_PIN, INPUT);
-	pinMode(EAST_YELLOW_PIN, INPUT);
-	pinMode(EAST_GREEN_PIN, INPUT);
+	pinMode(EAST_RED_PIN, OUTPUT);
+	pinMode(EAST_YELLOW_PIN, OUTPUT);
+	pinMode(EAST_GREEN_PIN, OUTPUT);
 
-	pinMode(NORTH_RED_PIN, INPUT);
-	pinMode(NORTH_YELLOW_PIN, INPUT);
-	pinMode(NORTH_GREEN_PIN, INPUT);
+	pinMode(NORTH_RED_PIN, OUTPUT);
+	pinMode(NORTH_YELLOW_PIN, OUTPUT);
+	pinMode(NORTH_GREEN_PIN, OUTPUT);
 
 	FSM_State = goN;
 }
 
+
+
 int GetInput(void) {
-	int northButton = digitalRead(NORTH_PIN);
-	int eastButton = digitalRead(EAST_PIN);
-	if(northButton && eastButton) {
+	int northSensor = digitalRead(NORTH_PIN);
+	int eastSensor = digitalRead(EAST_PIN);
+	if(northSensor && eastSensor) {
 		return 0b11;
+
 	} 
 	//else
-	if(northButton) {
+	if(northSensor) {
 		return 0b10;
 	} 
 	// else
-	if(eastButton) {
+	if(eastSensor) {
 		return 0b01;
 	} 
 	// else
 	return 0b00;
+//  return 0;
 }
 
 void SetOutput(int out) {
@@ -91,7 +98,7 @@ void loop() {
 	SetOutput(output);
 
 	// 2. Wait for time relevant to state
-	delay(FSM[FSM_State].Time * 10);
+	delay(FSM[FSM_State].Time * 2);
 
 	// 3. Get input
 	int input = GetInput();
