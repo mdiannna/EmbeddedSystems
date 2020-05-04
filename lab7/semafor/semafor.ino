@@ -27,7 +27,7 @@ typedef const struct State STyp;
 STyp FSM[6] = {
 	{0b100001, 3000, {goN, waitN, goN,   waitN}},
 	{0b010010, 500,  {goE, goE,   goE,   goE}},
-  {0b001100, 3000, {goE, goE,   waitE, waitE}},
+  	{0b001100, 3000, {goE, goE,   waitE, waitE}},
 	{0b010010, 500,  {goN, goN,   goN,   goN}}, 
 };
 
